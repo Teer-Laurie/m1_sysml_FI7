@@ -1,4 +1,4 @@
-  package robotNettoyeur {
+  package robotAspirateur {
     private import ScalarValues::Boolean;
 
     package parts {
@@ -6,52 +6,50 @@
         part def Utilisateur;
 
         /* contexte */
-        part def RobotNettoyeur;
+        part def RobotAspirateur;
+        part def StationDeCharge;
         part def SmartPhone;
-        part def BoxWifi;
-        part def BacDechets;
-        part def ReservoirEau;
+        part def ReseauWifi;
+        part def ReseauElectrique;
+        part def Sol;
+        part def Obstacle;
+        part def Salete;
     }
 
-    package useCases {
-        private import robotNettoyeur::parts::*;
+    private import robotAspirateur::parts::*;
 
-        actor utilisateur:Utilisateur;
+    part def Contexte {
+        part utilisateur: Utilisateur;
+        part robot: RobotAspirateur;
+        part station: StationDeCharge;
+        part smartPhone: SmartPhone;
+        part wifi: ReseauWifi;
+        part reseauElectrique: ReseauElectrique;
+        part sol: Sol;
+        part obstacle: Obstacle[*];
+        part salete: Salete[*];
 
-        use case connecterSmartphoneAuRobot {
-            ref actor utilisateur;
-        }
+        /* interactions avec les acteurs */
+        flow commande from utilisateur to smartPhone;
+        flow vide from utilisateur to robot;          // vidange du bac, entretien
+        flow perturbe from animal to robot;
 
-        use case connecterRobotAuWifi {
-            ref actor utilisateur;
-        }
+        /* commande et communication */
+        flow controle from smartPhone to robot;
+        flow informe from robot to smartPhone;        // état, carte, notifications
+        connect robot to wifi;
+        connect smartPhone to wifi;
 
-        use case creerOuConsulterCartographie {
-            ref actor utilisateur;
-        }
+        /* énergie */
+        flow alimente from reseauElectrique to station;
+        flow recharge from station to robot;
+        flow retourne from robot to station;          // docking
+        connect station to reseauElectrique;
 
-        use case configurerSessionNettoyage {
-            ref actor utilisateur;
-        }
-
-        use case viderBacDechets {
-            ref actor utilisateur;
-        }
-
-        use case verifierEtRemplirReservoir {
-            ref actor utilisateur;
-        }
-
-        use case automatiserNettoyage {
-            ref actor utilisateur;
-        }
-
-        use case choisirSurfaceANettoyer {
-            ref actor utilisateur;
-        }
-
-        use case lancerNettoyage {
-            ref actor utilisateur;
-        }
+        /* environnement physique */
+        flow nettoie from robot to sol;
+        flow aspire from salete to robot;
+        flow detecte from obstacle to robot;          // perçu par les capteurs
+        connect robot to sol;
     }
 }
