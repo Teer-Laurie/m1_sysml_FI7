@@ -1,4 +1,4 @@
- package robotAspirateur {
+  package robotNettoyeur {
     private import ScalarValues::Boolean;
 
     package parts {
@@ -6,49 +6,52 @@
         part def Utilisateur;
 
         /* contexte */
-        part def RobotAspirateur;
-        part def StationDeCharge;
+        part def RobotNettoyeur;
         part def SmartPhone;
-        part def ReseauWifi;
-        part def ReseauElectrique;
-        part def Sol;
-        part def Obstacle;
-        part def Salete;
+        part def BoxWifi;
+        part def BacDechets;
+        part def ReservoirEau;
     }
 
-    private import robotAspirateur::parts::*;
+    package useCases {
+        private import robotNettoyeur::parts::*;
 
-    part def Contexte {
-        part utilisateur: Utilisateur[*];
-        part robot: RobotAspirateur;
-        part station: StationDeCharge;
-        part smartPhone: SmartPhone[*];
-        part wifi: ReseauWifi;
-        part reseauElectrique: ReseauElectrique;
-        part sol: Sol;
-        part bouton;
-        part obstacle: Obstacle[*];
-        part salete: Salete[*];
+        actor utilisateur:Utilisateur;
 
-        /* interactions avec les acteurs */
-        flow connecte from utilisateur to smartPhone;
-        flow vide from utilisateur to station;        
+        use case connecterSmartphoneAuRobot {
+            ref actor utilisateur;
+        }
 
-        flow controle from smartPhone to robot;
-        flow informe from robot to smartPhone;      
-        flow nettoie from robot to sol;
-        flow aspire from salete to robot;
-        flow detecte from obstacle to robot;          
+        use case connecterRobotAuWifi {
+            ref actor utilisateur;
+        }
 
-        /* énergie */
-        flow alimente from reseauElectrique to station;
-        flow recharge from station to robot;
-        flow retourne from robot to station;    
-        connect robot to wifi;
-        connect smartPhone to wifi;      
-        connect station to reseauElectrique;
+        use case creerOuConsulterCartographie {
+            ref actor utilisateur;
+        }
 
-    
-    
+        use case configurerSessionNettoyage {
+            ref actor utilisateur;
+        }
+
+        use case viderBacDechets {
+            ref actor utilisateur;
+        }
+
+        use case verifierEtRemplirReservoir {
+            ref actor utilisateur;
+        }
+
+        use case automatiserNettoyage {
+            ref actor utilisateur;
+        }
+
+        use case choisirSurfaceANettoyer {
+            ref actor utilisateur;
+        }
+
+        use case lancerNettoyage {
+            ref actor utilisateur;
+        }
     }
 }
