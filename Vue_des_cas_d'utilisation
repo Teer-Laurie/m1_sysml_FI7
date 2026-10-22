@@ -1,0 +1,42 @@
+package tbi {
+    private import ScalarValues::Boolean;
+    package parts {
+        /* acteurs */
+        part def Utilisateur;
+        part def Enseignant :> Utilisateur;
+        part def Etudiant;
+
+        /* contexte */
+        part def TableauBlancInteractif;
+        part def VideoProjecteur;
+        part def SmartPhone;
+        part def Stylet;
+        part def Souris;
+    }
+
+        package useCases {
+        private import tbi::parts::*;
+
+        actor utilisateur:Utilisateur;
+        actor enseignant:Enseignant ::> utilisateur;
+
+        use case sauvegarderInformations {
+            ref actor utilisateur;
+        }
+        use case dupliquerAffichage {
+            ref actor utilisateur;        
+        }
+
+        use case ecrireADistance {
+            ref actor utilisateur;
+        }
+
+        use case administrerTableau {
+            ref actor enseignant;
+        }
+
+        use case transformerSurfacePlane {
+            ref actor enseignant;
+        }
+    }
+}
