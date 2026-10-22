@@ -37,7 +37,169 @@
             "expandedElements": [
               "robotNettoyeur::parts",
               "robotNettoyeur::useCases"
-            ]
+            ],
+            "layout": {
+              "robotAspirateur::Contexte": {
+                "x": 232,
+                "y": 8,
+                "parentKey": null,
+                "collapsedW": 104,
+                "collapsedH": 198
+              },
+              "robotNettoyeur::parts": {
+                "x": 8,
+                "y": 8,
+                "parentKey": null,
+                "w": 160,
+                "h": 536,
+                "collapsedW": 208,
+                "collapsedH": 190
+              },
+              "robotNettoyeur::useCases": {
+                "x": 258,
+                "y": 84,
+                "parentKey": null,
+                "w": 255,
+                "h": 982,
+                "collapsedW": 282,
+                "collapsedH": 204
+              },
+              "robotNettoyeur::parts::Utilisateur": {
+                "x": 22,
+                "y": 56,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::parts::RobotNettoyeur": {
+                "x": 22,
+                "y": 136,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 116,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::parts::SmartPhone": {
+                "x": 22,
+                "y": 216,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::parts::BoxWifi": {
+                "x": 22,
+                "y": 296,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::parts::BacDechets": {
+                "x": 22,
+                "y": 376,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::parts::ReservoirEau": {
+                "x": 22,
+                "y": 456,
+                "parentKey": "robotNettoyeur::parts",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::useCases::utilisateur": {
+                "x": 22,
+                "y": 56,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 104,
+                "collapsedH": 58
+              },
+              "robotNettoyeur::useCases::connecterSmartphoneAuRobot": {
+                "x": 22,
+                "y": 136,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 198,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::connecterRobotAuWifi": {
+                "x": 22,
+                "y": 230,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 157,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::creerOuConsulterCartographie": {
+                "x": 22,
+                "y": 324,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 211,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::configurerSessionNettoyage": {
+                "x": 22,
+                "y": 418,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 198,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::viderBacDechets": {
+                "x": 22,
+                "y": 512,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 123,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::verifierEtRemplirReservoir": {
+                "x": 22,
+                "y": 606,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 198,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::automatiserNettoyage": {
+                "x": 22,
+                "y": 700,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 157,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::choisirSurfaceANettoyer": {
+                "x": 22,
+                "y": 794,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 177,
+                "collapsedH": 72
+              },
+              "robotNettoyeur::useCases::lancerNettoyage": {
+                "x": 22,
+                "y": 888,
+                "parentKey": "robotNettoyeur::useCases",
+                "collapsedW": 123,
+                "collapsedH": 72
+              }
+            },
+            "ports": {},
+            "edgeRoutes": {},
+            "edgeAnchors": {},
+            "edgeGeometry": {
+              "definedBy:robotNettoyeur::useCases::utilisateur->robotNettoyeur::parts::Utilisateur": {
+                "sourceHandle": "top",
+                "targetHandle": "right",
+                "path": "M 332,140L 134,93",
+                "lineStyle": "straight",
+                "sourcePoint": {
+                  "x": 332,
+                  "y": 140
+                },
+                "targetPoint": {
+                  "x": 134,
+                  "y": 93
+                },
+                "label": {
+                  "x": 233,
+                  "y": 116.5
+                }
+              }
+            }
           }
         },
         "gvMode": "group"
