@@ -3,40 +3,33 @@ package tbi {
     package parts {
         /* acteurs */
         part def Utilisateur;
-        part def Enseignant :> Utilisateur;
-        part def Etudiant;
 
         /* contexte */
-        part def TableauBlancInteractif;
-        part def VideoProjecteur;
+        part def RobotAspirateur;
+        part def Aspirer;
         part def SmartPhone;
-        part def Stylet;
-        part def Souris;
     }
 
         package useCases {
         private import tbi::parts::*;
 
         actor utilisateur:Utilisateur;
-        actor enseignant:Enseignant ::> utilisateur;
 
-        use case sauvegarderInformations {
+        use case interractionSmartphone {
             ref actor utilisateur;
         }
-        use case dupliquerAffichage {
+        use case stationDeCharge {
             ref actor utilisateur;        
         }
 
-        use case ecrireADistance {
+        use case obstacle {
             ref actor utilisateur;
         }
 
-        use case administrerTableau {
-            ref actor enseignant;
+        use case reseauElectrique {
+            ref actor utilisateur;
         }
 
-        use case transformerSurfacePlane {
-            ref actor enseignant;
         }
     }
 }
