@@ -1,4 +1,4 @@
-  package robotNettoyeur {
+package robotAspirateur {
     private import ScalarValues::Boolean;
 
     package parts {
@@ -6,52 +6,52 @@
         part def Utilisateur;
 
         /* contexte */
-        part def RobotNettoyeur;
-        part def SmartPhone;
-        part def BoxWifi;
-        part def BacDechets;
-        part def ReservoirEau;
+        part def RobotAspirateur;
+        part def StationDeCharge;
+        part def AppSmartPhone;
+        part def ReseauWifi;
+        part def ReseauElectrique;
+        part def Sol;
+        part def Obstacle;
+        part def Salete;
     }
 
-    package useCases {
-        private import robotNettoyeur::parts::*;
+    private import robotAspirateur::parts::*;
 
-        actor utilisateur:Utilisateur;
+    part def Contexte {
+        part utilisateur: Utilisateur[*];
+        part robot: RobotAspirateur;
+        part station: StationDeCharge;
+        part appSmartPhone: AppSmartPhone[*];
+        part wifi: ReseauWifi;
+        part reseauElectrique: ReseauElectrique;
+        part sol: Sol;
+        part bouton;
+        part obstacle: Obstacle[*];
+        part salete: Salete[*];
 
-        use case connecterSmartphoneAuRobot {
-            ref actor utilisateur;
-        }
+        
+        connect robot to wifi;
+        connect appSmartPhone to wifi;      
+        connect station to reseauElectrique;
 
-        use case connecterRobotAuWifi {
-            ref actor utilisateur;
-        }
+        flow lancer from utilisateur to appSmartPhone;
+        flow controle from appSmartPhone to robot;
+        flow informe from robot to appSmartPhone;     
 
-        use case creerOuConsulterCartographie {
-            ref actor utilisateur;
-        }
+        flow detecte from robot to obstacle;  
+        flow nettoie from robot to sol;
+        flow aspire from robot to salete;    
+        flow retourne from robot to station;
 
-        use case configurerSessionNettoyage {
-            ref actor utilisateur;
-        }
+        flow alimente from reseauElectrique to station;            
+        flow alimente from reseauElectrique to station;
+        flow recharge from station to robot;    
+        flow vide from utilisateur to station;  
 
-        use case viderBacDechets {
-            ref actor utilisateur;
-        }
+        
 
-        use case verifierEtRemplirReservoir {
-            ref actor utilisateur;
-        }
-
-        use case automatiserNettoyage {
-            ref actor utilisateur;
-        }
-
-        use case choisirSurfaceANettoyer {
-            ref actor utilisateur;
-        }
-
-        use case lancerNettoyage {
-            ref actor utilisateur;
-        }
+    
+    
     }
 }

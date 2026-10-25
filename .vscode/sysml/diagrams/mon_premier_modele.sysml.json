@@ -1,6 +1,7 @@
 {
   "version": 9,
   "structuredDefaults": "inherited",
+<<<<<<< Updated upstream
   "anchors": {
     "robotAspirateur": {
       "gv": {
@@ -26,6 +27,560 @@
             "edgeRoutes": {},
             "edgeAnchors": {},
             "edgeGeometry": {}
+          }
+        }
+      },
+      "iv": {
+        "layout": {
+          "robotAspirateur::Contexte": {
+            "x": 16,
+            "y": 16,
+            "parentKey": null,
+            "w": 1480,
+            "h": 549
+          },
+          "robotAspirateur::parts::Utilisateur": {
+            "x": 16,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::RobotAspirateur": {
+            "x": 232,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::StationDeCharge": {
+            "x": 448,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::AppSmartPhone": {
+            "x": 664,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::ReseauWifi": {
+            "x": 880,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::ReseauElectrique": {
+            "x": 1096,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::Sol": {
+            "x": 1312,
+            "y": 613,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::Obstacle": {
+            "x": 16,
+            "y": 719,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::parts::Salete": {
+            "x": 232,
+            "y": 719,
+            "parentKey": null,
+            "w": 168,
+            "h": 58
+          },
+          "robotAspirateur::Contexte::utilisateur": {
+            "x": 32,
+            "y": 48,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 239,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::robot": {
+            "x": 657.4485526223358,
+            "y": 222.2899761286528,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 177,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::station": {
+            "x": 375,
+            "y": 129,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 191,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::appSmartPhone": {
+            "x": 912.878397107339,
+            "y": 32.532296566689,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 266,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::wifi": {
+            "x": 1198.2147009056803,
+            "y": 190.60757178966153,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::reseauElectrique": {
+            "x": 22,
+            "y": 210,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 259,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::sol": {
+            "x": 973.915813382004,
+            "y": 109.5514473776642,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::bouton": {
+            "x": 22,
+            "y": 469,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::obstacle": {
+            "x": 986,
+            "y": 273,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 198,
+            "collapsedH": 58
+          },
+          "robotAspirateur::Contexte::salete": {
+            "x": 999.5,
+            "y": 363,
+            "parentKey": "robotAspirateur::Contexte",
+            "collapsedW": 171,
+            "collapsedH": 58
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "connect:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::wifi": {
+            "sourceHandle": "right:0.250",
+            "targetHandle": "left:0.250",
+            "path": "M 850.4485526223358,252.7899761286528L 1214.2147009056803,221.10757178966153",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 850.4485526223358,
+              "y": 252.7899761286528
+            },
+            "targetPoint": {
+              "x": 1214.2147009056803,
+              "y": 221.10757178966153
+            },
+            "label": {
+              "x": 1032.331626764008,
+              "y": 236.94877395915717
+            }
+          },
+          "connect:robotAspirateur::Contexte::appSmartPhone->robotAspirateur::Contexte::wifi": {
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M 1194.878397107339,77.532296566689L 1214.2147009056803,235.60757178966153",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 1194.878397107339,
+              "y": 77.532296566689
+            },
+            "targetPoint": {
+              "x": 1214.2147009056803,
+              "y": 235.60757178966153
+            },
+            "label": {
+              "x": 1204.5465490065096,
+              "y": 156.56993417817526
+            }
+          },
+          "connect:robotAspirateur::Contexte::station->robotAspirateur::Contexte::reseauElectrique": {
+            "sourceHandle": "left",
+            "targetHandle": "right",
+            "path": "M 391,174L 297,255",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 391,
+              "y": 174
+            },
+            "targetPoint": {
+              "x": 297,
+              "y": 255
+            },
+            "label": {
+              "x": 344,
+              "y": 214.5
+            }
+          },
+          "flow:robotAspirateur::Contexte::utilisateur->robotAspirateur::Contexte::appSmartPhone:lancer": {
+            "caption": {
+              "x": 578.9391985536694,
+              "y": 69.0161482833445,
+              "lines": [
+                "lancer"
+              ],
+              "width": 58,
+              "height": 18,
+              "text": "lancer",
+              "source": {
+                "x": 287,
+                "y": 93
+              },
+              "target": {
+                "x": 928.878397107339,
+                "y": 63.032296566689
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.250",
+            "path": "M 287,93L 928.878397107339,63.032296566689",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 287,
+              "y": 93
+            },
+            "targetPoint": {
+              "x": 928.878397107339,
+              "y": 63.032296566689
+            },
+            "label": {
+              "x": 607.9391985536695,
+              "y": 78.0161482833445
+            }
+          },
+          "flow:robotAspirateur::Contexte::appSmartPhone->robotAspirateur::Contexte::robot:controle": {
+            "caption": {
+              "x": 854.6634748648373,
+              "y": 159.78613634767095,
+              "lines": [
+                "controle"
+              ],
+              "width": 70,
+              "height": 18,
+              "text": "controle",
+              "source": {
+                "x": 928.878397107339,
+                "y": 77.532296566689
+              },
+              "target": {
+                "x": 850.4485526223358,
+                "y": 260.0399761286528
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 2
+            },
+            "sourceHandle": "left",
+            "targetHandle": "right:0.375",
+            "path": "M 928.878397107339,77.532296566689L 850.4485526223358,260.0399761286528",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 928.878397107339,
+              "y": 77.532296566689
+            },
+            "targetPoint": {
+              "x": 850.4485526223358,
+              "y": 260.0399761286528
+            },
+            "label": {
+              "x": 889.6634748648373,
+              "y": 168.78613634767092
+            }
+          },
+          "flow:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::appSmartPhone:informe": {
+            "caption": {
+              "x": 884.6214948352903,
+              "y": 110.42131237976724,
+              "lines": [
+                "informe"
+              ],
+              "width": 64,
+              "height": 18,
+              "text": "informe",
+              "source": {
+                "x": 850.4485526223358,
+                "y": 267.2899761286528
+              },
+              "target": {
+                "x": 928.878397107339,
+                "y": 92.032296566689
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.750",
+            "path": "M 850.4485526223358,267.2899761286528L 928.878397107339,92.032296566689",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 850.4485526223358,
+              "y": 267.2899761286528
+            },
+            "targetPoint": {
+              "x": 928.878397107339,
+              "y": 92.032296566689
+            },
+            "label": {
+              "x": 889.6634748648373,
+              "y": 179.6611363476709
+            }
+          },
+          "flow:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::obstacle:detecte": {
+            "caption": {
+              "x": 894.2242763111678,
+              "y": 287.2699880643264,
+              "lines": [
+                "detecte"
+              ],
+              "width": 64,
+              "height": 18,
+              "text": "detecte",
+              "source": {
+                "x": 850.4485526223358,
+                "y": 274.5399761286528
+              },
+              "target": {
+                "x": 1002,
+                "y": 318
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right:0.625",
+            "targetHandle": "left",
+            "path": "M 850.4485526223358,274.5399761286528L 1002,318",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 850.4485526223358,
+              "y": 274.5399761286528
+            },
+            "targetPoint": {
+              "x": 1002,
+              "y": 318
+            },
+            "label": {
+              "x": 926.2242763111678,
+              "y": 296.2699880643264
+            }
+          },
+          "flow:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::sol:nettoie": {
+            "caption": {
+              "x": 888.18218300217,
+              "y": 191.04571175315849,
+              "lines": [
+                "nettoie"
+              ],
+              "width": 64,
+              "height": 18,
+              "text": "nettoie",
+              "source": {
+                "x": 850.4485526223358,
+                "y": 245.5399761286528
+              },
+              "target": {
+                "x": 989.915813382004,
+                "y": 154.5514473776642
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 3
+            },
+            "sourceHandle": "right:0.125",
+            "targetHandle": "left",
+            "path": "M 850.4485526223358,245.5399761286528L 989.915813382004,154.5514473776642",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 850.4485526223358,
+              "y": 245.5399761286528
+            },
+            "targetPoint": {
+              "x": 989.915813382004,
+              "y": 154.5514473776642
+            },
+            "label": {
+              "x": 920.18218300217,
+              "y": 200.0457117531585
+            }
+          },
+          "flow:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::salete:aspire": {
+            "caption": {
+              "x": 903.9742763111678,
+              "y": 335.89498806432636,
+              "lines": [
+                "aspire"
+              ],
+              "width": 58,
+              "height": 18,
+              "text": "aspire",
+              "source": {
+                "x": 850.4485526223358,
+                "y": 281.7899761286528
+              },
+              "target": {
+                "x": 1015.5,
+                "y": 408
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right:0.750",
+            "targetHandle": "left",
+            "path": "M 850.4485526223358,281.7899761286528L 1015.5,408",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 850.4485526223358,
+              "y": 281.7899761286528
+            },
+            "targetPoint": {
+              "x": 1015.5,
+              "y": 408
+            },
+            "label": {
+              "x": 932.9742763111678,
+              "y": 344.8949880643264
+            }
+          },
+          "flow:robotAspirateur::Contexte::robot->robotAspirateur::Contexte::station:retourne": {
+            "caption": {
+              "x": 592.7242763111678,
+              "y": 197.14498806432636,
+              "lines": [
+                "retourne"
+              ],
+              "width": 70,
+              "height": 18,
+              "text": "retourne",
+              "source": {
+                "x": 673.4485526223358,
+                "y": 252.7899761286528
+              },
+              "target": {
+                "x": 582,
+                "y": 159.5
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 2
+            },
+            "sourceHandle": "left:0.250",
+            "targetHandle": "right:0.250",
+            "path": "M 673.4485526223358,252.7899761286528L 582,159.5",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 673.4485526223358,
+              "y": 252.7899761286528
+            },
+            "targetPoint": {
+              "x": 582,
+              "y": 159.5
+            },
+            "label": {
+              "x": 627.7242763111678,
+              "y": 206.1449880643264
+            }
+          },
+          "flow:robotAspirateur::Contexte::station->robotAspirateur::Contexte::robot:recharge": {
+            "caption": {
+              "x": 592.7242763111678,
+              "y": 226.14498806432638,
+              "lines": [
+                "recharge"
+              ],
+              "width": 70,
+              "height": 18,
+              "text": "recharge",
+              "source": {
+                "x": 582,
+                "y": 188.5
+              },
+              "target": {
+                "x": 673.4485526223358,
+                "y": 281.7899761286528
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right:0.750",
+            "targetHandle": "left:0.750",
+            "path": "M 582,188.5L 673.4485526223358,281.7899761286528",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 582,
+              "y": 188.5
+            },
+            "targetPoint": {
+              "x": 673.4485526223358,
+              "y": 281.7899761286528
+            },
+            "label": {
+              "x": 627.7242763111678,
+              "y": 235.1449880643264
+            }
+          },
+          "flow:robotAspirateur::Contexte::utilisateur->robotAspirateur::Contexte::station:vide": {
+            "caption": {
+              "x": 316.5,
+              "y": 110,
+              "lines": [
+                "vide"
+              ],
+              "width": 45,
+              "height": 18,
+              "text": "vide",
+              "source": {
+                "x": 287,
+                "y": 78.5
+              },
+              "target": {
+                "x": 391,
+                "y": 159.5
+              },
+              "lineStyle": "straight",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right:0.250",
+            "targetHandle": "left:0.250",
+            "path": "M 287,78.5L 391,159.5",
+            "lineStyle": "straight",
+            "sourcePoint": {
+              "x": 287,
+              "y": 78.5
+            },
+            "targetPoint": {
+              "x": 391,
+              "y": 159.5
+            },
+            "label": {
+              "x": 339,
+              "y": 119
+            }
           }
         }
       }
@@ -206,4 +761,7 @@
       }
     }
   }
+=======
+  "anchors": {"robotAspirateur":{"gv":{"gvViews":{"group":{"expandedElements":["robotAspirateur::Contexte","robotAspirateur::parts"],"layout":{"robotAspirateur::parts":{"x":288.68939094356836,"y":-151.7713885728966,"parentKey":null,"w":468,"h":953.7866568160842,"collapsedW":208,"collapsedH":190},"robotAspirateur::Contexte":{"x":8,"y":-100.85154203749006,"parentKey":null,"w":719.853865137293,"h":958.8515420374902,"collapsedW":104,"collapsedH":198},"robotAspirateur::parts::Utilisateur":{"x":41.533077761880406,"y":115.96913658546906,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::parts::RobotAspirateur":{"x":75.52692109028328,"y":212.72606284101573,"parentKey":"robotAspirateur::parts","collapsedW":123,"collapsedH":58},"robotAspirateur::parts::StationDeCharge":{"x":43.48306915310798,"y":317.04212396027714,"parentKey":"robotAspirateur::parts","collapsedW":123,"collapsedH":58},"robotAspirateur::parts::SmartPhone":{"x":45.56461635586152,"y":404.9845282644619,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::parts::ReseauWifi":{"x":54.02538192238404,"y":478.8960691541157,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::parts::ReseauElectrique":{"x":42.32845451900096,"y":555.4953024397569,"parentKey":"robotAspirateur::parts","collapsedW":130,"collapsedH":58},"robotAspirateur::parts::Sol":{"x":65.72230932576701,"y":642.9337644196938,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::parts::Obstacle":{"x":58.056920516365096,"y":741.0345368732343,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::parts::Salete":{"x":62.486147488906454,"y":841.3190593985145,"parentKey":"robotAspirateur::parts","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::utilisateur":{"x":86.50461750369784,"y":110.47307890971669,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::robot":{"x":86.50461750369782,"y":202.56769469166005,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::station":{"x":86.50461750369782,"y":297.3500028695908,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::smartPhone":{"x":85.16077130570412,"y":388.10077245354046,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::wifi":{"x":22,"y":478.85154203749005,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::reseauElectrique":{"x":22,"y":558.85154203749,"parentKey":"robotAspirateur::Contexte","collapsedW":130,"collapsedH":58},"robotAspirateur::Contexte::sol":{"x":22,"y":638.8515420374902,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::bouton":{"x":22,"y":718.8515420374902,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::obstacle":{"x":22,"y":798.8515420374902,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58},"robotAspirateur::Contexte::salete":{"x":22,"y":878.8515420374902,"parentKey":"robotAspirateur::Contexte","collapsedW":104,"collapsedH":58}},"ports":{},"edgeRoutes":{},"edgeAnchors":{},"edgeGeometry":{"definedBy:robotAspirateur::Contexte::utilisateur->robotAspirateur::parts::Utilisateur":{"sourceHandle":"right","targetHandle":"bottom","path":"M 198.50461750369783,38.62153687222663L 382.22246870544876,22.19774801257246","lineStyle":"straight","sourcePoint":{"x":198.50461750369783,"y":38.62153687222663},"targetPoint":{"x":382.22246870544876,"y":22.19774801257246},"label":{"x":290.3635431045733,"y":30.409642442399544}},"definedBy:robotAspirateur::Contexte::robot->robotAspirateur::parts::RobotAspirateur":{"sourceHandle":"right","targetHandle":"bottom","path":"M 198.50461750369783,130.71615265417L 425.71631203385164,118.95467426811913","lineStyle":"straight","sourcePoint":{"x":198.50461750369783,"y":130.71615265417},"targetPoint":{"x":425.71631203385164,"y":118.95467426811913},"label":{"x":312.1104647687747,"y":124.83541346114457}},"definedBy:robotAspirateur::Contexte::station->robotAspirateur::parts::StationDeCharge":{"sourceHandle":"right","targetHandle":"left","path":"M 198.50461750369783,225.49846083210076L 332.17246009667633,194.27073538738054","lineStyle":"straight","sourcePoint":{"x":198.50461750369783,"y":225.49846083210076},"targetPoint":{"x":332.17246009667633,"y":194.27073538738054},"label":{"x":265.33853880018705,"y":209.88459810974064}},"definedBy:robotAspirateur::Contexte::smartPhone->robotAspirateur::parts::SmartPhone":{"sourceHandle":"right","targetHandle":"left","path":"M 197.16077130570412,316.2492304160504L 334.2540072994299,282.2131396915653","lineStyle":"straight","sourcePoint":{"x":197.16077130570412,"y":316.2492304160504},"targetPoint":{"x":334.2540072994299,"y":282.2131396915653},"label":{"x":265.707389302567,"y":299.23118505380785}},"definedBy:robotAspirateur::Contexte::wifi->robotAspirateur::parts::ReseauWifi":{"sourceHandle":"right","targetHandle":"left","path":"M 134,407L 342.7147728659524,356.1246805812191","lineStyle":"straight","sourcePoint":{"x":134,"y":407},"targetPoint":{"x":342.7147728659524,"y":356.1246805812191},"label":{"x":238.3573864329762,"y":381.56234029060954}},"definedBy:robotAspirateur::Contexte::reseauElectrique->robotAspirateur::parts::ReseauElectrique":{"sourceHandle":"right","targetHandle":"left","path":"M 160,487L 331.0178454625693,432.72391386686024","lineStyle":"straight","sourcePoint":{"x":160,"y":487},"targetPoint":{"x":331.0178454625693,"y":432.72391386686024},"label":{"x":245.50892273128466,"y":459.8619569334301}},"definedBy:robotAspirateur::Contexte::sol->robotAspirateur::parts::Sol":{"sourceHandle":"right","targetHandle":"left","path":"M 134,567L 354.41170026933537,520.1623758467972","lineStyle":"straight","sourcePoint":{"x":134,"y":567.0000000000001},"targetPoint":{"x":354.41170026933537,"y":520.1623758467972},"label":{"x":244.20585013466768,"y":543.5811879233986}},"definedBy:robotAspirateur::Contexte::obstacle->robotAspirateur::parts::Obstacle":{"sourceHandle":"right","targetHandle":"left","path":"M 134,727L 346.74631145993345,618.2631483003377","lineStyle":"straight","sourcePoint":{"x":134,"y":727.0000000000001},"targetPoint":{"x":346.74631145993345,"y":618.2631483003377},"label":{"x":240.37315572996673,"y":672.6315741501688}},"definedBy:robotAspirateur::Contexte::salete->robotAspirateur::parts::Salete":{"sourceHandle":"bottom","targetHandle":"left","path":"M 82,836L 351.1755384324748,718.5476708256178","lineStyle":"straight","sourcePoint":{"x":82,"y":836.0000000000001},"targetPoint":{"x":351.1755384324748,"y":718.5476708256178},"label":{"x":216.5877692162374,"y":777.2738354128089}}}}}}}}
+>>>>>>> Stashed changes
 }
