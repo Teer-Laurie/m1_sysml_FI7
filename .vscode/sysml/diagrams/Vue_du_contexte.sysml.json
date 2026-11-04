@@ -1,0 +1,35 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "robotAspirateur": {
+      "gv": {
+        "gvViews": {
+          "group": {
+            "layout": {
+              "robotAspirateur::Contexte": {
+                "x": 248,
+                "y": 8,
+                "parentKey": null,
+                "collapsedW": 265,
+                "collapsedH": 198,
+                "placedByHand": true
+              },
+              "robotAspirateur::parts": {
+                "x": 8,
+                "y": 8,
+                "parentKey": null,
+                "collapsedW": 208,
+                "collapsedH": 190
+              }
+            },
+            "ports": {},
+            "edgeRoutes": {},
+            "edgeAnchors": {},
+            "edgeGeometry": {}
+          }
+        }
+      }
+    }
+  }
+}
