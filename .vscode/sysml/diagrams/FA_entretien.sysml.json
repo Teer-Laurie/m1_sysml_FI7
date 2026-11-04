@@ -1,0 +1,5 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {"AspiCoo_Entretenir":{"gv":{"gvViews":{"group":{"expandedElements":["AspiCoo_Entretenir::vueEntretenirSysteme"]},"tree":{"gvRelations":"structural"}},"gvMode":"tree"},"afv":{"hiddenElements":[]}},"AspiCoo_Entretenir::vueEntretenirSysteme":{"gv":{"gvMode":"tree"}}}
+}
