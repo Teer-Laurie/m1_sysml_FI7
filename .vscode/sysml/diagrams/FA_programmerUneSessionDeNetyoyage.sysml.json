@@ -1,0 +1,619 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "AspiCoo_Programmer": {
+      "afv": {
+        "layout": {
+          "AspiCoo_Programmer::fluxProgrammerSession": {
+            "x": 74,
+            "y": -442.375,
+            "parentKey": null,
+            "w": 1267,
+            "h": 1278,
+            "placedByHand": true
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::recevoirParametres": {
+            "x": 574,
+            "y": 777,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierZonesSelectionnees": {
+            "x": 557,
+            "y": 912,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 198,
+            "h": 58,
+            "placedByHand": true
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierParametresNettoyage": {
+            "x": 556,
+            "y": 70,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 205,
+            "h": 58
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::enregistrerSession": {
+            "x": 971,
+            "y": 918,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 168,
+            "h": 58
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::transmettreConfirmation": {
+            "x": 966.5,
+            "y": 1058,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 177,
+            "h": 58
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::signalerParametresInvalides": {
+            "x": 779,
+            "y": 1198,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 205,
+            "h": 58
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::repriseVerification": {
+            "x": 611,
+            "y": 488,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 212,
+            "h": 48,
+            "placedByHand": true
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionZones": {
+            "x": 680,
+            "y": 1063,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 152,
+            "h": 48
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionParametres": {
+            "x": 1049,
+            "y": 413,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 202,
+            "h": 48,
+            "placedByHand": true
+          },
+          "AspiCoo_Programmer::fluxProgrammerSession/__final__": {
+            "x": 1047,
+            "y": 1198,
+            "parentKey": "AspiCoo_Programmer::fluxProgrammerSession",
+            "w": 16,
+            "h": 16
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::repriseVerification->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::recevoirParametres": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 791,93.625 L 791,308.625 Q 791,316.625 783,316.625 L 740,316.625 Q 732,316.625 732,324.625 L 732,334.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 791,
+              "y": 93.625
+            },
+            "targetPoint": {
+              "x": 732,
+              "y": 334.625
+            },
+            "label": {
+              "x": 791,
+              "y": 243.625
+            },
+            "points": [
+              {
+                "x": 791,
+                "y": 93.625
+              },
+              {
+                "x": 791,
+                "y": 316.625
+              },
+              {
+                "x": 732,
+                "y": 316.625
+              },
+              {
+                "x": 732,
+                "y": 334.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::recevoirParametres->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierZonesSelectionnees": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 732,392.625 L 732,450.625 Q 732,451.625 731,451.625 L 731,451.625 Q 730,451.625 730,452.625 L 730,469.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 732,
+              "y": 392.625
+            },
+            "targetPoint": {
+              "x": 730,
+              "y": 469.625
+            },
+            "label": {
+              "x": 732,
+              "y": 432.125
+            },
+            "points": [
+              {
+                "x": 732,
+                "y": 392.625
+              },
+              {
+                "x": 732,
+                "y": 451.625
+              },
+              {
+                "x": 730,
+                "y": 451.625
+              },
+              {
+                "x": 730,
+                "y": 469.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierZonesSelectionnees->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionZones": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 730,527.625 L 730,594.625 Q 730,602.625 738,602.625 L 822,602.625 Q 830,602.625 830,610.625 L 830,620.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 730,
+              "y": 527.625
+            },
+            "targetPoint": {
+              "x": 830,
+              "y": 620.625
+            },
+            "label": {
+              "x": 751.5,
+              "y": 602.625
+            },
+            "points": [
+              {
+                "x": 730,
+                "y": 527.625
+              },
+              {
+                "x": 730,
+                "y": 602.625
+              },
+              {
+                "x": 830,
+                "y": 602.625
+              },
+              {
+                "x": 830,
+                "y": 620.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionZones->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierParametresNettoyage:[zonesValides]": {
+            "caption": {
+              "x": 910.5,
+              "y": -33.90750203499044,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[zonesValides]"
+              ],
+              "text": "[zonesValides]",
+              "source": {
+                "x": 906,
+                "y": 644.625
+              },
+              "target": {
+                "x": 835,
+                "y": -343.375
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "right",
+            "path": "M 906,644.625 L 956,644.625 Q 964,644.625 964,636.625 L 964,-335.375 Q 964,-343.375 956,-343.375 L 835,-343.375",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 906,
+              "y": 644.625
+            },
+            "targetPoint": {
+              "x": 835,
+              "y": -343.375
+            },
+            "label": {
+              "x": 964,
+              "y": 115.125
+            },
+            "points": [
+              {
+                "x": 906,
+                "y": 644.625
+              },
+              {
+                "x": 964,
+                "y": 644.625
+              },
+              {
+                "x": 964,
+                "y": -343.375
+              },
+              {
+                "x": 835,
+                "y": -343.375
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionZones->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::signalerParametresInvalides:[zonesInvalides]": {
+            "caption": {
+              "x": 770,
+              "y": 681.63,
+              "width": 120,
+              "height": 18,
+              "lines": [
+                "[zonesInvalides]"
+              ],
+              "text": "[zonesInvalides]",
+              "source": {
+                "x": 830,
+                "y": 668.625
+              },
+              "target": {
+                "x": 929.875,
+                "y": 755.625
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top:0.375",
+            "path": "M 830,668.625 L 830,729.625 Q 830,737.625 838,737.625 L 921.875,737.625 Q 929.875,737.625 929.875,745.625 L 929.875,755.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 830,
+              "y": 668.625
+            },
+            "targetPoint": {
+              "x": 929.875,
+              "y": 755.625
+            },
+            "label": {
+              "x": 854.4375,
+              "y": 737.625
+            },
+            "points": [
+              {
+                "x": 830,
+                "y": 668.625
+              },
+              {
+                "x": 830,
+                "y": 737.625
+              },
+              {
+                "x": 929.875,
+                "y": 737.625
+              },
+              {
+                "x": 929.875,
+                "y": 755.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::signalerParametresInvalides->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::repriseVerification": {
+            "sourceHandle": "right",
+            "targetHandle": "right",
+            "path": "M 1058,784.625 L 1068,784.625 Q 1076,784.625 1076,776.625 L 1076,695.625 Q 1076,687.625 1068,687.625 L 923,687.625 Q 915,687.625 915,679.625 L 915,77.625 Q 915,69.625 907,69.625 L 897,69.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1058,
+              "y": 784.625
+            },
+            "targetPoint": {
+              "x": 897,
+              "y": 69.625
+            },
+            "label": {
+              "x": 915,
+              "y": 507.625
+            },
+            "points": [
+              {
+                "x": 1058,
+                "y": 784.625
+              },
+              {
+                "x": 1076,
+                "y": 784.625
+              },
+              {
+                "x": 1076,
+                "y": 687.625
+              },
+              {
+                "x": 915,
+                "y": 687.625
+              },
+              {
+                "x": 915,
+                "y": 69.625
+              },
+              {
+                "x": 897,
+                "y": 69.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::verifierParametresNettoyage->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::repriseVerification": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 732.5,-314.375 L 732.5,19.625 Q 732.5,27.625 740.5,27.625 L 783,27.625 Q 791,27.625 791,35.625 L 791,45.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 732.5,
+              "y": -314.375
+            },
+            "targetPoint": {
+              "x": 791,
+              "y": 45.625
+            },
+            "label": {
+              "x": 732.5,
+              "y": -105.125
+            },
+            "points": [
+              {
+                "x": 732.5,
+                "y": -314.375
+              },
+              {
+                "x": 732.5,
+                "y": 27.625
+              },
+              {
+                "x": 791,
+                "y": 27.625
+              },
+              {
+                "x": 791,
+                "y": 45.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::repriseVerification->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionParametres": {
+            "sourceHandle": "right:0.250",
+            "targetHandle": "top",
+            "path": "M 844,57.625 L 854,57.625 Q 862,57.625 862,49.625 L 862,-39.375 Q 862,-47.375 870,-47.375 L 1216,-47.375 Q 1224,-47.375 1224,-39.375 L 1224,-29.375",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 844,
+              "y": 57.625
+            },
+            "targetPoint": {
+              "x": 1224,
+              "y": -29.375
+            },
+            "label": {
+              "x": 990.5,
+              "y": -47.375
+            },
+            "points": [
+              {
+                "x": 844,
+                "y": 57.625
+              },
+              {
+                "x": 862,
+                "y": 57.625
+              },
+              {
+                "x": 862,
+                "y": -47.375
+              },
+              {
+                "x": 1224,
+                "y": -47.375
+              },
+              {
+                "x": 1224,
+                "y": -29.375
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionParametres->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::enregistrerSession:[parametresValides]": {
+            "caption": {
+              "x": 1155,
+              "y": 31.630000000000003,
+              "width": 138,
+              "height": 18,
+              "lines": [
+                "[parametresValides]"
+              ],
+              "text": "[parametresValides]",
+              "source": {
+                "x": 1224,
+                "y": 18.625
+              },
+              "target": {
+                "x": 1129,
+                "y": 475.625
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 1224,18.625 L 1224,449.625 Q 1224,457.625 1216,457.625 L 1137,457.625 Q 1129,457.625 1129,465.625 L 1129,475.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1224,
+              "y": 18.625
+            },
+            "targetPoint": {
+              "x": 1129,
+              "y": 475.625
+            },
+            "label": {
+              "x": 1224,
+              "y": 294.625
+            },
+            "points": [
+              {
+                "x": 1224,
+                "y": 18.625
+              },
+              {
+                "x": 1224,
+                "y": 457.625
+              },
+              {
+                "x": 1129,
+                "y": 457.625
+              },
+              {
+                "x": 1129,
+                "y": 475.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::decisionParametres->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::signalerParametresInvalides:[parametresInvalides]": {
+            "caption": {
+              "x": 970.7,
+              "y": -14.375,
+              "width": 151,
+              "height": 18,
+              "lines": [
+                "[parametresInvalides]"
+              ],
+              "text": "[parametresInvalides]",
+              "source": {
+                "x": 1123,
+                "y": -5.375
+              },
+              "target": {
+                "x": 981.125,
+                "y": 755.625
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top:0.625",
+            "path": "M 1123,-5.375 L 989.125,-5.375 Q 981.125,-5.375 981.125,2.625 L 981.125,755.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1123,
+              "y": -5.375
+            },
+            "targetPoint": {
+              "x": 981.125,
+              "y": 755.625
+            },
+            "label": {
+              "x": 981.125,
+              "y": 304.1875
+            },
+            "points": [
+              {
+                "x": 1123,
+                "y": -5.375
+              },
+              {
+                "x": 981.125,
+                "y": -5.375
+              },
+              {
+                "x": 981.125,
+                "y": 755.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::enregistrerSession->AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::transmettreConfirmation": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 1129,533.625 L 1129,615.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1129,
+              "y": 533.625
+            },
+            "targetPoint": {
+              "x": 1129,
+              "y": 615.625
+            },
+            "label": {
+              "x": 1129,
+              "y": 574.625
+            },
+            "points": [
+              {
+                "x": 1129,
+                "y": 533.625
+              },
+              {
+                "x": 1129,
+                "y": 615.625
+              }
+            ],
+            "corner": 8
+          },
+          "succession:AspiCoo_Programmer::fluxProgrammerSession/AspiCoo_Programmer::fluxProgrammerSession::transmettreConfirmation->AspiCoo_Programmer::fluxProgrammerSession/__final__": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 1129,673.625 L 1129,755.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1129,
+              "y": 673.625
+            },
+            "targetPoint": {
+              "x": 1129,
+              "y": 755.625
+            },
+            "label": {
+              "x": 1129,
+              "y": 714.625
+            },
+            "points": [
+              {
+                "x": 1129,
+                "y": 673.625
+              },
+              {
+                "x": 1129,
+                "y": 755.625
+              }
+            ],
+            "corner": 8
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,47 +1,53 @@
 package AspiCoo_Entretenir {
 
-    action vueEntretenirSysteme {
+    action fluxEntretenirSysteme {
 
-        action commencerEntretien;
-        action verifierEtatRobot;
-        action verifierReservoirs;
-        action remplirEau;
-        action remplirProduit;
-        action nettoyerAccessoires;
-        action verifierStation;
-        action verifierSachet;
-        action retirerSachetPlein;
-        action rendreSachetSuivantDisponible;
-        action terminerEntretien;
+        action recevoirDemandeEntretien;
+        action diagnostiquerEtatRobot;
+        action verifierReservoirEau;
+        action verifierReservoirProduit;
+        action verifierEtatAccessoires;
+        action verifierEtatStation;
+        action verifierEtatSachet;
+        action identifierOperationsEntretien;
+        action signalerBesoinRemplissage;
+        action signalerBesoinNettoyage;
+        action signalerSachetPlein;
+        action recevoirConfirmationEntretien;
+        action actualiserEtatSysteme;
+        action terminerDiagnostic;
 
-        merge choixReservoirs;
-        merge choixSachet;
+        merge fusionDiagnostic;
+        merge fusionEntretien;
 
-        first start;
+        first debut;
 
-        then commencerEntretien;
-        then verifierEtatRobot;
-        then verifierReservoirs;
+        then action recevoirDemandeEntretien;
+        then action diagnostiquerEtatRobot;
 
-        then decide decision0;
+        then action verifierReservoirEau;
+        then action verifierReservoirProduit;
+        then action verifierEtatAccessoires;
+        then action verifierEtatStation;
+        then action verifierEtatSachet;
 
-        if eauNecessaire then remplirEau;
-        if produitNecessaire then remplirProduit;
+        then action identifierOperationsEntretien;
 
-        succession remplirEau then choixReservoirs;
-        succession remplirProduit then choixReservoirs;
+        then decide decisionEntretien;
 
-        then nettoyerAccessoires;
-        then verifierStation;
-        then verifierSachet;
+        if remplissageNecessaire then signalerBesoinRemplissage;
+        if nettoyageNecessaire then signalerBesoinNettoyage;
+        if sachetPlein then signalerSachetPlein;
+        if entretienNonNecessaire then fusionEntretien;
 
-        then decide decision1;
+        succession signalerBesoinRemplissage then fusionDiagnostic;
+        succession signalerBesoinNettoyage then fusionDiagnostic;
+        succession signalerSachetPlein then fusionDiagnostic;
 
-        if sachetPlein then retirerSachetPlein;
-        if sachetNonPlein then terminerEntretien;
+        succession fusionDiagnostic then recevoirConfirmationEntretien;
 
-        succession retirerSachetPlein then rendreSachetSuivantDisponible;
-        succession rendreSachetSuivantDisponible then terminerEntretien;
+        then action actualiserEtatSysteme;
+        then action terminerDiagnostic;
 
         then done;
     }
