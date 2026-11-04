@@ -20,6 +20,9 @@ package robot {
         action creerCompteIdentification;
         action choisirParametres;
 
+        action finAlerte;
+        action finConfiguration;
+
         decide decideWifi;
         decide decideMethode;
         decide decideQR;
@@ -36,7 +39,8 @@ package robot {
         then decideWifi;
             if robotNonConnecte then afficherMessageAlerte;
             if robotConnecte then mergeConnexion;
-        succession afficherMessageAlerte then done;
+
+        succession afficherMessageAlerte then finAlerte;
 
         succession mergeConnexion then connecterRobotApplication;
         then decideMethode;
@@ -56,6 +60,7 @@ package robot {
         then decideCompte;
             if compteNonCree then mergeCompte;
             if compteCree then choisirParametres;
-        succession choisirParametres then done;
+
+        succession choisirParametres then finConfiguration;
     }
 }
