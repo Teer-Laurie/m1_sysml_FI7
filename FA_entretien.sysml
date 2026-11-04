@@ -1,6 +1,13 @@
 package AspiCoo_Entretenir {
 
+    private import ScalarValues::Boolean;
+
     action vueEntretenirSysteme {
+
+        attribute eauNecessaire : Boolean;
+        attribute produitNecessaire : Boolean;
+        attribute sachetPlein : Boolean;
+        attribute sachetNonPlein : Boolean;
 
         action lancerProcessusEntretien;
         action controlerEtatRobot;
@@ -15,7 +22,9 @@ package AspiCoo_Entretenir {
         action terminerProcessusEntretien;
 
         merge choixReservoirs;
-        merge choixSachet;
+
+        decide decision0;
+        decide decision1;
 
         first start;
 
