@@ -3,9 +3,13 @@ package robot {
         private import ScalarValues::Boolean;
 
         attribute robotConnecte : Boolean;
+        attribute robotNonConnecte : Boolean;
         attribute scanQRCode : Boolean;
+        attribute saisieManuelle : Boolean;
         attribute identifiantCorrect : Boolean;
+        attribute identifiantIncorrect : Boolean;
         attribute compteCree : Boolean;
+        attribute compteNonCree : Boolean;
 
         action installerApplication;
         action connecterRobotWifi;
@@ -30,27 +34,27 @@ package robot {
         then installerApplication;
         then connecterRobotWifi;
         then decideWifi;
-            if not robotConnecte then afficherMessageAlerte;
+            if robotNonConnecte then afficherMessageAlerte;
             if robotConnecte then mergeConnexion;
         succession afficherMessageAlerte then done;
 
         succession mergeConnexion then connecterRobotApplication;
         then decideMethode;
             if scanQRCode then scannerQRCode;
-            if not scanQRCode then saisirIdentifiantManuellement;
+            if saisieManuelle then saisirIdentifiantManuellement;
 
         succession scannerQRCode then decideQR;
-            if not identifiantCorrect then mergeConnexion;
+            if identifiantIncorrect then mergeConnexion;
             if identifiantCorrect then mergeIdentifiant;
 
         succession saisirIdentifiantManuellement then mergeIdentifiant;
         succession mergeIdentifiant then decideIdentifiant;
-            if not identifiantCorrect then mergeConnexion;
+            if identifiantIncorrect then mergeConnexion;
             if identifiantCorrect then mergeCompte;
 
         succession mergeCompte then creerCompteIdentification;
         then decideCompte;
-            if not compteCree then mergeCompte;
+            if compteNonCree then mergeCompte;
             if compteCree then choisirParametres;
         succession choisirParametres then done;
     }
