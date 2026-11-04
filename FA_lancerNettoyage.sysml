@@ -1,6 +1,13 @@
 package AspiCoo_Lancer {
 
+    private import ScalarValues::Boolean;
+
     action vueLancerNettoyage {
+
+        attribute modeAspiration : Boolean;
+        attribute modeLavage : Boolean;
+        attribute nettoyageIncomplet : Boolean;
+        attribute nettoyageTermine : Boolean;
 
         action recevoirDemande;
         action verifierSession;
@@ -13,14 +20,17 @@ package AspiCoo_Lancer {
         action collecterDechets;
         action compacterDechets;
         action verifierFinNettoyage;
+        action reprendreNettoyage;
+        action terminerSession;
         action retournerStation;
         action viderReservoirRobot;
         action rechargerRobot;
-        action reprendreNettoyage;
-        action terminerSession;
 
         merge choixMode;
         merge finNettoyage;
+
+        decide decisionMode;
+        decide decisionFin;
 
         first start;
 
@@ -48,7 +58,12 @@ package AspiCoo_Lancer {
         if nettoyageIncomplet then reprendreNettoyage;
         if nettoyageTermine then terminerSession;
 
-        succession reprendreNettoyage then exploiterCartographie;
+        succession reprendreNettoyage then verifierFinNettoyage;
+
+        succession terminerSession then retournerStation;
+        succession retournerStation then viderReservoirRobot;
+        succession viderReservoirRobot then rechargerRobot;
+        succession rechargerRobot then finNettoyage;
 
         then done;
     }
