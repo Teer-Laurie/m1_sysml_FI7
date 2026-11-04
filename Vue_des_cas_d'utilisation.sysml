@@ -1,4 +1,4 @@
-  package robotNettoyeur {
+package robotAspirateur {
     private import ScalarValues::Boolean;
 
     package parts {
@@ -6,7 +6,7 @@
         part def Utilisateur;
 
         /* contexte */
-        part def RobotNettoyeur;
+        part def robotAspirateur;
         part def SmartPhone;
         part def BoxWifi;
         part def BacDechets;
@@ -14,7 +14,7 @@
     }
 
     package useCases {
-        private import robotNettoyeur::parts::*;
+        private import robotAspirateur::parts::*;
 
         actor utilisateur:Utilisateur;
 
