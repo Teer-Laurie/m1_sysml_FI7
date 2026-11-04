@@ -1,1 +1,57 @@
+package robot {
+    action configurerSysteme {
+        private import ScalarValues::Boolean;
 
+        attribute robotConnecte : Boolean;
+        attribute scanQRCode : Boolean;
+        attribute identifiantCorrect : Boolean;
+        attribute compteCree : Boolean;
+
+        action installerApplication;
+        action connecterRobotWifi;
+        action afficherMessageAlerte;
+        action connecterRobotApplication;
+        action scannerQRCode;
+        action saisirIdentifiantManuellement;
+        action creerCompteIdentification;
+        action choisirParametres;
+
+        decide decideWifi;
+        decide decideMethode;
+        decide decideQR;
+        decide decideIdentifiant;
+        decide decideCompte;
+
+        merge mergeConnexion;
+        merge mergeIdentifiant;
+        merge mergeCompte;
+
+        first start;
+        then installerApplication;
+        then connecterRobotWifi;
+        then decideWifi;
+            if not robotConnecte then afficherMessageAlerte;
+            if robotConnecte then mergeConnexion;
+        succession afficherMessageAlerte then done;
+
+        succession mergeConnexion then connecterRobotApplication;
+        then decideMethode;
+            if scanQRCode then scannerQRCode;
+            if not scanQRCode then saisirIdentifiantManuellement;
+
+        succession scannerQRCode then decideQR;
+            if not identifiantCorrect then mergeConnexion;
+            if identifiantCorrect then mergeIdentifiant;
+
+        succession saisirIdentifiantManuellement then mergeIdentifiant;
+        succession mergeIdentifiant then decideIdentifiant;
+            if not identifiantCorrect then mergeConnexion;
+            if identifiantCorrect then mergeCompte;
+
+        succession mergeCompte then creerCompteIdentification;
+        then decideCompte;
+            if not compteCree then mergeCompte;
+            if compteCree then choisirParametres;
+        succession choisirParametres then done;
+    }
+}
