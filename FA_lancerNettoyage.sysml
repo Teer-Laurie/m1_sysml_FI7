@@ -24,10 +24,10 @@ package AspiCoo_Lancer {
         action terminerSession;
         action retournerStation;
         action viderReservoirRobot;
+        action transfererDechetsVersSachet;
         action rechargerRobot;
 
         merge choixMode;
-        merge finNettoyage;
 
         decide decisionMode;
         decide decisionFin;
@@ -62,8 +62,8 @@ package AspiCoo_Lancer {
 
         succession terminerSession then retournerStation;
         succession retournerStation then viderReservoirRobot;
-        succession viderReservoirRobot then rechargerRobot;
-        succession rechargerRobot then finNettoyage;
+        succession viderReservoirRobot then transfererDechetsVersSachet;
+        succession transfererDechetsVersSachet then rechargerRobot;
 
         then done;
     }
