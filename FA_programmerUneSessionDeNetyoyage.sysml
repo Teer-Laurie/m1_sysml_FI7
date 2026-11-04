@@ -1,34 +1,38 @@
 package AspiCoo_Programmer {
 
+    private import ScalarValues::Boolean;
+
     action fluxProgrammerSession {
 
+        attribute boutonProgrammerAppuye : Boolean;
+        attribute parametresValides : Boolean;
+
+        action afficherInterfaceProgrammation;
         action recevoirParametres;
-        action verifierZonesSelectionnees;
-        action verifierParametresNettoyage;
+        action verifierParametres;
+        action afficherMessageErreur;
         action enregistrerSession;
-        action transmettreConfirmation;
-        action signalerParametresInvalides;
+        action afficherConfirmation;
 
-        merge repriseVerification;
+        merge repriseSaisie;
+        decide decision0;
 
-        first debut;
+        first start;
 
-        then action recevoirParametres;
-        then action verifierZonesSelectionnees;
-        then decide decisionZones;
+        succession start if boutonProgrammerAppuye then afficherInterfaceProgrammation;
 
-        if zonesValides then verifierParametresNettoyage;
-        if zonesInvalides then signalerParametresInvalides;
+        then repriseSaisie;
+        then recevoirParametres;
+        then verifierParametres;
 
-        succession signalerParametresInvalides then repriseVerification;
-        succession verifierParametresNettoyage then repriseVerification;
-
-        then decide decisionParametres;
+        then decide decision0;
 
         if parametresValides then enregistrerSession;
-        if parametresInvalides then signalerParametresInvalides;
+        if not parametresValides then afficherMessageErreur;
 
-        succession enregistrerSession then transmettreConfirmation;
+        succession afficherMessageErreur then repriseSaisie;
+
+        succession enregistrerSession then afficherConfirmation;
 
         then done;
     }

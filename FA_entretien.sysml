@@ -49,8 +49,7 @@ package AspiCoo_Entretenir {
         if sachetPlein then signalerRetraitSachetPlein;
         if sachetNonPlein then terminerProcessusEntretien;
 
-        succession signalerRetraitSachetPlein then activerDisponibiliteSachetSuivant;
-        succession activerDisponibiliteSachetSuivant then terminerProcessusEntretien;
+        succession signalerRetraitSachetPlein then terminerProcessusEntretien;
 
         then done;
     }
