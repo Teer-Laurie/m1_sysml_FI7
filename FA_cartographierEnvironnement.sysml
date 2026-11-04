@@ -26,9 +26,6 @@ package robot {
         action verifierValiderDonnees;
         action enregistrementFinal;
 
-        action finAnnulationCartographie;
-        action finAnnulationEnvoi;
-        action finCartographie;
 
         decide decideCartographie;
         decide decideRecommencerCartographie;
@@ -52,7 +49,7 @@ package robot {
         succession decideRecommencerCartographie
             if recommencerCartographie then mergeCartographie;
         succession decideRecommencerCartographie
-            if annulerCartographie then finAnnulationCartographie;
+            if annulerCartographie then done;
 
         succession enregistrerDonnees if donneesEnregistrees then mergeEnvoi;
 
@@ -63,9 +60,9 @@ package robot {
 
         succession afficherMessageErreur then decideRecommencerEnvoi;
             if recommencerEnvoi then mergeEnvoi;
-            if annulerEnvoi then finAnnulationEnvoi;
+            if annulerEnvoi then done;
 
         succession verifierValiderDonnees if donneesValidees then enregistrementFinal;
-        succession enregistrementFinal then finCartographie;
+        succession enregistrementFinal then done;
     }
 }
