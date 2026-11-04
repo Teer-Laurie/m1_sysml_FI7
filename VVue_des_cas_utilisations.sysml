@@ -16,9 +16,6 @@ package AspiCoo {
             ref actor utilisateur;
         }
 
-        use case connecterSystemeApplication {
-            ref actor utilisateur;
-        }
 
         use case cartographierEnvironnement {
             ref actor utilisateur;
