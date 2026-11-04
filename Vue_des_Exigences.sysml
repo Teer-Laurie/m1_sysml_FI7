@@ -1,6 +1,5 @@
 
 package AspiCoo {
-
     package requirements {
 
         requirement nettoyageAutonome specializes utilisation {
