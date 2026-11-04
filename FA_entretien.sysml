@@ -2,46 +2,45 @@ package AspiCoo_Entretenir {
 
     action vueEntretenirSysteme {
 
-        action commencerEntretien;
-        action verifierEtatRobot;
-        action verifierReservoirs;
-        action remplirEau;
-        action remplirProduit;
-        action nettoyerAccessoires;
-        action verifierStation;
-        action verifierSachet;
-        action retirerSachetPlein;
-        action rendreSachetSuivantDisponible;
-        action terminerEntretien;
+        action lancerProcessusEntretien;
+        action controlerEtatRobot;
+        action controlerNiveauDesReservoirs;
+        action signalerBesoinRemplissageEau;
+        action signalerBesoinRemplissageProduit;
+        action signalerNettoyageAccessoires;
+        action controlerEtatStation;
+        action controlerEtatSachet;
+        action signalerRetraitSachetPlein;
+        action activerDisponibiliteSachetSuivant;
+        action terminerProcessusEntretien;
 
         merge choixReservoirs;
-        merge choixSachet;
 
         first start;
 
-        then commencerEntretien;
-        then verifierEtatRobot;
-        then verifierReservoirs;
+        then lancerProcessusEntretien;
+        then controlerEtatRobot;
+        then controlerNiveauDesReservoirs;
 
         then decide decision0;
 
-        if eauNecessaire then remplirEau;
-        if produitNecessaire then remplirProduit;
+        if eauNecessaire then signalerBesoinRemplissageEau;
+        if produitNecessaire then signalerBesoinRemplissageProduit;
 
-        succession remplirEau then choixReservoirs;
-        succession remplirProduit then choixReservoirs;
+        succession signalerBesoinRemplissageEau then choixReservoirs;
+        succession signalerBesoinRemplissageProduit then choixReservoirs;
 
-        then nettoyerAccessoires;
-        then verifierStation;
-        then verifierSachet;
+        then signalerNettoyageAccessoires;
+        then controlerEtatStation;
+        then controlerEtatSachet;
 
         then decide decision1;
 
-        if sachetPlein then retirerSachetPlein;
-        if sachetNonPlein then terminerEntretien;
+        if sachetPlein then signalerRetraitSachetPlein;
+        if sachetNonPlein then terminerProcessusEntretien;
 
-        succession retirerSachetPlein then rendreSachetSuivantDisponible;
-        succession rendreSachetSuivantDisponible then terminerEntretien;
+        succession signalerRetraitSachetPlein then activerDisponibiliteSachetSuivant;
+        succession activerDisponibiliteSachetSuivant then terminerProcessusEntretien;
 
         then done;
     }
