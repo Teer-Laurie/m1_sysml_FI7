@@ -16,7 +16,7 @@ package AspiCoo_Entretenir {
 
         occurrence entretenirSysteme {
 
-            part interface: InterfaceEntretien;
+            part interfaceUtilisateur: InterfaceEntretien;
             part robot: RobotAspirateur;
             part moduleControle: ModuleControle;
             part reservoirs: Reservoirs;
@@ -24,7 +24,7 @@ package AspiCoo_Entretenir {
             part station: Station;
             part sachet: SachetDechets;
 
-            message lancerEntretien from interface to robot;
+            message lancerEntretien from interfaceUtilisateur to robot;
 
             message controlerEtatRobot from robot to moduleControle;
 
@@ -33,8 +33,8 @@ package AspiCoo_Entretenir {
             message signalerBesoinRemplissageEau from reservoirs to robot;
             message signalerBesoinRemplissageProduit from reservoirs to robot;
 
-            message notifierRemplissageEau from robot to interface;
-            message notifierRemplissageProduit from robot to interface;
+            message notifierRemplissageEau from robot to interfaceUtilisateur;
+            message notifierRemplissageProduit from robot to interfaceUtilisateur;
 
             message signalerNettoyageAccessoires from robot to accessoires;
 
@@ -44,9 +44,9 @@ package AspiCoo_Entretenir {
 
             message signalerRetraitSachetPlein from sachet to robot;
 
-            message notifierRetraitSachet from robot to interface;
+            message notifierRetraitSachet from robot to interfaceUtilisateur;
 
-            message terminerEntretien from robot to interface;
+            message terminerEntretien from robot to interfaceUtilisateur;
         }
     }
 }
