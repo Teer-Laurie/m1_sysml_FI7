@@ -1,37 +1,12 @@
 
 package RobotAspirateur {
 
-    // Définition des éléments
-    part def RobotAspirateur;
-    part def Smartphone;
-    part def Sauvegarde;
-    part def Fonctions;
-    part def Contraintes;
-
-    part def InteractionApplication;
-    part def SuiviNettoyage;
-    part def MaintenancePreventive;
-    part def ControlePieces;
-    part def GuideChangementPiecesEntretien;
-    part def TableauDeBord;
-
-    part def ConnexionAvecApplication;
-    part def AspirerSaletes;
-    part def NiveauSalete;
-    part def DeplacementAutonome;
-    part def DetectionObstacles;
-    part def CartographierEnvironnement;
-
-    part def Cout;
-    part def Poids;
-    part def NiveauSonore;
-    part def NiveauDetection;
-
-
-    // Structure principale du robot aspirateur
     part robotAspirateur : RobotAspirateur {
 
-        // Branche Smartphone
+        // ==============================
+        // BRANCHE SMARTPHONE
+        // ==============================
+
         part smartphone : Smartphone {
 
             part interactionApplication : InteractionApplication {
@@ -50,11 +25,17 @@ package RobotAspirateur {
             }
         }
 
-        // Branche Sauvegarde
+        // ==============================
+        // BRANCHE SAUVEGARDE
+        // ==============================
+
         part sauvegarde : Sauvegarde;
 
 
-        // Branche Fonctions
+        // ==============================
+        // BRANCHE FONCTIONS
+        // ==============================
+
         part fonctions : Fonctions {
 
             part interactionApplication : InteractionApplication {
@@ -78,7 +59,10 @@ package RobotAspirateur {
         }
 
 
-        // Branche Contraintes
+        // ==============================
+        // BRANCHE CONTRAINTES
+        // ==============================
+
         part contraintes : Contraintes {
 
             part cout : Cout;
