@@ -2,12 +2,11 @@ part robotAspirateur : robotAspirateur {
     part sauvegarde : sauvegarde;
     part smartphone : smartphone {
         part interactionApplication : interactionApplication;
-        part suivieDeNettoyage : suivieDeNettoyage;
-        part maintenancePreventive : maintenancePreventive;
-        part sortieVideo: sortieVideo;
-        part controleDesPieces : controleDesPieces;
-        part guideDeChangement : guideDeChangement ;
-        part tableauDeBord : tableauDeBord;
+            part suivieDeNettoyage : suivieDeNettoyage;
+            part maintenancePreventive : maintenancePreventive;
+                part controleDesPieces : controleDesPieces;
+                part guideDeChangement : guideDeChangement ;
+                part tableauDeBord : tableauDeBord;
     }
     part fonctions : fonctions {
         part interactionApplication : interactionApplication;
