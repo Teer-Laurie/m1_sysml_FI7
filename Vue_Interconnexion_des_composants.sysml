@@ -1,43 +1,64 @@
 package exigencesRobotAspirateur {
 
-    requirement 'Robot Aspirateur' {
+    /* définitions des exigences */
+    requirement def RobotAspirateur;
+    requirement def Smartphone;
+    requirement def InteractionApplication;
+    requirement def SuiviNettoyage;
+    requirement def TableauDeBord;
+    requirement def MaintenancePreventive;
+    requirement def ControlePieces;
+    requirement def GuideChangementPiecesEntretien;
+    requirement def Sauvegarde;
+    requirement def Fonctions;
+    requirement def ConnexionAvecApplication;
+    requirement def AspirerSaletes;
+    requirement def NiveauSalete;
+    requirement def DeplacementAutonome;
+    requirement def DetectionObstacles;
+    requirement def CartographierEnvironnement;
+    requirement def Contraintes;
+    requirement def Cout;
+    requirement def Poids;
+    requirement def NiveauSonore;
+    requirement def NiveauDetection;
 
-        requirement 'Smartphone' {
-            requirement 'Interaction application' {
-                requirement 'Suivie de nettoyage' {
-                    requirement 'Tableau de bord';
+    /* arborescence des exigences */
+    requirement robotAspirateur : RobotAspirateur {
+        requirement smartphone : Smartphone {
+            requirement interactionApplication : InteractionApplication {
+                requirement suiviNettoyage : SuiviNettoyage {
+                    requirement tableauDeBord : TableauDeBord;
                 }
-                requirement 'Maintenance préventive' {
-                    requirement 'Contrôle des pièces';
-                    requirement 'Guide de changement de pièces et d\'entretien';
+                requirement maintenancePreventive : MaintenancePreventive {
+                    requirement controlePieces : ControlePieces;
+                    requirement guideChangementPiecesEntretien : GuideChangementPiecesEntretien;
                 }
             }
         }
-
-        requirement 'Sauvegarde';
-
-        requirement 'Fonctions' {
-            requirement 'Interaction application' {
-                requirement 'connection avec application';
+        requirement sauvegarde : Sauvegarde;
+        requirement fonctions : Fonctions {
+            requirement interactionApplicationRobot : InteractionApplication {
+                requirement connexionAvecApplication : ConnexionAvecApplication;
             }
-            requirement 'Aspirer les saletés' {
-                requirement 'Niveau de saleté';
+            requirement aspirerSaletes : AspirerSaletes {
+                requirement niveauSalete : NiveauSalete;
             }
-            requirement 'Déplacement autonome' {
-                requirement 'Détection d\'obstacles';
+            requirement deplacementAutonome : DeplacementAutonome {
+                requirement detectionObstacles : DetectionObstacles;
             }
-            requirement 'Cartographier Environnement';
+            requirement cartographierEnvironnement : CartographierEnvironnement;
         }
-
-        requirement 'Contraintes' {
-            requirement 'Coût';
-            requirement 'Poids';
-            requirement 'Niveau Sonore';
-            requirement 'Niveau de détection';
+        requirement contraintes : Contraintes {
+            requirement cout : Cout;
+            requirement poids : Poids;
+            requirement niveauSonore : NiveauSonore;
+            requirement niveauDetection : NiveauDetection;
         }
     }
 
+    /* lien entre Contrôle des pièces et Tableau de bord */
     dependency
-        from 'Robot Aspirateur'::'Smartphone'::'Interaction application'::'Maintenance préventive'::'Contrôle des pièces'
-        to 'Robot Aspirateur'::'Smartphone'::'Interaction application'::'Suivie de nettoyage'::'Tableau de bord';
+        from robotAspirateur::smartphone::interactionApplication::maintenancePreventive::controlePieces
+        to robotAspirateur::smartphone::interactionApplication::suiviNettoyage::tableauDeBord;
 }
