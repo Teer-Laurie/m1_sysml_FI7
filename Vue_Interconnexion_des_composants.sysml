@@ -1,6 +1,5 @@
 package systemeRobot {
 
-    /* ================= COMPOSANTS ================= */
     package parts {
         /* acteurs */
         part def Utilisateur;
@@ -42,146 +41,23 @@ package systemeRobot {
         part def GuideEntretien;
     }
 
-    /* ================= EXIGENCES ================= */
-    package exigences {
-        requirement robotAspirateur {
-            requirement pilotageSmartphone {
-                requirement interactionApplicationSmartphone {
-                    requirement suiviNettoyage {
-                        requirement affichageTableauDeBord;
-                    }
-                    requirement maintenancePreventive {
-                        requirement controlePieces;
-                        requirement guideChangementPieces;
-                    }
-                }
-            }
-            requirement sauvegardeDonnees;
-            requirement fonctions {
-                requirement interactionRobotApplication {
-                    requirement connexionApplication;
-                }
-                requirement aspirationSaletes;
-                requirement deplacementAutonome {
-                    requirement detectionObstacles;
-                }
-                requirement cartographieEnvironnement;
-            }
-            requirement contraintes {
-                requirement coutRevient;
-                requirement poidsTotal;
-                requirement niveauSonore;
-                requirement niveauDetection;
-            }
-        }
-    }
-
     private import parts::*;
-    private import exigences::**;
-
-    /* ================= CAS D'UTILISATION ================= */
-    package casUtilisation {
-        use case configurerSysteme {
-            actor utilisateur : Utilisateur;
-            require interactionRobotApplication;
-            require connexionApplication;
-        }
-        use case cartographierEnvironnement {
-            actor utilisateur : Utilisateur;
-            require cartographieEnvironnement;
-            require sauvegardeDonnees;
-        }
-        use case lancerNettoyage {
-            actor utilisateur : Utilisateur;
-            require aspirationSaletes;
-            require deplacementAutonome;
-        }
-        use case suivreNettoyage {
-            actor utilisateur : Utilisateur;
-            require suiviNettoyage;
-        }
-        use case effectuerMaintenance {
-            actor utilisateur : Utilisateur;
-            require maintenancePreventive;
-        }
-    }
-
-    /* ================= RECETTE ================= */
-    package recette {
-        verification systemeConfigure {
-            verify interactionRobotApplication;
-        }
-        verification environnementCartographie {
-            verify cartographieEnvironnement;
-        }
-        verification donneesSauvegardees {
-            verify sauvegardeDonnees;
-        }
-        verification nettoyageSuivi {
-            verify suiviNettoyage;
-        }
-        verification maintenanceEffectuee {
-            verify maintenancePreventive;
-        }
-        verification fonctionsVerifiees {
-            verify fonctions;
-        }
-    }
-
-    /* ================= CONTRÔLE ================= */
-    package controle {
-        verification contraintesControlees {
-            verify contraintes;
-        }
-        verification controleCoutRevient {
-            verify coutRevient;
-        }
-        verification controlePoidsTotal {
-            verify poidsTotal;
-        }
-        verification controleNiveauSonore {
-            verify niveauSonore;
-        }
-        verification controleNiveauDetection {
-            verify niveauDetection;
-        }
-    }
 
     /* ================= ARCHITECTURE PHYSIQUE ================= */
     package architecturePhysique {
         part robot : Robot {
-            satisfy robotAspirateur;
-
             part carteMere : CarteMere {
                 part microControleur : MicroControleur;
-                part moduleWifi : ModuleWifi {
-                    satisfy connexionApplication;
-                }
-                part memoire : Memoire {
-                    satisfy sauvegardeDonnees;
-                }
+                part moduleWifi : ModuleWifi;
+                part memoire : Memoire;
             }
-            part moteurAspiration : MoteurAspiration {
-                satisfy aspirationSaletes;
-            }
-            part brosses : Brosse[1..*] {
-                satisfy aspirationSaletes;
-            }
-            part bacPoussiere : BacPoussiere {
-                satisfy aspirationSaletes;
-            }
-            part moteursRoues : MoteurRoue[2] {
-                satisfy deplacementAutonome;
-            }
-            part roues : Roue[2..*] {
-                satisfy deplacementAutonome;
-            }
-            part capteursObstacles : CapteurObstacle[1..*] {
-                satisfy detectionObstacles;
-            }
-            part capteurLidar : CapteurLidar {
-                satisfy cartographieEnvironnement;
-            }
+            part moteurAspiration : MoteurAspiration;
+            part brosses : Brosse[1..*];
+            part bacPoussiere : BacPoussiere;
+            part moteursRoues : MoteurRoue[2];
+            part roues : Roue[2..*];
+            part capteursObstacles : CapteurObstacle[1..*];
+            part capteurLidar : CapteurLidar;
             part batterie : Batterie;
         }
     }
@@ -189,26 +65,18 @@ package systemeRobot {
     /* ================= ARCHITECTURE LOGIQUE ================= */
     package architectureLogique {
         part logicielEmbarque : LogicielEmbarque {
-            satisfy interactionRobotApplication;
+            item donneesCarte : DonneesCarte[0..*];
+            item identifiant : Identifiant;
         }
 
         part application : Application {
-            satisfy pilotageSmartphone;
-            satisfy interactionApplicationSmartphone;
-
-            part tableauDeBord : TableauDeBord {
-                satisfy affichageTableauDeBord;
-            }
-            part controleurPieces : ControleurPieces {
-                satisfy controlePieces;
-            }
-            part guideEntretien : GuideEntretien {
-                satisfy guideChangementPieces;
-            }
             part menuParametrage : MenuParametrage;
+            part tableauDeBord : TableauDeBord;
+            part controleurPieces : ControleurPieces;
+            part guideEntretien : GuideEntretien;
             part messages : Message[0..*];
-            part compte : Compte;
-            part parametres : Parametres[0..*];
+            item compte : Compte;
+            item parametres : Parametres[0..*];
         }
     }
 }
