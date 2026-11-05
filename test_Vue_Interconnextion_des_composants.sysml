@@ -21,7 +21,7 @@ part tbi : robotAspirateur {
         part detectionObstacles : detectionObstacles;
         part cartographierEnvironnement : cartographierEnvironnement;
     }
-    part fonctions : fonctions {
+    part contraintes : contraintes {
         part cout : cout;
         part poids : poids;
         part niveauSonore : niveauSonore;
