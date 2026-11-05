@@ -1,7 +1,4 @@
-package robotAspirateur {
-    private import ScalarValues::Boolean;
-}
-part tbi : robotAspirateur {
+part robotAspirateur : robotAspirateur {
     part sauvegarde : sauvegarde;
     part smartphone : smartphone {
         part interactionApplication : interactionApplication;
