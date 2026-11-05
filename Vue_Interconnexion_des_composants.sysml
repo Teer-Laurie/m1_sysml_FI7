@@ -9,7 +9,7 @@ package exigencesRobotAspirateur {
                 }
                 requirement 'Maintenance préventive' {
                     requirement 'Contrôle des pièces';
-                    requirement "Guide de changement de pièces et d'entretien";
+                    requirement 'Guide de changement de pièces et d\'entretien';
                 }
             }
         }
@@ -24,7 +24,7 @@ package exigencesRobotAspirateur {
                 requirement 'Niveau de saleté';
             }
             requirement 'Déplacement autonome' {
-                requirement "Détection d'obstacles";
+                requirement 'Détection d\'obstacles';
             }
             requirement 'Cartographier Environnement';
         }
@@ -37,7 +37,6 @@ package exigencesRobotAspirateur {
         }
     }
 
-    // Lien entre "Contrôle des pièces" et "Tableau de bord"
     dependency
         from 'Robot Aspirateur'::'Smartphone'::'Interaction application'::'Maintenance préventive'::'Contrôle des pièces'
         to 'Robot Aspirateur'::'Smartphone'::'Interaction application'::'Suivie de nettoyage'::'Tableau de bord';
