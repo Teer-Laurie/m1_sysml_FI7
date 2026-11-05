@@ -1,67 +1,105 @@
+package vueInterconnexion {
 
-package exigencesRobotAspirateur {
+    /* types de ports */
+    port def PortAlimentation;
+    port def PortCommande;
+    port def PortCapteur;
+    port def PortDonnees;
+    port def PortWifi;
 
-    requirement def RobotAspirateur {
-        requirement smartphone : Smartphone;
-        requirement sauvegarde : Sauvegarde;
-        requirement fonctions : Fonctions;
-        requirement contraintes : Contraintes;
-    }
+    /* définitions des composants */
+    part def SystemeRobotAspirateur;
+    part def Robot;
+    part def CarteMere;
+    part def MicroControleur;
+    part def ModuleWifi;
+    part def Memoire;
+    part def Batterie;
+    part def MoteurAspiration;
+    part def MoteurRoue;
+    part def CapteurObstacle;
+    part def CapteurLidar;
+    part def ReseauWifi;
+    part def Smartphone;
+    part def Application;
 
-    /* ===== Smartphone ===== */
-    requirement def Smartphone {
-        requirement interactionApplication : InteractionApplication;
-    }
-    requirement def InteractionApplication {
-        requirement suiviNettoyage : SuiviNettoyage;
-        requirement maintenancePreventive : MaintenancePreventive;
-    }
-    requirement def SuiviNettoyage {
-        requirement tableauDeBord : TableauDeBord;
-    }
-    requirement def MaintenancePreventive {
-        requirement controlePieces : ControlePieces;
-        requirement guideChangementPiecesEntretien : GuideChangementPiecesEntretien;
-    }
-    requirement def ControlePieces {
-        requirement tableauDeBord : TableauDeBord;
-    }
-    requirement def TableauDeBord;
-    requirement def GuideChangementPiecesEntretien;
+    part systeme : SystemeRobotAspirateur {
 
-    /* ===== Sauvegarde ===== */
-    requirement def Sauvegarde;
+        /* ===== Robot ===== */
+        part robot : Robot {
+            port wifi : PortWifi;
 
-    /* ===== Fonctions ===== */
-    requirement def Fonctions {
-        requirement interactionApplicationRobot : InteractionApplicationRobot;
-        requirement aspirerSaletes : AspirerSaletes;
-        requirement deplacementAutonome : DeplacementAutonome;
-        requirement cartographierEnvironnement : CartographierEnvironnement;
-    }
-    requirement def InteractionApplicationRobot {
-        requirement connexionAvecApplication : ConnexionAvecApplication;
-    }
-    requirement def ConnexionAvecApplication;
-    requirement def AspirerSaletes {
-        requirement niveauSalete : NiveauSalete;
-    }
-    requirement def NiveauSalete;
-    requirement def DeplacementAutonome {
-        requirement detectionObstacles : DetectionObstacles;
-    }
-    requirement def DetectionObstacles;
-    requirement def CartographierEnvironnement;
+            part batterie : Batterie {
+                port alimentation : PortAlimentation;
+            }
 
-    /* ===== Contraintes ===== */
-    requirement def Contraintes {
-        requirement cout : Cout;
-        requirement poids : Poids;
-        requirement niveauSonore : NiveauSonore;
-        requirement niveauDetection : NiveauDetection;
+            part carteMere : CarteMere {
+                part microControleur : MicroControleur {
+                    port alimentation : PortAlimentation;
+                    port commandeAspiration : PortCommande;
+                    port commandeRoues : PortCommande;
+                    port entreeObstacles : PortCapteur;
+                    port entreeLidar : PortCapteur;
+                    port donneesMemoire : PortDonnees;
+                    port donneesWifi : PortDonnees;
+                }
+                part memoire : Memoire {
+                    port donnees : PortDonnees;
+                }
+                part moduleWifi : ModuleWifi {
+                    port donnees : PortDonnees;
+                    port antenne : PortWifi;
+                }
+
+                connect microControleur.donneesMemoire to memoire.donnees;
+                connect microControleur.donneesWifi to moduleWifi.donnees;
+            }
+
+            part moteurAspiration : MoteurAspiration {
+                port commande : PortCommande;
+            }
+            part moteursRoues : MoteurRoue[2] {
+                port commande : PortCommande;
+            }
+            part capteursObstacles : CapteurObstacle[1..*] {
+                port mesure : PortCapteur;
+            }
+            part capteurLidar : CapteurLidar {
+                port mesure : PortCapteur;
+            }
+
+            /* alimentation */
+            connect batterie.alimentation to carteMere.microControleur.alimentation;
+
+            /* commandes des actionneurs */
+            connect carteMere.microControleur.commandeAspiration to moteurAspiration.commande;
+            connect carteMere.microControleur.commandeRoues to moteursRoues.commande;
+
+            /* remontée des capteurs */
+            connect capteursObstacles.mesure to carteMere.microControleur.entreeObstacles;
+            connect capteurLidar.mesure to carteMere.microControleur.entreeLidar;
+
+            /* sortie WiFi du robot */
+            connect carteMere.moduleWifi.antenne to wifi;
+        }
+
+        /* ===== Réseau WiFi ===== */
+        part reseauWifi : ReseauWifi {
+            port coteRobot : PortWifi;
+            port coteSmartphone : PortWifi;
+        }
+
+        /* ===== Smartphone ===== */
+        part smartphone : Smartphone {
+            port wifi : PortWifi;
+            part application : Application {
+                port communication : PortWifi;
+            }
+            connect application.communication to wifi;
+        }
+
+        /* liaisons entre robot, réseau et smartphone */
+        connect robot.wifi to reseauWifi.coteRobot;
+        connect reseauWifi.coteSmartphone to smartphone.wifi;
     }
-    requirement def Cout;
-    requirement def Poids;
-    requirement def NiveauSonore;
-    requirement def NiveauDetection;
 }
