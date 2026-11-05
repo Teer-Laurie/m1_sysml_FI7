@@ -40,10 +40,12 @@ package systemeRobot {
             message espaceCartographie of DonneesCarte from environnement to robot;
 
             // Alternative : espace mal cartographié
-            message espaceMalCartographie from robot to messageErreur;
-            message afficherErreurCartographie from messageErreur to utilisateur;
-            message recommencerCartographie from utilisateur to robot;
-            message annulerCartographie from utilisateur to robot;
+            message espaceMalCartographie from robot to application;
+            message afficherErreurCartographie from application to messageErreur;
+            message erreurCartographieAffichee from messageErreur to utilisateur;
+            message recommencerCartographie from utilisateur to application;
+            message relancerCartographie from application to robot;
+            message annulerCartographie from utilisateur to application;
 
             // Sauvegarde des données
             message sauvegarder of DonneesCarte from robot to memoire;
@@ -55,8 +57,9 @@ package systemeRobot {
 
             // Alternative : données non reçues
             message donneesNonRecues from application to messageErreur;
-            message afficherErreurEnvoi from messageErreur to utilisateur;
+            message erreurEnvoiAffichee from messageErreur to utilisateur;
             message recommencerEnvoi from utilisateur to application;
+            message relancerEnvoi from application to robot;
             message annulerEnvoi from utilisateur to application;
 
             // Vérification et validation
