@@ -1,6 +1,7 @@
 
 package RobotAspirateur {
 
+    // Définition des éléments
     part def RobotAspirateur;
     part def Smartphone;
     part def Sauvegarde;
@@ -26,33 +27,49 @@ package RobotAspirateur {
     part def NiveauSonore;
     part def NiveauDetection;
 
+
+    // Structure principale du robot aspirateur
     part robotAspirateur : RobotAspirateur {
 
+        // Branche Smartphone
         part smartphone : Smartphone {
+
             part interactionApplication : InteractionApplication {
+
                 part suiviNettoyage : SuiviNettoyage;
+
                 part maintenancePreventive : MaintenancePreventive {
+
                     part controlePieces : ControlePieces;
+
                     part guideChangementPiecesEntretien :
                         GuideChangementPiecesEntretien;
                 }
+
                 part tableauDeBord : TableauDeBord;
             }
         }
 
+        // Branche Sauvegarde
         part sauvegarde : Sauvegarde;
 
+
+        // Branche Fonctions
         part fonctions : Fonctions {
+
             part interactionApplication : InteractionApplication {
+
                 part connexionAvecApplication :
                     ConnexionAvecApplication;
             }
 
             part aspirerSaletes : AspirerSaletes {
+
                 part niveauSalete : NiveauSalete;
             }
 
             part deplacementAutonome : DeplacementAutonome {
+
                 part detectionObstacles : DetectionObstacles;
             }
 
@@ -60,10 +77,16 @@ package RobotAspirateur {
                 CartographierEnvironnement;
         }
 
+
+        // Branche Contraintes
         part contraintes : Contraintes {
+
             part cout : Cout;
+
             part poids : Poids;
+
             part niveauSonore : NiveauSonore;
+
             part niveauDetection : NiveauDetection;
         }
     }
