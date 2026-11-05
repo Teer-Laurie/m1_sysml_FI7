@@ -21,7 +21,7 @@ package systemeRobot {
             part robot : Robot;
             part environnement : Environnement;
             part memoire : Memoire;
-            part message : Message;
+            part messageErreur : Message;
 
             // Démarrage du robot
             message demarrerRobot from utilisateur to robot;
@@ -40,8 +40,8 @@ package systemeRobot {
             message espaceCartographie of DonneesCarte from environnement to robot;
 
             // Alternative : espace mal cartographié
-            message espaceMalCartographie from robot to message;
-            message afficherErreurCartographie from message to utilisateur;
+            message espaceMalCartographie from robot to messageErreur;
+            message afficherErreurCartographie from messageErreur to utilisateur;
             message recommencerCartographie from utilisateur to robot;
             message annulerCartographie from utilisateur to robot;
 
@@ -54,8 +54,8 @@ package systemeRobot {
             message donneesRecues from application to robot;
 
             // Alternative : données non reçues
-            message donneesNonRecues from application to message;
-            message afficherErreurEnvoi from message to utilisateur;
+            message donneesNonRecues from application to messageErreur;
+            message afficherErreurEnvoi from messageErreur to utilisateur;
             message recommencerEnvoi from utilisateur to application;
             message annulerEnvoi from utilisateur to application;
 
