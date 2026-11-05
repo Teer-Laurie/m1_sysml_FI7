@@ -3,48 +3,48 @@ package controle {
 
     // Vérification des contraintes
     verification contraintesControlees {
-        verify contraintes;
+        verifycontraintes;
     }
 
     verification coutControle {
-        verify cout;
+        verifycout;
     }
 
     verification poidsControle {
-        verify poids;
+        verifypoids;
     }
 
     verification niveauSonoreControle {
-        verify niveauSonore;
+        verifyniveauSonore;
     }
 
     verification niveauDetectionControle {
-        verify niveauDetection;
+        verifyniveauDetection;
     }
 
     // Vérification des fonctions
     verification aspirationVerifiee {
-        verify aspirerSaletes;
+        verifyaspirerSaletes;
     }
 
     verification deplacementVerifie {
-        verify deplacementAutonome;
+        verifydeplacementAutonome;
     }
 
     verification cartographieVerifiee {
-        verify cartographierEnvironnement;
+        verifycartographierEnvironnement;
     }
 
     verification detectionVerifiee {
-        verify detectionObstacles;
+        verifydetectionObstacles;
     }
 
     // Vérification du smartphone
     verification applicationVerifiee {
-        verify interactionApplication;
+        verifyinteractionApplication;
     }
 
     verification sauvegardeVerifiee {
-        verify sauvegarde;
+        verifysauvegarde;
     }
 }
