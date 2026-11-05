@@ -1,64 +1,50 @@
 
-package recette {
+package controle {
 
-    verification smartphoneVerifie {
-        verify smartphone;
+    // Vérification des contraintes
+    verification contraintesControlees {
+        verify contraintes;
     }
 
-    verification sauvegardeVerifiee {
-        verify sauvegarde;
+    verification coutControle {
+        verify cout;
     }
 
-    verification interactionApplicationVerifiee {
-        verify interactionApplication;
+    verification poidsControle {
+        verify poids;
     }
 
-    verification suiviNettoyageVerifie {
-        verify suiviNettoyage;
+    verification niveauSonoreControle {
+        verify niveauSonore;
     }
 
-    verification maintenancePreventiveVerifiee {
-        verify maintenancePreventive;
+    verification niveauDetectionControle {
+        verify niveauDetection;
     }
 
-    verification controlePiecesVerifie {
-        verify controlePieces;
-    }
-
-    verification guideEntretienVerifie {
-        verify guideChangementPiecesEntretien;
-    }
-
-    verification tableauDeBordVerifie {
-        verify tableauDeBord;
-    }
-
-    verification connexionApplicationVerifiee {
-        verify connexionAvecApplication;
-    }
-
+    // Vérification des fonctions
     verification aspirationVerifiee {
         verify aspirerSaletes;
     }
 
-    verification niveauSaleteVerifie {
-        verify niveauSalete;
-    }
-
-    verification deplacementAutonomeVerifie {
+    verification deplacementVerifie {
         verify deplacementAutonome;
-    }
-
-    verification detectionObstaclesVerifiee {
-        verify detectionObstacles;
     }
 
     verification cartographieVerifiee {
         verify cartographierEnvironnement;
     }
 
-    verification contraintesVerifiees {
-        verify contraintes;
+    verification detectionVerifiee {
+        verify detectionObstacles;
     }
 
+    // Vérification du smartphone
+    verification applicationVerifiee {
+        verify interactionApplication;
+    }
+
+    verification sauvegardeVerifiee {
+        verify sauvegarde;
+    }
 }
