@@ -1,28 +1,15 @@
-package AspiCoo {
+package CasUtilisationRAL {
 
-    package parts {
-
+    package Acteurs {
         part def Utilisateur;
-
     }
 
-    package useCases {
-
-        private import AspiCoo::parts::*;
+    package CasUtilisation {
+        private import Acteurs::*;
 
         actor utilisateur : Utilisateur;
 
-        use case configurerSysteme {
-            ref actor utilisateur;
-        }
-
-
-        use case cartographierEnvironnement {
-            ref actor utilisateur;
-        }
-
-
-        use case programmerSessionNettoyage {
+        use case programmerNettoyage {
             ref actor utilisateur;
         }
 
@@ -30,9 +17,20 @@ package AspiCoo {
             ref actor utilisateur;
         }
 
-        use case entretenirSysteme {
+        use case consulterCarte {
             ref actor utilisateur;
         }
 
+        use case gererDechetsEtReservoirs {
+            ref actor utilisateur;
+        }
+
+        use case effectuerMaintenance {
+            ref actor utilisateur;
+        }
+
+        use case configurerSysteme {
+            ref actor utilisateur;
+        }
     }
 }
