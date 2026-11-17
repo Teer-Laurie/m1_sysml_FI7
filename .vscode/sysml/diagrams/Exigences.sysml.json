@@ -1,5 +1,5 @@
 {
   "version": 9,
   "structuredDefaults": "inherited",
-  "anchors": {}
+  "anchors": {"ExigencesRAL":{"grv":{"gridPreset":"requirements"},"gv":{"gvViews":{"group":{"expandedElements":["ExigencesRAL::specificationsRAL","ExigencesRAL::specificationsRAL::fonctionnel","ExigencesRAL::specificationsRAL::fonctionnel::commande","ExigencesRAL::specificationsRAL::fonctionnel::commande::lancerArreter","ExigencesRAL::specificationsRAL::fonctionnel::commande::programmation","ExigencesRAL::specificationsRAL::fonctionnel::energie"],"gvRelations":"structural"},"tree":{"layout":{"ExigencesRAL::specificationsRAL":{"x":0,"y":0,"parentKey":null,"w":136,"h":72}},"ports":{},"edgeRoutes":{},"edgeAnchors":{},"edgeGeometry":{},"gvRelations":"parts","lineStyle":"orthogonal","expandedElements":[],"gvCardRelations":{}}},"gvMode":"tree"}}}
 }

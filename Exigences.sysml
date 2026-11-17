@@ -1,212 +1,172 @@
+package ExigencesRAL {
 
-package AspiCoo {
+    requirement specificationsRAL {
+        doc /* Le système robot aspirateur laveur (robot, station, application) doit satisfaire l'ensemble des exigences ci-dessous. */
 
-    package requirements {
+        /* ===== EXIGENCES FONCTIONNELLES ===== */
+        requirement fonctionnel {
+            doc /* Exigences relatives aux fonctionnalités du système. */
 
-        // ==========================================
-        // 1. EXIGENCES GENERALES
-        // ==========================================
+            requirement commande {
+                doc /* Commande, connectivité et mise en service */
+                requirement <'EF-01'> lancerArreter {
+                    doc /* L'utilisateur doit pouvoir lancer ou arrêter un nettoyage depuis l'application ou le bouton du robot. */
+                }
+                requirement <'EF-02'> programmation {
+                    doc /* L'utilisateur doit pouvoir programmer des sessions à des jours et heures précis. */
+                }
+                requirement <'EF-03'> selectionZones {
+                    doc /* L'utilisateur doit pouvoir sélectionner les pièces ou zones à nettoyer depuis l'application. */
+                }
+                requirement <'EF-04'> connexionWifi {
+                    doc /* Le robot doit se connecter à un réseau Wi-Fi pour communiquer avec l'application. */
+                }
+                requirement <'EF-26'> appairage {
+                    doc /* L'utilisateur doit pouvoir appairer le robot avec l'application lors de la mise en service. */
+                }
+            }
 
+            requirement navigation {
+                doc /* Navigation et cartographie (innovation 1) */
+                requirement <'EF-05'> cartographieAutomatique {
+                    doc /* Le robot doit cartographier automatiquement les espaces à nettoyer. */
+                }
+                requirement <'EF-06'> miseAJourCarte {
+                    doc /* Le robot doit actualiser sa carte pendant ses déplacements. */
+                }
+                requirement <'EF-07'> consultationCarte {
+                    doc /* L'utilisateur doit pouvoir consulter la carte depuis l'application. */
+                }
+                requirement <'EF-08'> detectionObstacles {
+                    doc /* Le robot doit détecter les obstacles sur son trajet pour éviter les collisions. */
+                }
+                requirement <'EF-09'> adaptationParcours {
+                    doc /* Le robot doit réorganiser localement son parcours face à un obstacle ou une situation imprévue. */
+                }
+            }
 
+            requirement nettoyage {
+                doc /* Nettoyage (innovation 3) */
+                requirement <'EF-10'> nettoyageAutonome {
+                    doc /* Le robot doit nettoyer les sols sans intervention de l'utilisateur pendant une session. */
+                }
+                requirement <'EF-11'> nettoyageHumide {
+                    doc /* Le robot doit aspirer et laver les surfaces compatibles. */
+                }
+                requirement <'EF-12'> detectionSurface {
+                    doc /* Le robot doit identifier le type de surface rencontré. */
+                }
+                requirement <'EF-13'> adaptationSurface {
+                    doc /* Le robot doit adapter son mode et ses paramètres de nettoyage à la surface détectée. */
+                }
+                requirement <'EF-14'> detectionSalete {
+                    doc /* Le robot doit détecter le niveau de saleté des zones. */
+                }
+                requirement <'EF-15'> ajustementAspiration {
+                    doc /* Le robot doit ajuster sa puissance d'aspiration selon le niveau de saleté. */
+                }
+            }
 
+            requirement energie {
+                doc /* Énergie */
+                requirement <'EF-16'> retourStation {
+                    doc /* Le robot doit retourner à sa station lorsque la batterie est faible ou la session terminée. */
+                }
+                requirement <'EF-17'> repriseNettoyage {
+                    doc /* Le robot doit reprendre une session interrompue après recharge. */
+                }
+                requirement <'EF-18'> rechargeAutomatique {
+                    doc /* La station doit recharger automatiquement la batterie du robot. */
+                }
+            }
 
-        requirement normes specializes specificationsAspiCoo {
-            doc /* Le système doit respecter les normes de sécurité et les contraintes réglementaires applicables. */
+            requirement dechets {
+                doc /* Déchets et consommables (innovation 2) */
+                requirement <'EF-19'> compactage {
+                    doc /* Le robot doit compacter mécaniquement les déchets collectés dans son réservoir. */
+                }
+                requirement <'EF-20'> transfertDechets {
+                    doc /* La station doit récupérer automatiquement les déchets compactés du robot. */
+                }
+                requirement <'EF-21'> stockageSachets {
+                    doc /* La station doit stocker les déchets dans des sachets biodégradables, sans contact direct de l'utilisateur avec les déchets. */
+                }
+                requirement <'EF-22'> remplacementSachet {
+                    doc /* L'utilisateur doit pouvoir retirer un sachet plein pour accéder au suivant. */
+                }
+                requirement <'EF-23'> gestionReservoirsLiquides {
+                    doc /* La station doit accueillir les réservoirs d'eau et de produit ménager. */
+                }
+            }
+
+            requirement maintenance {
+                doc /* Maintenance préventive (innovation 4) */
+                requirement <'EF-24'> detectionEncrassement {
+                    doc /* Le robot doit détecter l'encrassement ou le blocage de composants (brosses, filtre). */
+                }
+                requirement <'EF-25'> notificationEntretien {
+                    doc /* Le système doit avertir l'utilisateur, via l'application, avant une panne probable. */
+                }
+            }
         }
 
-        requirement ergonomie specializes specificationsAspiCoo {
-            doc /* Le système doit garantir une utilisation et un entretien faciles. */
+        /* ===== EXIGENCES DE PERFORMANCE ===== */
+        requirement performances {
+            doc /* Exigences quantifiées (valeurs cibles à valider). */
+            requirement <'PE-01'> autonomie {
+                doc /* Autonomie énergétique supérieure ou égale à 4 h en conditions normales d'utilisation. */
+            }
+            requirement <'PE-02'> seuilRetour {
+                doc /* Le retour à la station doit être déclenché quand la batterie atteint 15 % de charge. */
+            }
+            requirement <'PE-03'> efficaciteCompactage {
+                doc /* Le compactage doit réduire d'au moins 30 % le volume des déchets collectés. */
+            }
+            requirement <'PE-04'> capaciteReservoir {
+                doc /* Le réservoir du robot doit contenir au moins 0,5 L de déchets compactés sans dépasser le gabarit extérieur du robot. */
+            }
+            requirement <'PE-05'> fiabiliteSurface {
+                doc /* Le type de surface doit être correctement identifié dans au moins 90 % des cas. */
+            }
+            requirement <'PE-06'> delaiAlerte {
+                doc /* Une alerte d'entretien doit parvenir à l'application dans les 5 minutes suivant la détection. */
+            }
+            requirement <'PE-08'> compatibiliteSurfaces {
+                doc /* Le robot doit se déplacer sur les surfaces compatibles (carrelage, parquet, moquette rase). */
+            }
         }
 
-        requirement environnement specializes specificationsAspiCoo {
-            doc /* Le système doit prendre en compte les exigences environnementales. */
+        /* ===== NORMES ET RÉGLEMENTATION ===== */
+        requirement normes {
+            doc /* Normes et réglementation applicables. */
+            requirement <'NO-01'> securiteElectrique {
+                doc /* Le système doit respecter les normes de sécurité des appareils électrodomestiques (série IEC 60335). */
+            }
+            requirement <'NO-02'> compatibiliteReseau {
+                doc /* La station doit être compatible avec la tension et la fréquence du réseau du pays d'utilisation (230 V / 50 Hz en France). */
+            }
         }
 
-
-        // ==========================================
-        // 2. EXIGENCES D'UTILISATION
-        // ==========================================
-
-        requirement nettoyageAutonome specializes utilisation {
-            doc /* Le robot doit pouvoir effectuer automatiquement le nettoyage des sols sans intervention permanente de l'utilisateur. */
+        /* ===== ERGONOMIE ===== */
+        requirement ergonomie {
+            doc /* Facilité d'utilisation et d'entretien. */
+            requirement <'ER-01'> accesReservoir {
+                doc /* Le réservoir du robot doit être démontable sans outil et nettoyable. */
+            }
+            requirement <'ER-02'> faciliteApplication {
+                doc /* Le lancement d'un nettoyage depuis l'application doit nécessiter au plus 3 interactions. */
+            }
         }
 
-        requirement commandeNettoyage specializes utilisation {
-            doc /* L'utilisateur doit pouvoir lancer ou arrêter une session de nettoyage depuis l'application mobile ou le bouton du robot. */
+        /* ===== ENVIRONNEMENT ===== */
+        requirement environnement {
+            doc /* Exigences environnementales. */
+            requirement <'EN-01'> poussieres {
+                doc /* Le système doit limiter la dispersion de poussières lors du compactage et du transfert. */
+            }
+            requirement <'EN-02'> consommationRaisonnee {
+                doc /* Le système doit adapter la consommation d'eau, de produit et d'énergie aux besoins réels. */
+            }
         }
-
-        requirement programmationNettoyage specializes utilisation {
-            doc /* L'utilisateur doit pouvoir programmer des sessions de nettoyage à des jours et heures précis. */
-        }
-
-        requirement selectionZones specializes utilisation {
-            doc /* L'utilisateur doit pouvoir sélectionner les pièces ou les zones à nettoyer depuis l'application mobile. */
-        }
-
-        requirement cartographieAutomatique specializes utilisation {
-            doc /* Le robot doit pouvoir cartographier automatiquement les espaces à nettoyer. */
-        }
-
-        requirement miseAJourCartographie specializes utilisation {
-            doc /* Le robot doit pouvoir actualiser les informations de sa cartographie pendant ses déplacements. */
-        }
-
-        requirement consultationCartographie specializes utilisation {
-            doc /* L'utilisateur doit pouvoir consulter la cartographie de son environnement depuis l'application mobile. */
-        }
-
-        requirement detectionObstacles specializes utilisation {
-            doc /* Le robot doit pouvoir détecter les obstacles présents sur son trajet afin d'éviter les collisions. */
-        }
-
-        requirement adaptationParcours specializes utilisation {
-            doc /* Le robot doit pouvoir réorganiser localement son parcours lorsqu'un obstacle ou une situation imprévue est détecté. */
-        }
-
-        requirement detectionSurface specializes utilisation {
-            doc /* Le robot doit pouvoir identifier automatiquement le type de surface rencontré pendant son déplacement. */
-        }
-
-        requirement adaptationNettoyage specializes utilisation {
-            doc /* Le robot doit adapter son mode et ses paramètres de nettoyage en fonction du type de surface détecté. */
-        }
-
-        requirement nettoyageHumide specializes utilisation {
-            doc /* Le robot doit pouvoir effectuer l'aspiration et le lavage humide des surfaces compatibles avec ces modes de nettoyage. */
-        }
-
-        requirement detectionSalete specializes utilisation {
-            doc /* Le robot doit pouvoir détecter le niveau de saleté des zones à nettoyer. */
-        }
-
-        requirement ajustementAspiration specializes utilisation {
-            doc /* Le robot doit pouvoir ajuster automatiquement sa puissance d'aspiration en fonction du niveau de saleté détecté. */
-        }
-
-        requirement connexionWifi specializes utilisation {
-            doc /* Le robot doit pouvoir se connecter à un réseau Wi-Fi pour communiquer avec l'application mobile. */
-        }
-
-        requirement controleSmartphone specializes utilisation {
-            doc /* L'utilisateur doit pouvoir communiquer avec le robot et accéder à ses principales fonctionnalités depuis une application mobile. */
-        }
-
-        requirement retourStation specializes utilisation {
-            doc /* Le robot doit pouvoir retourner automatiquement à sa station lorsque sa batterie est faible ou lorsqu'une session est terminée. */
-        }
-
-        requirement repriseNettoyage specializes utilisation {
-            doc /* Le robot doit pouvoir reprendre une session de nettoyage interrompue après une recharge lorsque cela est nécessaire. */
-        }
-
-        requirement rechargeAutomatique specializes utilisation {
-            doc /* La station doit pouvoir recharger automatiquement la batterie du robot lorsqu'il est connecté à celle-ci. */
-        }
-
-        requirement collecteDechets specializes utilisation {
-            doc /* La station doit pouvoir récupérer les déchets présents dans le réservoir du robot et les transférer vers son réservoir principal. */
-        }
-
-        requirement gestionReservoirs specializes utilisation {
-            doc /* La station doit pouvoir accueillir et maintenir les réservoirs d'eau et de produit ménager nécessaires au lavage. */
-        }
-
-        requirement compactageDechets specializes utilisation {
-            doc /* Le robot doit intégrer un mécanisme permettant de compacter mécaniquement les déchets collectés dans son réservoir afin de réduire leur volume. */
-        }
-
-        requirement transfertDechets specializes utilisation {
-            doc /* La station doit permettre le transfert automatique des déchets compactés du réservoir du robot vers le réservoir principal de la station. */
-        }
-
-        requirement stockageSachets specializes utilisation {
-            doc /* La station doit permettre le stockage des déchets dans des sachets biodégradables superposés. */
-        }
-
-        requirement remplacementSachet specializes utilisation {
-            doc /* L'utilisateur doit pouvoir retirer manuellement un sachet plein afin d'accéder au sachet suivant. */
-        }
-
-        requirement detectionEncrassement specializes utilisation {
-            doc /* Le robot doit pouvoir détecter les signes d'encrassement ou de blocage de certains composants, notamment les brosses et les filtres. */
-        }
-
-        requirement notificationEntretien specializes utilisation {
-            doc /* Le robot doit pouvoir avertir l'utilisateur lorsqu'une opération d'entretien ou de maintenance préventive est nécessaire. */
-        }
-
-
-        // ==========================================
-        // 3. EXIGENCES DE PERFORMANCE
-        // ==========================================
-
-        requirement fonctionnementAutonome specializes performances {
-            doc /* Le robot doit pouvoir réaliser ses opérations de nettoyage et gérer ses déplacements sans intervention permanente de l'utilisateur. */
-        }
-
-        requirement autonomieBatterie specializes performances {
-            doc /* Le robot doit disposer d'une autonomie énergétique cible de quatre heures dans des conditions normales d'utilisation. */
-        }
-
-        requirement compatibiliteSurfaces specializes performances {
-            doc /* Le robot doit pouvoir se déplacer et fonctionner sur les différentes surfaces compatibles avec son utilisation. */
-        }
-
-        requirement capaciteReservoir specializes performances {
-            doc /* Le réservoir à déchets du robot doit disposer d'une capacité adaptée à la collecte des déchets pendant une session de nettoyage. */
-        }
-
-        requirement efficaciteCompactage specializes performances {
-            doc /* Le mécanisme de compactage doit réduire le volume occupé par les déchets collectés dans le réservoir du robot. */
-        }
-
-        requirement efficaciteNettoyage specializes performances {
-            doc /* Le robot doit assurer un nettoyage efficace des surfaces compatibles avec les modes d'aspiration et de lavage. */
-        }
-
-
-        // ==========================================
-        // 4. EXIGENCES REGLEMENTAIRES
-        // ==========================================
-
-        requirement compatibiliteElectrique specializes normes {
-            doc /* La station doit être compatible avec la tension et les caractéristiques du réseau électrique du pays d'utilisation. */
-        }
-
-        requirement conformiteNormes specializes normes {
-            doc /* Le système doit respecter les normes de sécurité applicables aux appareils électroménagers et aux équipements électriques. */
-        }
-
-
-        // ==========================================
-        // 5. EXIGENCES ERGONOMIQUES
-        // ==========================================
-
-        requirement entretienFacile specializes ergonomie {
-            doc /* Le réservoir à déchets du robot doit être facilement accessible, démontable et nettoyable. */
-        }
-
-        requirement remplacementFacile specializes ergonomie {
-            doc /* Le remplacement manuel des sachets biodégradables doit être simple et accessible à l'utilisateur. */
-        }
-
-        requirement faciliteUtilisation specializes ergonomie {
-            doc /* L'application mobile et les commandes du robot doivent permettre une utilisation simple et compréhensible. */
-        }
-
-
-        // ==========================================
-        // 6. EXIGENCES ENVIRONNEMENTALES
-        // ==========================================
-
-        requirement limitationPoussieres specializes environnement {
-            doc /* Le système doit limiter la dispersion des poussières lors du compactage, de la collecte et du transfert des déchets. */
-        }
-
-
-        requirement consommationRaisonnee specializes environnement {
-            doc /* Le robot doit adapter l'utilisation de l'eau, du produit ménager et de l'énergie aux besoins réels du nettoyage. */
-        }
-
     }
 }
