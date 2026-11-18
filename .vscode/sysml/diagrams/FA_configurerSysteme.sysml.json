@@ -556,7 +556,7 @@
         },
         "ports": {},
         "edgeRoutes": {},
-        "edgeAnchors": {"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"right"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%5D":{"sourceHandle":"right","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%5D":{"pill":{"t":0.4264029402420421,"along":0,"across":2.24}},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%5D":{"sourceHandle":"left","targetHandle":"left"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D":{"sourceHandle":"bottom","targetHandle":"left:0.250"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%5D":{"sourceHandle":"right","targetHandle":"top"}},
+        "edgeAnchors": {"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"right"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%5D":{"sourceHandle":"right","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%5D":{"pill":{"t":0.4264029402420421,"along":0,"across":2.24}},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%5D":{"sourceHandle":"left","targetHandle":"left"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D":{"sourceHandle":"bottom","targetHandle":"left:0.250"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%5D":{"sourceHandle":"right","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%5D":{"sourceHandle":"right","targetHandle":"right","pill":{"t":0.3745334903014887,"along":0,"across":-7.04}}},
         "edgeGeometry": {
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AinstallerApplicationSmartphone%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2F__initial__%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AinstallerApplicationSmartphone%22%5D": {
             "sourceHandle": "bottom",
@@ -3675,8 +3675,8 @@
           },
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%5D": {
             "caption": {
-              "x": 742.109,
-              "y": 2801.863,
+              "x": 1031.6187761937083,
+              "y": 2383,
               "width": 101,
               "height": 18,
               "lines": [
@@ -3684,48 +3684,48 @@
               ],
               "text": "[recommencer]",
               "source": {
-                "x": 918.6092684377331,
-                "y": 2810.8632412208926
+                "x": 1115.1092684377331,
+                "y": 2822.8632412208926
               },
               "target": {
-                "x": 838.5,
+                "x": 1029.5,
                 "y": 2392
               },
               "lineStyle": "orthogonal",
               "conflicts": 0,
               "crossings": 0
             },
-            "sourceHandle": "left:0.250",
-            "targetHandle": "left",
-            "path": "M 918.609,2810.863 L 791.5,2810.863 Q 783.5,2810.863 783.5,2802.863 L 783.5,2400 Q 783.5,2392 791.5,2392 L 838.5,2392",
+            "sourceHandle": "right",
+            "targetHandle": "right",
+            "path": "M 1115.109,2822.863 L 1122.055,2822.863 Q 1129,2822.863 1129,2815.918 L 1129,2400 Q 1129,2392 1121,2392 L 1029.5,2392",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": 918.6092684377331,
-              "y": 2810.8632412208926
+              "x": 1115.1092684377331,
+              "y": 2822.8632412208926
             },
             "targetPoint": {
-              "x": 838.5,
+              "x": 1029.5,
               "y": 2392
             },
             "label": {
-              "x": 783.5,
-              "y": 2641.486254829313
+              "x": 1129,
+              "y": 2564.6269863915795
             },
             "points": [
               {
-                "x": 918.6092684377331,
-                "y": 2810.8632412208926
+                "x": 1115.1092684377331,
+                "y": 2822.8632412208926
               },
               {
-                "x": 783.5,
-                "y": 2810.8632412208926
+                "x": 1129,
+                "y": 2822.8632412208926
               },
               {
-                "x": 783.5,
+                "x": 1129,
                 "y": 2392
               },
               {
-                "x": 838.5,
+                "x": 1029.5,
                 "y": 2392
               }
             ],
@@ -4707,7 +4707,7 @@
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%22%5D": {
             "caption": {
               "x": 871,
-              "y": 2540,
+              "y": 2572,
               "width": 126,
               "height": 18,
               "lines": [
@@ -4765,7 +4765,7 @@
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%5D": {
             "caption": {
               "x": 981,
-              "y": 2569.016513245255,
+              "y": 2550,
               "width": 144,
               "height": 18,
               "lines": [
