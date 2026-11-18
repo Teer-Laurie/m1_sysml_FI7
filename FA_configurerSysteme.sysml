@@ -192,8 +192,7 @@ package tbi {
 
         if espaceNonCartographie
             then decisionRecommencerCartographie;
-            
-        if annulation
+            then annulation
             then done;
 
         if espaceCartographie
