@@ -42,7 +42,7 @@ package tbi {
         // 2. ACTIONS
         // ==========================================
 
-        // Configuration du système
+        // Configuration du systeme
         action installerApplicationSmartphone;
         action connecterRobotWifi;
         action messageAlerte;
@@ -54,7 +54,7 @@ package tbi {
         action creerCompteIdentification;
         action accederMenuApplication;
 
-        // Configuration des paramètres
+        // Configuration des parametres
         action choisirParametresApplication;
         action fermerApplication;
 
@@ -102,33 +102,33 @@ package tbi {
 
         first start;
 
-        succession start then installerApplicationSmartphone;
+        succession first start then installerApplicationSmartphone;
         then connecterRobotWifi;
         then decisionConnexion;
 
         if wifiNonConnecte then messageAlerte;
         if wifiConnecte then connecterRobotApplication;
 
-        succession messageAlerte then done;
+        succession first messageAlerte then done;
 
 
         // ==========================================
         // 6. IDENTIFICATION DU ROBOT
         // ==========================================
 
-        succession connecterRobotApplication
+        succession first connecterRobotApplication
             then decisionModeIdentification;
 
         if scanQRCode then scannerQRCodeIdentification;
         if identificationManuelle then saisirManuellementIdentifiantRobot;
 
-        succession scannerQRCodeIdentification
+        succession first scannerQRCodeIdentification
             then mergeIdentification;
 
-        succession mergeIdentification
+        succession first mergeIdentification
             then decisionIdentification;
 
-        succession saisirManuellementIdentifiantRobot
+        succession first saisirManuellementIdentifiantRobot
             then decisionIdentification;
 
         if identificationIncorrecte
@@ -142,7 +142,7 @@ package tbi {
         // 7. CREATION DU COMPTE
         // ==========================================
 
-        succession creerCompteIdentification
+        succession first creerCompteIdentification
             then decisionCompte;
 
         if compteNonCree
@@ -156,7 +156,7 @@ package tbi {
         // 8. CHOIX DANS LE MENU
         // ==========================================
 
-        succession accederMenuApplication
+        succession first accederMenuApplication
             then decisionMenuApplication;
 
         if boutonCartographierEnvironnement
@@ -165,17 +165,17 @@ package tbi {
         if boutonConfigurerParametres
             then choisirParametresApplication;
 
-        succession choisirParametresApplication
+        succession first choisirParametresApplication
             then fermerApplication;
 
-        succession fermerApplication then done;
+        succession first fermerApplication then done;
 
 
         // ==========================================
         // 9. DEMARRAGE DU ROBOT
         // ==========================================
 
-        succession demarrerRobot
+        succession first demarrerRobot
             then choisirOptionCartographie;
 
         then lancerRobot;
@@ -187,12 +187,12 @@ package tbi {
         // 10. VERIFICATION DE LA CARTOGRAPHIE
         // ==========================================
 
-        succession cartographierEspace
+        succession first cartographierEspace
             then decisionCartographie;
 
         if espaceNonCartographie
             then decisionRecommencerCartographie;
-            then annulation
+            then annulation;
             then done;
 
         if espaceCartographie
@@ -213,7 +213,7 @@ package tbi {
         // 12. ENREGISTREMENT ET ENVOI
         // ==========================================
 
-        succession enregistrerDonnees
+        succession first enregistrerDonnees
             then envoyerDonneesApplication;
 
         then decisionTransmission;
@@ -229,7 +229,7 @@ package tbi {
         // 13. GESTION DU MESSAGE D'ERREUR
         // ==========================================
 
-        succession messageErreur
+        succession first messageErreur
             then decisionErreurTransmission;
 
         if recommencer
@@ -243,10 +243,10 @@ package tbi {
         // 14. VALIDATION ET FIN
         // ==========================================
 
-        succession verifierValiderDonneesUtilisateur
+        succession first verifierValiderDonneesUtilisateur
             then enregistrementFinal;
 
-        succession enregistrementFinal then done;
+        succession first enregistrementFinal then done;
 
     }
 }
