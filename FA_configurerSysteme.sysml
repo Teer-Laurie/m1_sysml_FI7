@@ -76,17 +76,17 @@ package tbi {
         // 3. DECISIONS INDIVIDUELLES
         // ==========================================
 
-        decide decideConnexion;
-        decide decideModeIdentification;
-        decide decideIdentification;
-        decide decideCompte;
-        decide decideMenuApplication;
+        decide decisionConnexion;
+        decide decisionModeIdentification;
+        decide decisionIdentification;
+        decide decisionCompte;
+        decide decisionMenuApplication;
 
-        decide decideCartographie;
-        decide decideRecommencerCartographie;
+        decide decisionCartographie;
+        decide decisionRecommencerCartographie;
 
-        decide decideTransmission;
-        decide decideErreurTransmission;
+        decide decisionTransmission;
+        decide decisionErreurTransmission;
 
 
         // ==========================================
@@ -104,7 +104,7 @@ package tbi {
 
         succession start then installerApplicationSmartphone;
         then connecterRobotWifi;
-        then decideConnexion;
+        then decisionConnexion;
 
         if wifiNonConnecte then messageAlerte;
         if wifiConnecte then connecterRobotApplication;
@@ -117,7 +117,7 @@ package tbi {
         // ==========================================
 
         succession connecterRobotApplication
-            then decideModeIdentification;
+            then decisionModeIdentification;
 
         if scanQRCode then scannerQRCodeIdentification;
         if identificationManuelle then saisirManuellementIdentifiantRobot;
@@ -126,10 +126,10 @@ package tbi {
             then mergeIdentification;
 
         succession mergeIdentification
-            then decideIdentification;
+            then decisionIdentification;
 
         succession saisirManuellementIdentifiantRobot
-            then decideIdentification;
+            then decisionIdentification;
 
         if identificationIncorrecte
             then connecterRobotApplication;
@@ -143,7 +143,7 @@ package tbi {
         // ==========================================
 
         succession creerCompteIdentification
-            then decideCompte;
+            then decisionCompte;
 
         if compteNonCree
             then creerCompteIdentification;
@@ -157,7 +157,7 @@ package tbi {
         // ==========================================
 
         succession accederMenuApplication
-            then decideMenuApplication;
+            then decisionMenuApplication;
 
         if boutonCartographierEnvironnement
             then demarrerRobot;
@@ -188,10 +188,12 @@ package tbi {
         // ==========================================
 
         succession cartographierEspace
-            then decideCartographie;
+            then decisionCartographie;
 
         if espaceNonCartographie
-            then decideRecommencerCartographie;
+            then decisionRecommencerCartographie;
+            then annulation;
+            then done;
 
         if espaceCartographie
             then enregistrerDonnees;
@@ -215,7 +217,7 @@ package tbi {
         succession enregistrerDonnees
             then envoyerDonneesApplication;
 
-        then decideTransmission;
+        then decisionTransmission;
 
         if donneesEnvoyees
             then verifierValiderDonneesUtilisateur;
@@ -229,7 +231,7 @@ package tbi {
         // ==========================================
 
         succession messageErreur
-            then decideErreurTransmission;
+            then decisionErreurTransmission;
 
         if recommencer
             then envoyerDonneesApplication;

@@ -59,7 +59,7 @@
             "placedByHand": true
           },
           "tbi::configurerSysteme/tbi::configurerSysteme::saisirManuellementIdentifiantRobot": {
-            "x": 551.7088966576503,
+            "x": 553.379930339716,
             "y": 800.9344947690146,
             "parentKey": "tbi::configurerSysteme",
             "w": 252,
@@ -423,11 +423,12 @@
             "h": 58
           },
           "tbi::configurerSysteme/tbi::configurerSysteme::messageErreur": {
-            "x": 24,
-            "y": 4055,
+            "x": 877.8982115355731,
+            "y": 2670.7922400742927,
             "parentKey": "tbi::configurerSysteme",
             "w": 168,
-            "h": 58
+            "h": 58,
+            "placedByHand": true
           },
           "tbi::configurerSysteme/tbi::configurerSysteme::decideModeIdentification": {
             "x": 548.2190301408737,
@@ -486,11 +487,76 @@
             "parentKey": "tbi::configurerSysteme",
             "w": 218,
             "h": 58
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionConnexion": {
+            "x": 978.3682694565257,
+            "y": 412,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 172,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionModeIdentification": {
+            "x": 548.2190301408737,
+            "y": 671.3682694565256,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 262,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionIdentification": {
+            "x": 567.4337746875111,
+            "y": 889.208176576147,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 222,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionCompte": {
+            "x": 720,
+            "y": 1136.0786062771826,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 142,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionMenuApplication": {
+            "x": 675,
+            "y": 1352,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 232,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionCartographie": {
+            "x": 589,
+            "y": 2042,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 202,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionRecommencerCartographie": {
+            "x": 1209.7730951725098,
+            "y": 2105.895191630423,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 312,
+            "h": 48,
+            "placedByHand": true
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionTransmission": {
+            "x": 811,
+            "y": 2457,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 202,
+            "h": 48
+          },
+          "tbi::configurerSysteme/tbi::configurerSysteme::decisionErreurTransmission": {
+            "x": 831.1092684377331,
+            "y": 2776.8632412208926,
+            "parentKey": "tbi::configurerSysteme",
+            "w": 262,
+            "h": 48,
+            "placedByHand": true
           }
         },
         "ports": {},
         "edgeRoutes": {},
-        "edgeAnchors": {"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"right"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%5D":{"sourceHandle":"right","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%5D":{"pill":{"t":0.4264029402420421,"along":0,"across":2.24}}},
+        "edgeAnchors": {"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"right"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%5D":{"sourceHandle":"right","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideIdentification%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%5D":{"pill":{"t":0.4264029402420421,"along":0,"across":2.24}},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%5D":{"sourceHandle":"bottom","targetHandle":"top"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%5D":{"sourceHandle":"left","targetHandle":"left"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D":{"sourceHandle":"bottom","targetHandle":"left:0.250"},"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%5D":{"sourceHandle":"right","targetHandle":"top"}},
         "edgeGeometry": {
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AinstallerApplicationSmartphone%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2F__initial__%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AinstallerApplicationSmartphone%22%5D": {
             "sourceHandle": "bottom",
@@ -873,80 +939,6 @@
               {
                 "x": 556,
                 "y": 848
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 956.25,810.342 L 956.25,851.637 Q 956.25,852.106 955.781,852.106 L 955.781,852.106 Q 955.312,852.106 955.312,852.575 L 955.312,870.106",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 956.2496399592483,
-              "y": 810.3420673641315
-            },
-            "targetPoint": {
-              "x": 955.3115447827167,
-              "y": 870.1062485325837
-            },
-            "label": {
-              "x": 956.2496399592483,
-              "y": 840.6932055366233
-            },
-            "points": [
-              {
-                "x": 956.2496399592483,
-                "y": 810.3420673641315
-              },
-              {
-                "x": 956.2496399592483,
-                "y": 852.1062485325837
-              },
-              {
-                "x": 955.3115447827167,
-                "y": 852.1062485325837
-              },
-              {
-                "x": 955.3115447827167,
-                "y": 870.1062485325837
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 556,906 L 556,968.5 Q 556,970 554.5,970 L 554.5,970 Q 553,970 553,971.5 L 553,988",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 556,
-              "y": 906
-            },
-            "targetPoint": {
-              "x": 553,
-              "y": 988
-            },
-            "label": {
-              "x": 556,
-              "y": 948.5
-            },
-            "points": [
-              {
-                "x": 556,
-                "y": 906
-              },
-              {
-                "x": 556,
-                "y": 970
-              },
-              {
-                "x": 553,
-                "y": 970
-              },
-              {
-                "x": 553,
-                "y": 988
               }
             ],
             "corner": 8
@@ -1505,93 +1497,6 @@
             ],
             "corner": 8
           },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 712,1586 L 712,1668",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 712,
-              "y": 1586
-            },
-            "targetPoint": {
-              "x": 712,
-              "y": 1668
-            },
-            "label": {
-              "x": 712,
-              "y": 1627
-            },
-            "points": [
-              {
-                "x": 712,
-                "y": 1586
-              },
-              {
-                "x": 712,
-                "y": 1668
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 712,1726 L 712,1808",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 712,
-              "y": 1726
-            },
-            "targetPoint": {
-              "x": 712,
-              "y": 1808
-            },
-            "label": {
-              "x": 712,
-              "y": 1767
-            },
-            "points": [
-              {
-                "x": 712,
-                "y": 1726
-              },
-              {
-                "x": 712,
-                "y": 1808
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 712,1866 L 712,1948",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 712,
-              "y": 1866
-            },
-            "targetPoint": {
-              "x": 712,
-              "y": 1948
-            },
-            "label": {
-              "x": 712,
-              "y": 1907
-            },
-            "points": [
-              {
-                "x": 712,
-                "y": 1866
-              },
-              {
-                "x": 712,
-                "y": 1948
-              }
-            ],
-            "corner": 8
-          },
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideEspace%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideEspace%22%5D": {
             "sourceHandle": "bottom:0.333",
             "targetHandle": "top",
@@ -1890,35 +1795,6 @@
               {
                 "x": 893,
                 "y": 3043
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 934,2281 L 934,2363",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 934,
-              "y": 2281
-            },
-            "targetPoint": {
-              "x": 934,
-              "y": 2363
-            },
-            "label": {
-              "x": 934,
-              "y": 2322
-            },
-            "points": [
-              {
-                "x": 934,
-                "y": 2281
-              },
-              {
-                "x": 934,
-                "y": 2363
               }
             ],
             "corner": 8
@@ -2312,39 +2188,6 @@
             ],
             "corner": 8
           },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "left",
-            "path": "M 632,2961 L 632,3043 Q 632,3051 640,3051 L 885,3051",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 632,
-              "y": 2961
-            },
-            "targetPoint": {
-              "x": 885,
-              "y": 3051
-            },
-            "label": {
-              "x": 713.5,
-              "y": 3051
-            },
-            "points": [
-              {
-                "x": 632,
-                "y": 2961
-              },
-              {
-                "x": 632,
-                "y": 3051
-              },
-              {
-                "x": 885,
-                "y": 3051
-              }
-            ],
-            "corner": 8
-          },
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecideConnexion%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecideConnexion%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%22%5D": {
             "caption": {
               "x": 1023.3679999999999,
@@ -2398,7 +2241,7 @@
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
             "sourceHandle": "bottom",
             "targetHandle": "right",
-            "path": "M 1086.368,598 L 1086.368,608 Q 1086.368,616 1094.368,616 L 1102.403,616 Q 1110.403,616 1110.403,624 L 1110.403,3043 Q 1110.403,3051 1102.403,3051 L 901,3051",
+            "path": "M 1086.368,598 L 1086.368,608 Q 1086.368,616 1094.368,616 L 1133.673,616 Q 1141.673,616 1141.673,624 L 1141.673,3043 Q 1141.673,3051 1133.673,3051 L 901,3051",
             "lineStyle": "orthogonal",
             "sourcePoint": {
               "x": 1086.3682694565257,
@@ -2409,8 +2252,8 @@
               "y": 3051
             },
             "label": {
-              "x": 1110.4032521060963,
-              "y": 1917.1841347282627
+              "x": 1141.6726072919535,
+              "y": 1917.184134728263
             },
             "points": [
               {
@@ -2422,11 +2265,11 @@
                 "y": 616
               },
               {
-                "x": 1110.4032521060963,
+                "x": 1141.6726072919535,
                 "y": 616
               },
               {
-                "x": 1110.4032521060963,
+                "x": 1141.6726072919535,
                 "y": 3051
               },
               {
@@ -2899,80 +2742,6 @@
               {
                 "x": 967.5,
                 "y": 1696
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 967.5,1754 L 967.5,1808",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 967.5,
-              "y": 1754
-            },
-            "targetPoint": {
-              "x": 967.5,
-              "y": 1808
-            },
-            "label": {
-              "x": 967.5,
-              "y": 1781
-            },
-            "points": [
-              {
-                "x": 967.5,
-                "y": 1754
-              },
-              {
-                "x": 967.5,
-                "y": 1808
-              }
-            ],
-            "corner": 8
-          },
-          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
-            "sourceHandle": "bottom",
-            "targetHandle": "top",
-            "path": "M 967.5,1866 L 967.5,1876 Q 967.5,1884 975.5,1884 L 1041,1884 Q 1049,1884 1049,1892 L 1049,3017 Q 1049,3025 1041,3025 L 901,3025 Q 893,3025 893,3033 L 893,3043",
-            "lineStyle": "orthogonal",
-            "sourcePoint": {
-              "x": 967.5,
-              "y": 1866
-            },
-            "targetPoint": {
-              "x": 893,
-              "y": 3043
-            },
-            "label": {
-              "x": 1049,
-              "y": 2491.75
-            },
-            "points": [
-              {
-                "x": 967.5,
-                "y": 1866
-              },
-              {
-                "x": 967.5,
-                "y": 1884
-              },
-              {
-                "x": 1049,
-                "y": 1884
-              },
-              {
-                "x": 1049,
-                "y": 3025
-              },
-              {
-                "x": 893,
-                "y": 3025
-              },
-              {
-                "x": 893,
-                "y": 3043
               }
             ],
             "corner": 8
@@ -3532,6 +3301,1566 @@
             ],
             "corner": 8
           },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%5D": {
+            "caption": {
+              "x": 616.719,
+              "y": 754.37,
+              "width": 169,
+              "height": 18,
+              "lines": [
+                "[identificationManuelle]"
+              ],
+              "text": "[identificationManuelle]",
+              "source": {
+                "x": 701.2190301408737,
+                "y": 741.3682694565256
+              },
+              "target": {
+                "x": 701.379930339716,
+                "y": 822.9344947690146
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 701.219,741.368 L 701.219,804.854 Q 701.219,804.934 701.299,804.934 L 701.299,804.934 Q 701.38,804.934 701.38,805.015 L 701.38,822.934",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 701.2190301408737,
+              "y": 741.3682694565256
+            },
+            "targetPoint": {
+              "x": 701.379930339716,
+              "y": 822.9344947690146
+            },
+            "label": {
+              "x": 701.2190301408737,
+              "y": 782.2318322121912
+            },
+            "points": [
+              {
+                "x": 701.2190301408737,
+                "y": 741.3682694565256
+              },
+              {
+                "x": 701.2190301408737,
+                "y": 804.9344947690146
+              },
+              {
+                "x": 701.379930339716,
+                "y": 804.9344947690146
+              },
+              {
+                "x": 701.379930339716,
+                "y": 822.9344947690146
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 956.25,810.342 L 956.25,851.637 Q 956.25,852.106 955.781,852.106 L 955.781,852.106 Q 955.312,852.106 955.312,852.575 L 955.312,870.106",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 956.2496399592483,
+              "y": 810.3420673641315
+            },
+            "targetPoint": {
+              "x": 955.3115447827167,
+              "y": 870.1062485325837
+            },
+            "label": {
+              "x": 956.2496399592483,
+              "y": 840.6932055366233
+            },
+            "points": [
+              {
+                "x": 956.2496399592483,
+                "y": 810.3420673641315
+              },
+              {
+                "x": 956.2496399592483,
+                "y": 852.1062485325837
+              },
+              {
+                "x": 955.3115447827167,
+                "y": 852.1062485325837
+              },
+              {
+                "x": 955.3115447827167,
+                "y": 870.1062485325837
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%5D": {
+            "caption": {
+              "x": 563.5,
+              "y": 1484.2,
+              "width": 231,
+              "height": 18,
+              "lines": [
+                "[boutonCartographierEnvironnement]"
+              ],
+              "text": "[boutonCartographierEnvironnement]",
+              "source": {
+                "x": 697,
+                "y": 1398
+              },
+              "target": {
+                "x": 712,
+                "y": 1528
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 697,1398 L 687,1398 Q 679,1398 679,1406 L 679,1502 Q 679,1510 687,1510 L 704,1510 Q 712,1510 712,1518 L 712,1528",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 697,
+              "y": 1398
+            },
+            "targetPoint": {
+              "x": 712,
+              "y": 1528
+            },
+            "label": {
+              "x": 679,
+              "y": 1470.5
+            },
+            "points": [
+              {
+                "x": 697,
+                "y": 1398
+              },
+              {
+                "x": 679,
+                "y": 1398
+              },
+              {
+                "x": 679,
+                "y": 1510
+              },
+              {
+                "x": 712,
+                "y": 1510
+              },
+              {
+                "x": 712,
+                "y": 1528
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%22%5D": {
+            "caption": {
+              "x": 870.5,
+              "y": 1446.9,
+              "width": 194,
+              "height": 18,
+              "lines": [
+                "[boutonConfigurerParametres]"
+              ],
+              "text": "[boutonConfigurerParametres]",
+              "source": {
+                "x": 929,
+                "y": 1398
+              },
+              "target": {
+                "x": 967.5,
+                "y": 1696
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 929,1398 L 959.5,1398 Q 967.5,1398 967.5,1406 L 967.5,1696",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 929,
+              "y": 1398
+            },
+            "targetPoint": {
+              "x": 967.5,
+              "y": 1696
+            },
+            "label": {
+              "x": 967.5,
+              "y": 1527.75
+            },
+            "points": [
+              {
+                "x": 929,
+                "y": 1398
+              },
+              {
+                "x": 967.5,
+                "y": 1398
+              },
+              {
+                "x": 967.5,
+                "y": 1696
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirParametresApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 967.5,1754 L 967.5,1808",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 967.5,
+              "y": 1754
+            },
+            "targetPoint": {
+              "x": 967.5,
+              "y": 1808
+            },
+            "label": {
+              "x": 967.5,
+              "y": 1781
+            },
+            "points": [
+              {
+                "x": 967.5,
+                "y": 1754
+              },
+              {
+                "x": 967.5,
+                "y": 1808
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AfermerApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 967.5,1866 L 967.5,1876 Q 967.5,1884 975.5,1884 L 1145.753,1884 Q 1153.753,1884 1153.753,1892 L 1153.753,3017 Q 1153.753,3025 1145.753,3025 L 901,3025 Q 893,3025 893,3033 L 893,3043",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 967.5,
+              "y": 1866
+            },
+            "targetPoint": {
+              "x": 893,
+              "y": 3043
+            },
+            "label": {
+              "x": 1153.752659864398,
+              "y": 2491.75
+            },
+            "points": [
+              {
+                "x": 967.5,
+                "y": 1866
+              },
+              {
+                "x": 967.5,
+                "y": 1884
+              },
+              {
+                "x": 1153.752659864398,
+                "y": 1884
+              },
+              {
+                "x": 1153.752659864398,
+                "y": 3025
+              },
+              {
+                "x": 893,
+                "y": 3025
+              },
+              {
+                "x": 893,
+                "y": 3043
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdemarrerRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 712,1586 L 712,1668",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 712,
+              "y": 1586
+            },
+            "targetPoint": {
+              "x": 712,
+              "y": 1668
+            },
+            "label": {
+              "x": 712,
+              "y": 1627
+            },
+            "points": [
+              {
+                "x": 712,
+                "y": 1586
+              },
+              {
+                "x": 712,
+                "y": 1668
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%22%5D": {
+            "caption": {
+              "x": 800.5,
+              "y": 2038.4834867547452,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "[recommencer]"
+              ],
+              "text": "[recommencer]",
+              "source": {
+                "x": 762.5,
+                "y": 2076
+              },
+              "target": {
+                "x": 796,
+                "y": 1977
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right:0.250",
+            "targetHandle": "right",
+            "path": "M 762.5,2076 L 843,2076 Q 851,2076 851,2068 L 851,1985 Q 851,1977 843,1977 L 796,1977",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 762.5,
+              "y": 2076
+            },
+            "targetPoint": {
+              "x": 796,
+              "y": 1977
+            },
+            "label": {
+              "x": 851,
+              "y": 2043.25
+            },
+            "points": [
+              {
+                "x": 762.5,
+                "y": 2076
+              },
+              {
+                "x": 851,
+                "y": 2076
+              },
+              {
+                "x": 851,
+                "y": 1977
+              },
+              {
+                "x": 796,
+                "y": 1977
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%5D": {
+            "caption": {
+              "x": 742.109,
+              "y": 2801.863,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "[recommencer]"
+              ],
+              "text": "[recommencer]",
+              "source": {
+                "x": 918.6092684377331,
+                "y": 2810.8632412208926
+              },
+              "target": {
+                "x": 838.5,
+                "y": 2392
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left:0.250",
+            "targetHandle": "left",
+            "path": "M 918.609,2810.863 L 791.5,2810.863 Q 783.5,2810.863 783.5,2802.863 L 783.5,2400 Q 783.5,2392 791.5,2392 L 838.5,2392",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 918.6092684377331,
+              "y": 2810.8632412208926
+            },
+            "targetPoint": {
+              "x": 838.5,
+              "y": 2392
+            },
+            "label": {
+              "x": 783.5,
+              "y": 2641.486254829313
+            },
+            "points": [
+              {
+                "x": 918.6092684377331,
+                "y": 2810.8632412208926
+              },
+              {
+                "x": 783.5,
+                "y": 2810.8632412208926
+              },
+              {
+                "x": 783.5,
+                "y": 2392
+              },
+              {
+                "x": 838.5,
+                "y": 2392
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
+            "caption": {
+              "x": 933.4139918031146,
+              "y": 2854.776391591841,
+              "width": 95,
+              "height": 18,
+              "lines": [
+                "[annulation]"
+              ],
+              "text": "[annulation]",
+              "source": {
+                "x": 984.1092684377331,
+                "y": 2846.8632412208926
+              },
+              "target": {
+                "x": 886.0717967697245,
+                "y": 3047
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "left:0.250",
+            "path": "M 984.109,2846.863 L 984.109,2856.863 Q 984.109,2864.863 976.109,2864.863 L 876.072,2864.863 Q 868.072,2864.863 868.072,2872.863 L 868.072,3039 Q 868.072,3047 876.072,3047 L 886.072,3047",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 984.1092684377331,
+              "y": 2846.8632412208926
+            },
+            "targetPoint": {
+              "x": 886.0717967697245,
+              "y": 3047
+            },
+            "label": {
+              "x": 868.0717967697245,
+              "y": 2897.912884776442
+            },
+            "points": [
+              {
+                "x": 984.1092684377331,
+                "y": 2846.8632412208926
+              },
+              {
+                "x": 984.1092684377331,
+                "y": 2864.8632412208926
+              },
+              {
+                "x": 868.0717967697245,
+                "y": 2864.8632412208926
+              },
+              {
+                "x": 868.0717967697245,
+                "y": 3047
+              },
+              {
+                "x": 886.0717967697245,
+                "y": 3047
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotWifi%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotWifi%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 1086.368,352 L 1086.368,434",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1086.3682694565257,
+              "y": 352
+            },
+            "targetPoint": {
+              "x": 1086.3682694565257,
+              "y": 434
+            },
+            "label": {
+              "x": 1086.3682694565257,
+              "y": 393
+            },
+            "points": [
+              {
+                "x": 1086.3682694565257,
+                "y": 352
+              },
+              {
+                "x": 1086.3682694565257,
+                "y": 434
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageAlerte%22%5D": {
+            "caption": {
+              "x": 1023.3679999999999,
+              "y": 495,
+              "width": 126,
+              "height": 18,
+              "lines": [
+                "[wifiNonConnecte]"
+              ],
+              "text": "[wifiNonConnecte]",
+              "source": {
+                "x": 1086.3682694565257,
+                "y": 482
+              },
+              "target": {
+                "x": 1086.3682694565257,
+                "y": 540
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 1086.368,482 L 1086.368,540",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1086.3682694565257,
+              "y": 482
+            },
+            "targetPoint": {
+              "x": 1086.3682694565257,
+              "y": 540
+            },
+            "label": {
+              "x": 1086.3682694565257,
+              "y": 511
+            },
+            "points": [
+              {
+                "x": 1086.3682694565257,
+                "y": 482
+              },
+              {
+                "x": 1086.3682694565257,
+                "y": 540
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionConnexion%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%5D": {
+            "caption": {
+              "x": 889.67,
+              "y": 449,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[wifiConnecte]"
+              ],
+              "text": "[wifiConnecte]",
+              "source": {
+                "x": 1000.3682694565257,
+                "y": 458
+              },
+              "target": {
+                "x": 697.5,
+                "y": 564
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 1000.368,458 L 705.5,458 Q 697.5,458 697.5,466 L 697.5,564",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1000.3682694565257,
+              "y": 458
+            },
+            "targetPoint": {
+              "x": 697.5,
+              "y": 564
+            },
+            "label": {
+              "x": 795.9341347282628,
+              "y": 458
+            },
+            "points": [
+              {
+                "x": 1000.3682694565257,
+                "y": 458
+              },
+              {
+                "x": 697.5,
+                "y": 458
+              },
+              {
+                "x": 697.5,
+                "y": 564
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 697.5,622 L 697.5,673.509 Q 697.5,675.368 699.36,675.368 L 699.36,675.368 Q 701.219,675.368 701.219,677.228 L 701.219,693.368",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 697.5,
+              "y": 622
+            },
+            "targetPoint": {
+              "x": 701.2190301408737,
+              "y": 693.3682694565256
+            },
+            "label": {
+              "x": 697.5,
+              "y": 659.5436497986996
+            },
+            "points": [
+              {
+                "x": 697.5,
+                "y": 622
+              },
+              {
+                "x": 697.5,
+                "y": 675.3682694565256
+              },
+              {
+                "x": 701.2190301408737,
+                "y": 675.3682694565256
+              },
+              {
+                "x": 701.2190301408737,
+                "y": 693.3682694565256
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionModeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AscannerQRCodeIdentification%22%5D": {
+            "caption": {
+              "x": 836.32,
+              "y": 708.368,
+              "width": 95,
+              "height": 18,
+              "lines": [
+                "[scanQRCode]"
+              ],
+              "text": "[scanQRCode]",
+              "source": {
+                "x": 832.2190301408737,
+                "y": 717.3682694565256
+              },
+              "target": {
+                "x": 956.2496399592483,
+                "y": 752.3420673641315
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 832.219,717.368 L 948.25,717.368 Q 956.25,717.368 956.25,725.368 L 956.25,752.342",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 832.2190301408737,
+              "y": 717.3682694565256
+            },
+            "targetPoint": {
+              "x": 956.2496399592483,
+              "y": 752.3420673641315
+            },
+            "label": {
+              "x": 911.7212340038639,
+              "y": 717.3682694565256
+            },
+            "points": [
+              {
+                "x": 832.2190301408737,
+                "y": 717.3682694565256
+              },
+              {
+                "x": 956.2496399592483,
+                "y": 717.3682694565256
+              },
+              {
+                "x": 956.2496399592483,
+                "y": 752.3420673641315
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmergeIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "right",
+            "path": "M 955.312,918.106 L 955.312,928.106 Q 955.312,936.106 947.312,936.106 L 829.883,936.106 Q 829.434,936.106 829.434,935.657 L 829.434,935.657 Q 829.434,935.208 828.985,935.208 L 811.434,935.208",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 955.3115447827167,
+              "y": 918.1062485325837
+            },
+            "targetPoint": {
+              "x": 811.4337746875111,
+              "y": 935.208176576147
+            },
+            "label": {
+              "x": 891.9236237568956,
+              "y": 936.1062485325837
+            },
+            "points": [
+              {
+                "x": 955.3115447827167,
+                "y": 918.1062485325837
+              },
+              {
+                "x": 955.3115447827167,
+                "y": 936.1062485325837
+              },
+              {
+                "x": 829.4337746875111,
+                "y": 936.1062485325837
+              },
+              {
+                "x": 829.4337746875111,
+                "y": 935.208176576147
+              },
+              {
+                "x": 811.4337746875111,
+                "y": 935.208176576147
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AsaisirManuellementIdentifiantRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 701.38,880.934 L 701.38,895.598 Q 701.38,896.071 700.907,896.071 L 700.907,896.071 Q 700.434,896.071 700.434,896.544 L 700.434,911.208",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 701.379930339716,
+              "y": 880.9344947690146
+            },
+            "targetPoint": {
+              "x": 700.4337746875111,
+              "y": 911.208176576147
+            },
+            "label": {
+              "x": 700.9068525136136,
+              "y": 896.0713356725807
+            },
+            "points": [
+              {
+                "x": 701.379930339716,
+                "y": 880.9344947690146
+              },
+              {
+                "x": 701.379930339716,
+                "y": 896.0713356725807
+              },
+              {
+                "x": 700.4337746875111,
+                "y": 896.0713356725807
+              },
+              {
+                "x": 700.4337746875111,
+                "y": 911.208176576147
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AconnecterRobotApplication%22%5D": {
+            "caption": {
+              "x": 403.434,
+              "y": 914.21,
+              "width": 182,
+              "height": 18,
+              "lines": [
+                "[identificationIncorrecte]"
+              ],
+              "text": "[identificationIncorrecte]",
+              "source": {
+                "x": 589.4337746875111,
+                "y": 935.208176576147
+              },
+              "target": {
+                "x": 602,
+                "y": 593
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "left",
+            "path": "M 589.434,935.208 L 502.434,935.208 Q 494.434,935.208 494.434,927.208 L 494.434,601 Q 494.434,593 502.434,593 L 602,593",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 589.4337746875111,
+              "y": 935.208176576147
+            },
+            "targetPoint": {
+              "x": 602,
+              "y": 593
+            },
+            "label": {
+              "x": 494.4337746875111,
+              "y": 757.820975631829
+            },
+            "points": [
+              {
+                "x": 589.4337746875111,
+                "y": 935.208176576147
+              },
+              {
+                "x": 494.4337746875111,
+                "y": 935.208176576147
+              },
+              {
+                "x": 494.4337746875111,
+                "y": 593
+              },
+              {
+                "x": 602,
+                "y": 593
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%22%5D": {
+            "caption": {
+              "x": 615.934,
+              "y": 972.21,
+              "width": 169,
+              "height": 18,
+              "lines": [
+                "[identificationCorrecte]"
+              ],
+              "text": "[identificationCorrecte]",
+              "source": {
+                "x": 700.4337746875111,
+                "y": 959.208176576147
+              },
+              "target": {
+                "x": 701.0407433015981,
+                "y": 1023.0917073233796
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 700.434,959.208 L 700.434,1004.788 Q 700.434,1005.092 700.737,1005.092 L 700.737,1005.092 Q 701.041,1005.092 701.041,1005.395 L 701.041,1023.092",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 700.4337746875111,
+              "y": 959.208176576147
+            },
+            "targetPoint": {
+              "x": 701.0407433015981,
+              "y": 1023.0917073233796
+            },
+            "label": {
+              "x": 700.4337746875111,
+              "y": 991.4534262568068
+            },
+            "points": [
+              {
+                "x": 700.4337746875111,
+                "y": 959.208176576147
+              },
+              {
+                "x": 700.4337746875111,
+                "y": 1005.0917073233796
+              },
+              {
+                "x": 701.0407433015981,
+                "y": 1005.0917073233796
+              },
+              {
+                "x": 701.0407433015981,
+                "y": 1023.0917073233796
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 701.041,1081.092 L 701.041,1132.079 Q 701.041,1140.079 709.041,1140.079 L 805,1140.079 Q 813,1140.079 813,1148.079 L 813,1158.079",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 701.0407433015981,
+              "y": 1081.0917073233795
+            },
+            "targetPoint": {
+              "x": 813,
+              "y": 1158.0786062771826
+            },
+            "label": {
+              "x": 736.5269221738974,
+              "y": 1140.0786062771826
+            },
+            "points": [
+              {
+                "x": 701.0407433015981,
+                "y": 1081.0917073233795
+              },
+              {
+                "x": 701.0407433015981,
+                "y": 1140.0786062771826
+              },
+              {
+                "x": 813,
+                "y": 1140.0786062771826
+              },
+              {
+                "x": 813,
+                "y": 1158.0786062771826
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcreerCompteIdentification%22%5D": {
+            "caption": {
+              "x": 625.5,
+              "y": 1173.079,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[compteNonCree]"
+              ],
+              "text": "[compteNonCree]",
+              "source": {
+                "x": 742,
+                "y": 1182.0786062771826
+              },
+              "target": {
+                "x": 605.5407433015981,
+                "y": 1052.0917073233795
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "left",
+            "path": "M 742,1182.079 L 552.541,1182.079 Q 544.541,1182.079 544.541,1174.079 L 544.541,1060.092 Q 544.541,1052.092 552.541,1052.092 L 605.541,1052.092",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 742,
+              "y": 1182.0786062771826
+            },
+            "targetPoint": {
+              "x": 605.5407433015981,
+              "y": 1052.0917073233795
+            },
+            "label": {
+              "x": 547.7769221738974,
+              "y": 1182.0786062771826
+            },
+            "points": [
+              {
+                "x": 742,
+                "y": 1182.0786062771826
+              },
+              {
+                "x": 544.5407433015981,
+                "y": 1182.0786062771826
+              },
+              {
+                "x": 544.5407433015981,
+                "y": 1052.0917073233795
+              },
+              {
+                "x": 605.5407433015981,
+                "y": 1052.0917073233795
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AaccederMenuApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCompte%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AaccederMenuApplication%22%5D": {
+            "caption": {
+              "x": 765.5,
+              "y": 1219.08,
+              "width": 95,
+              "height": 18,
+              "lines": [
+                "[compteCree]"
+              ],
+              "text": "[compteCree]",
+              "source": {
+                "x": 813,
+                "y": 1206.0786062771826
+              },
+              "target": {
+                "x": 813,
+                "y": 1258
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 813,1206.079 L 813,1258",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 813,
+              "y": 1206.0786062771826
+            },
+            "targetPoint": {
+              "x": 813,
+              "y": 1258
+            },
+            "label": {
+              "x": 813,
+              "y": 1232.0393031385913
+            },
+            "points": [
+              {
+                "x": 813,
+                "y": 1206.0786062771826
+              },
+              {
+                "x": 813,
+                "y": 1258
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AaccederMenuApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AaccederMenuApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionMenuApplication%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 813,1316 L 813,1374",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 813,
+              "y": 1316
+            },
+            "targetPoint": {
+              "x": 813,
+              "y": 1374
+            },
+            "label": {
+              "x": 813,
+              "y": 1345
+            },
+            "points": [
+              {
+                "x": 813,
+                "y": 1316
+              },
+              {
+                "x": 813,
+                "y": 1374
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AchoisirOptionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 712,1726 L 712,1808",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 712,
+              "y": 1726
+            },
+            "targetPoint": {
+              "x": 712,
+              "y": 1808
+            },
+            "label": {
+              "x": 712,
+              "y": 1767
+            },
+            "points": [
+              {
+                "x": 712,
+                "y": 1726
+              },
+              {
+                "x": 712,
+                "y": 1808
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AlancerRobot%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 712,1866 L 712,1948",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 712,
+              "y": 1866
+            },
+            "targetPoint": {
+              "x": 712,
+              "y": 1948
+            },
+            "label": {
+              "x": 712,
+              "y": 1907
+            },
+            "points": [
+              {
+                "x": 712,
+                "y": 1866
+              },
+              {
+                "x": 712,
+                "y": 1948
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AcartographierEspace%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 712,2006 L 712,2064",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 712,
+              "y": 2006
+            },
+            "targetPoint": {
+              "x": 712,
+              "y": 2064
+            },
+            "label": {
+              "x": 712,
+              "y": 2035
+            },
+            "points": [
+              {
+                "x": 712,
+                "y": 2006
+              },
+              {
+                "x": 712,
+                "y": 2064
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionRecommencerCartographie%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionRecommencerCartographie%22%5D": {
+            "caption": {
+              "x": 813.9,
+              "y": 2079,
+              "width": 163,
+              "height": 18,
+              "lines": [
+                "[espaceNonCartographie]"
+              ],
+              "text": "[espaceNonCartographie]",
+              "source": {
+                "x": 813,
+                "y": 2088
+              },
+              "target": {
+                "x": 1387.7730951725098,
+                "y": 2127.895191630423
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 813,2088 L 1379.773,2088 Q 1387.773,2088 1387.773,2096 L 1387.773,2127.895",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 813,
+              "y": 2088
+            },
+            "targetPoint": {
+              "x": 1387.7730951725098,
+              "y": 2127.895191630423
+            },
+            "label": {
+              "x": 1120.3341434014665,
+              "y": 2088
+            },
+            "points": [
+              {
+                "x": 813,
+                "y": 2088
+              },
+              {
+                "x": 1387.7730951725098,
+                "y": 2088
+              },
+              {
+                "x": 1387.7730951725098,
+                "y": 2127.895191630423
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%22%5D": {
+            "caption": {
+              "x": 640,
+              "y": 2125,
+              "width": 144,
+              "height": 18,
+              "lines": [
+                "[espaceCartographie]"
+              ],
+              "text": "[espaceCartographie]",
+              "source": {
+                "x": 712,
+                "y": 2112
+              },
+              "target": {
+                "x": 934,
+                "y": 2223
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 712,2112 L 712,2197 Q 712,2205 720,2205 L 926,2205 Q 934,2205 934,2213 L 934,2223",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 712,
+              "y": 2112
+            },
+            "targetPoint": {
+              "x": 934,
+              "y": 2223
+            },
+            "label": {
+              "x": 785.5,
+              "y": 2205
+            },
+            "points": [
+              {
+                "x": 712,
+                "y": 2112
+              },
+              {
+                "x": 712,
+                "y": 2205
+              },
+              {
+                "x": 934,
+                "y": 2205
+              },
+              {
+                "x": 934,
+                "y": 2223
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionCartographie%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
+            "caption": {
+              "x": 511.9,
+              "y": 2079,
+              "width": 95,
+              "height": 18,
+              "lines": [
+                "[annulation]"
+              ],
+              "text": "[annulation]",
+              "source": {
+                "x": 611,
+                "y": 2088
+              },
+              "target": {
+                "x": 893,
+                "y": 3059
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "bottom",
+            "path": "M 611,2088 L 503,2088 Q 495,2088 495,2096 L 495,3069 Q 495,3077 503,3077 L 885,3077 Q 893,3077 893,3069 L 893,3059",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 611,
+              "y": 2088
+            },
+            "targetPoint": {
+              "x": 893,
+              "y": 3059
+            },
+            "label": {
+              "x": 495,
+              "y": 2732.5
+            },
+            "points": [
+              {
+                "x": 611,
+                "y": 2088
+              },
+              {
+                "x": 495,
+                "y": 2088
+              },
+              {
+                "x": 495,
+                "y": 3077
+              },
+              {
+                "x": 893,
+                "y": 3077
+              },
+              {
+                "x": 893,
+                "y": 3059
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrerDonnees%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 934,2281 L 934,2363",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 934,
+              "y": 2281
+            },
+            "targetPoint": {
+              "x": 934,
+              "y": 2363
+            },
+            "label": {
+              "x": 934,
+              "y": 2322
+            },
+            "points": [
+              {
+                "x": 934,
+                "y": 2281
+              },
+              {
+                "x": 934,
+                "y": 2363
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenvoyerDonneesApplication%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 934,2421 L 934,2479",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 934,
+              "y": 2421
+            },
+            "targetPoint": {
+              "x": 934,
+              "y": 2479
+            },
+            "label": {
+              "x": 934,
+              "y": 2450
+            },
+            "points": [
+              {
+                "x": 934,
+                "y": 2421
+              },
+              {
+                "x": 934,
+                "y": 2479
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%22%5D": {
+            "caption": {
+              "x": 871,
+              "y": 2540,
+              "width": 126,
+              "height": 18,
+              "lines": [
+                "[donneesEnvoyees]"
+              ],
+              "text": "[donneesEnvoyees]",
+              "source": {
+                "x": 934,
+                "y": 2527
+              },
+              "target": {
+                "x": 632,
+                "y": 2633
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 934,2527 L 934,2607 Q 934,2615 926,2615 L 640,2615 Q 632,2615 632,2623 L 632,2633",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 934,
+              "y": 2527
+            },
+            "targetPoint": {
+              "x": 632,
+              "y": 2633
+            },
+            "label": {
+              "x": 818,
+              "y": 2615
+            },
+            "points": [
+              {
+                "x": 934,
+                "y": 2527
+              },
+              {
+                "x": 934,
+                "y": 2615
+              },
+              {
+                "x": 632,
+                "y": 2615
+              },
+              {
+                "x": 632,
+                "y": 2633
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionTransmission%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%5D": {
+            "caption": {
+              "x": 981,
+              "y": 2569.016513245255,
+              "width": 144,
+              "height": 18,
+              "lines": [
+                "[donneesNonEnvoyees]"
+              ],
+              "text": "[donneesNonEnvoyees]",
+              "source": {
+                "x": 1035,
+                "y": 2503
+              },
+              "target": {
+                "x": 983.8982115355731,
+                "y": 2692.7922400742927
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 1035,2503 L 1045,2503 Q 1053,2503 1053,2511 L 1053,2666.792 Q 1053,2674.792 1045,2674.792 L 991.898,2674.792 Q 983.898,2674.792 983.898,2682.792 L 983.898,2692.792",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 1035,
+              "y": 2503
+            },
+            "targetPoint": {
+              "x": 983.8982115355731,
+              "y": 2692.7922400742927
+            },
+            "label": {
+              "x": 1053,
+              "y": 2623.44701426936
+            },
+            "points": [
+              {
+                "x": 1035,
+                "y": 2503
+              },
+              {
+                "x": 1053,
+                "y": 2503
+              },
+              {
+                "x": 1053,
+                "y": 2674.7922400742927
+              },
+              {
+                "x": 983.8982115355731,
+                "y": 2674.7922400742927
+              },
+              {
+                "x": 983.8982115355731,
+                "y": 2692.7922400742927
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AmessageErreur%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AdecisionErreurTransmission%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 983.898,2750.792 L 983.898,2780.758 Q 983.898,2780.863 984.004,2780.863 L 984.004,2780.863 Q 984.109,2780.863 984.109,2780.969 L 984.109,2798.863",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 983.8982115355731,
+              "y": 2750.7922400742927
+            },
+            "targetPoint": {
+              "x": 984.1092684377331,
+              "y": 2798.8632412208926
+            },
+            "label": {
+              "x": 983.8982115355731,
+              "y": 2774.9332690986726
+            },
+            "points": [
+              {
+                "x": 983.8982115355731,
+                "y": 2750.7922400742927
+              },
+              {
+                "x": 983.8982115355731,
+                "y": 2780.8632412208926
+              },
+              {
+                "x": 984.1092684377331,
+                "y": 2780.8632412208926
+              },
+              {
+                "x": 984.1092684377331,
+                "y": 2798.8632412208926
+              }
+            ],
+            "corner": 8
+          },
           "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AverifierValiderDonneesUtilisateur%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%22%5D": {
             "sourceHandle": "bottom",
             "targetHandle": "top",
@@ -3557,6 +4886,39 @@
               {
                 "x": 632,
                 "y": 2903
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22tbi%3A%3AconfigurerSysteme%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3Atbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22tbi%3A%3AconfigurerSysteme%2Ftbi%3A%3AconfigurerSysteme%3A%3AenregistrementFinal%22%2C%22tbi%3A%3AconfigurerSysteme%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "left",
+            "path": "M 632,2961 L 632,3043 Q 632,3051 640,3051 L 885,3051",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 632,
+              "y": 2961
+            },
+            "targetPoint": {
+              "x": 885,
+              "y": 3051
+            },
+            "label": {
+              "x": 713.5,
+              "y": 3051
+            },
+            "points": [
+              {
+                "x": 632,
+                "y": 2961
+              },
+              {
+                "x": 632,
+                "y": 3051
+              },
+              {
+                "x": 885,
+                "y": 3051
               }
             ],
             "corner": 8
