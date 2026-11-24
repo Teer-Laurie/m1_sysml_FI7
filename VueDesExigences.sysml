@@ -24,6 +24,9 @@ package ExigencesRAL {
                 requirement <'EF-26'> appairage {
                     doc /* L'utilisateur doit pouvoir appairer le robot avec l'application lors de la mise en service. */
                 }
+                requirement <'EF-30'> signalementRobotInjoignable {
+                    doc /* L'application doit informer l'utilisateur lorsque le robot est injoignable. */
+                }
             }
 
             requirement navigation {
@@ -97,15 +100,30 @@ package ExigencesRAL {
                 requirement <'EF-23'> gestionReservoirsLiquides {
                     doc /* La station doit accueillir les réservoirs d'eau et de produit ménager. */
                 }
+                requirement <'EF-27'> detectionPresenceSachet {
+                    doc /* La station doit détecter la présence d'un sachet avant tout transfert de déchets et prévenir l'utilisateur en son absence. */
+                }
+                requirement <'EF-31'> notificationSachetPlein {
+                    doc /* Le système doit mesurer le niveau de remplissage du sachet et notifier l'utilisateur lorsque le sachet est plein. */
+                }
+                requirement <'EF-32'> surveillanceNiveauxLiquides {
+                    doc /* Le système doit mesurer les niveaux d'eau et de produit ménager et notifier l'utilisateur lorsqu'un niveau est bas. */
+                }
             }
 
             requirement maintenance {
                 doc /* Maintenance préventive (innovation 4) */
                 requirement <'EF-24'> detectionEncrassement {
-                    doc /* Le robot doit détecter l'encrassement ou le blocage de composants (brosses, filtre). */
+                    doc /* Le robot doit détecter l'encrassement ou le blocage de composants (brosses, filtre) à la fin de chaque session de nettoyage. */
                 }
                 requirement <'EF-25'> notificationEntretien {
-                    doc /* Le système doit avertir l'utilisateur, via l'application, avant une panne probable. */
+                    doc /* Le système doit avertir l'utilisateur, via l'application, avant une panne probable, en identifiant le composant concerné. */
+                }
+                requirement <'EF-28'> guideEntretien {
+                    doc /* L'application doit permettre de consulter un guide d'entretien et de remplacement du composant concerné par l'alerte. */
+                }
+                requirement <'EF-29'> verificationApresIntervention {
+                    doc /* Le système doit vérifier l'état des composants après une intervention de l'utilisateur, réinitialiser le suivi d'usure si l'état est rétabli et signaler si l'anomalie persiste. */
                 }
             }
         }
@@ -129,7 +147,7 @@ package ExigencesRAL {
                 doc /* Le type de surface doit être correctement identifié dans au moins 90 % des cas. */
             }
             requirement <'PE-06'> delaiAlerte {
-                doc /* Une alerte d'entretien doit parvenir à l'application dans les 5 minutes suivant la détection. */
+                doc /* Toute alerte (entretien, sachet, niveau de liquide) doit parvenir à l'application dans les 5 minutes suivant sa détection. */
             }
             requirement <'PE-08'> compatibiliteSurfaces {
                 doc /* Le robot doit se déplacer sur les surfaces compatibles (carrelage, parquet, moquette rase). */

@@ -1,0 +1,774 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "FluxActionsRAL": {
+      "afv": {
+        "layout": {
+          "FluxActionsRAL::effectuerMaintenance": {
+            "x": 22,
+            "y": 22,
+            "parentKey": null,
+            "w": 769,
+            "h": 1970,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/__initial__": {
+            "x": 314,
+            "y": 18,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 12,
+            "h": 12,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::mesurerEtatComposants": {
+            "x": 236,
+            "y": 62,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::analyserEtatComposants": {
+            "x": 234.5,
+            "y": 157,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::identifierComposantConcerne": {
+            "x": 218,
+            "y": 342,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 205,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::notifierEntretien": {
+            "x": 236.5,
+            "y": 437,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::afficherGuideEntretien": {
+            "x": 235,
+            "y": 537,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::verifierEtatComposants": {
+            "x": 235,
+            "y": 637,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::reinitialiserSuiviUsure": {
+            "x": 22,
+            "y": 777,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 177,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::notifierPersistanceAnomalie": {
+            "x": 217,
+            "y": 817,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 205,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::testAnomalie": {
+            "x": 249,
+            "y": 252,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 142,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/FluxActionsRAL::effectuerMaintenance::testRetablissement": {
+            "x": 220,
+            "y": 727,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 202,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance/__final__": {
+            "x": 312,
+            "y": 907,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 16,
+            "h": 16,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::effectuerMaintenance::sessionTerminee": {
+            "x": 22,
+            "y": 1470,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 191,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::anomalieDetectee": {
+            "x": 237,
+            "y": 1470,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 198,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::aucuneAnomalie": {
+            "x": 22,
+            "y": 1610,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 184,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::guideDemande": {
+            "x": 230,
+            "y": 1610,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 171,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::interventionEffectuee": {
+            "x": 22,
+            "y": 1750,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 232,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::etatRetabli": {
+            "x": 278,
+            "y": 1750,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 168,
+            "h": 58
+          },
+          "FluxActionsRAL::effectuerMaintenance::etatNonRetabli": {
+            "x": 22,
+            "y": 1890,
+            "parentKey": "FluxActionsRAL::effectuerMaintenance",
+            "w": 184,
+            "h": 58
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AmesurerEtatComposants%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2F__initial__%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AmesurerEtatComposants%22%5D": {
+            "caption": {
+              "x": 275.4011888399742,
+              "y": 57.86922725049334,
+              "width": 126,
+              "height": 18,
+              "lines": [
+                "[sessionTerminee]"
+              ],
+              "text": "[sessionTerminee]",
+              "source": {
+                "x": 342,
+                "y": 52
+              },
+              "target": {
+                "x": 342,
+                "y": 84
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342,52 L 342,62 Q 342,70 334,70 L 324,70 Q 322,70 322,68 L 322,68 Q 322,66 324,66 L 334,66 Q 342,66 342,74 L 342,84",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342,
+              "y": 52
+            },
+            "targetPoint": {
+              "x": 342,
+              "y": 84
+            },
+            "label": {
+              "x": 322,
+              "y": 68
+            },
+            "points": [
+              {
+                "x": 342,
+                "y": 52
+              },
+              {
+                "x": 342,
+                "y": 70
+              },
+              {
+                "x": 322,
+                "y": 70
+              },
+              {
+                "x": 322,
+                "y": 66
+              },
+              {
+                "x": 342,
+                "y": 66
+              },
+              {
+                "x": 342,
+                "y": 84
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AmesurerEtatComposants%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AanalyserEtatComposants%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AmesurerEtatComposants%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AanalyserEtatComposants%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342,142 L 342,179",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342,
+              "y": 142
+            },
+            "targetPoint": {
+              "x": 342,
+              "y": 179
+            },
+            "label": {
+              "x": 342,
+              "y": 160.5
+            },
+            "points": [
+              {
+                "x": 342,
+                "y": 142
+              },
+              {
+                "x": 342,
+                "y": 179
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AanalyserEtatComposants%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AanalyserEtatComposants%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342,237 L 342,274",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342,
+              "y": 237
+            },
+            "targetPoint": {
+              "x": 342,
+              "y": 274
+            },
+            "label": {
+              "x": 342,
+              "y": 255.5
+            },
+            "points": [
+              {
+                "x": 342,
+                "y": 237
+              },
+              {
+                "x": 342,
+                "y": 274
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AidentifierComposantConcerne%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AidentifierComposantConcerne%22%5D": {
+            "caption": {
+              "x": 276.49305555555554,
+              "y": 337.1736111111111,
+              "width": 132,
+              "height": 18,
+              "lines": [
+                "[anomalieDetectee]"
+              ],
+              "text": "[anomalieDetectee]",
+              "source": {
+                "x": 342,
+                "y": 322
+              },
+              "target": {
+                "x": 342.5,
+                "y": 364
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342,322 L 342,345.75 Q 342,346 342.25,346 L 342.25,346 Q 342.5,346 342.5,346.25 L 342.5,364",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342,
+              "y": 322
+            },
+            "targetPoint": {
+              "x": 342.5,
+              "y": 364
+            },
+            "label": {
+              "x": 342,
+              "y": 343.25
+            },
+            "points": [
+              {
+                "x": 342,
+                "y": 322
+              },
+              {
+                "x": 342,
+                "y": 346
+              },
+              {
+                "x": 342.5,
+                "y": 346
+              },
+              {
+                "x": 342.5,
+                "y": 364
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestAnomalie%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2F__final__%22%5D": {
+            "caption": {
+              "x": 417,
+              "y": 301,
+              "width": 120,
+              "height": 18,
+              "lines": [
+                "[aucuneAnomalie]"
+              ],
+              "text": "[aucuneAnomalie]",
+              "source": {
+                "x": 413,
+                "y": 298
+              },
+              "target": {
+                "x": 350,
+                "y": 937
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "right",
+            "path": "M 413,298 L 469,298 Q 477,298 477,306 L 477,929 Q 477,937 469,937 L 350,937",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 413,
+              "y": 298
+            },
+            "targetPoint": {
+              "x": 350,
+              "y": 937
+            },
+            "label": {
+              "x": 477,
+              "y": 649
+            },
+            "points": [
+              {
+                "x": 413,
+                "y": 298
+              },
+              {
+                "x": 477,
+                "y": 298
+              },
+              {
+                "x": 477,
+                "y": 937
+              },
+              {
+                "x": 350,
+                "y": 937
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AidentifierComposantConcerne%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierEntretien%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AidentifierComposantConcerne%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierEntretien%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342.5,422 L 342.5,459",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342.5,
+              "y": 422
+            },
+            "targetPoint": {
+              "x": 342.5,
+              "y": 459
+            },
+            "label": {
+              "x": 342.5,
+              "y": 440.5
+            },
+            "points": [
+              {
+                "x": 342.5,
+                "y": 422
+              },
+              {
+                "x": 342.5,
+                "y": 459
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierEntretien%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AafficherGuideEntretien%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierEntretien%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AafficherGuideEntretien%22%5D": {
+            "caption": {
+              "x": 289,
+              "y": 530,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[guideDemande]"
+              ],
+              "text": "[guideDemande]",
+              "source": {
+                "x": 342.5,
+                "y": 517
+              },
+              "target": {
+                "x": 342.5,
+                "y": 559
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342.5,517 L 342.5,559",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342.5,
+              "y": 517
+            },
+            "targetPoint": {
+              "x": 342.5,
+              "y": 559
+            },
+            "label": {
+              "x": 342.5,
+              "y": 538
+            },
+            "points": [
+              {
+                "x": 342.5,
+                "y": 517
+              },
+              {
+                "x": 342.5,
+                "y": 559
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AafficherGuideEntretien%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AverifierEtatComposants%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AafficherGuideEntretien%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AverifierEtatComposants%22%5D": {
+            "caption": {
+              "x": 261,
+              "y": 630,
+              "width": 163,
+              "height": 18,
+              "lines": [
+                "[interventionEffectuee]"
+              ],
+              "text": "[interventionEffectuee]",
+              "source": {
+                "x": 342.5,
+                "y": 617
+              },
+              "target": {
+                "x": 342.5,
+                "y": 659
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342.5,617 L 342.5,659",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342.5,
+              "y": 617
+            },
+            "targetPoint": {
+              "x": 342.5,
+              "y": 659
+            },
+            "label": {
+              "x": 342.5,
+              "y": 638
+            },
+            "points": [
+              {
+                "x": 342.5,
+                "y": 617
+              },
+              {
+                "x": 342.5,
+                "y": 659
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AverifierEtatComposants%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AverifierEtatComposants%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 342.5,717 L 342.5,734.875 Q 342.5,735 342.625,735 L 342.625,735 Q 342.75,735 342.75,734.875 L 342.75,731.125 Q 342.75,731 342.875,731 L 342.875,731 Q 343,731 343,731.125 L 343,749",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 342.5,
+              "y": 717
+            },
+            "targetPoint": {
+              "x": 343,
+              "y": 749
+            },
+            "label": {
+              "x": 342.75,
+              "y": 733
+            },
+            "points": [
+              {
+                "x": 342.5,
+                "y": 717
+              },
+              {
+                "x": 342.5,
+                "y": 735
+              },
+              {
+                "x": 342.75,
+                "y": 735
+              },
+              {
+                "x": 342.75,
+                "y": 731
+              },
+              {
+                "x": 343,
+                "y": 731
+              },
+              {
+                "x": 343,
+                "y": 749
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AreinitialiserSuiviUsure%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AreinitialiserSuiviUsure%22%5D": {
+            "caption": {
+              "x": 137.1,
+              "y": 764,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "[etatRetabli]"
+              ],
+              "text": "[etatRetabli]",
+              "source": {
+                "x": 242,
+                "y": 773
+              },
+              "target": {
+                "x": 132.5,
+                "y": 799
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 242,773 L 140.5,773 Q 132.5,773 132.5,781 L 132.5,799",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 242,
+              "y": 773
+            },
+            "targetPoint": {
+              "x": 132.5,
+              "y": 799
+            },
+            "label": {
+              "x": 174.25,
+              "y": 773
+            },
+            "points": [
+              {
+                "x": 242,
+                "y": 773
+              },
+              {
+                "x": 132.5,
+                "y": 773
+              },
+              {
+                "x": 132.5,
+                "y": 799
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierPersistanceAnomalie%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AtestRetablissement%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierPersistanceAnomalie%22%5D": {
+            "caption": {
+              "x": 283,
+              "y": 810,
+              "width": 120,
+              "height": 18,
+              "lines": [
+                "[etatNonRetabli]"
+              ],
+              "text": "[etatNonRetabli]",
+              "source": {
+                "x": 343,
+                "y": 797
+              },
+              "target": {
+                "x": 341.5,
+                "y": 839
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 343,797 L 343,820.25 Q 343,821 342.25,821 L 342.25,821 Q 341.5,821 341.5,821.75 L 341.5,839",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 343,
+              "y": 797
+            },
+            "targetPoint": {
+              "x": 341.5,
+              "y": 839
+            },
+            "label": {
+              "x": 343,
+              "y": 818.75
+            },
+            "points": [
+              {
+                "x": 343,
+                "y": 797
+              },
+              {
+                "x": 343,
+                "y": 821
+              },
+              {
+                "x": 341.5,
+                "y": 821
+              },
+              {
+                "x": 341.5,
+                "y": 839
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AreinitialiserSuiviUsure%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AreinitialiserSuiviUsure%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "left",
+            "path": "M 132.5,857 L 132.5,929 Q 132.5,937 140.5,937 L 334,937",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 132.5,
+              "y": 857
+            },
+            "targetPoint": {
+              "x": 334,
+              "y": 937
+            },
+            "label": {
+              "x": 193.25,
+              "y": 937
+            },
+            "points": [
+              {
+                "x": 132.5,
+                "y": 857
+              },
+              {
+                "x": 132.5,
+                "y": 937
+              },
+              {
+                "x": 334,
+                "y": 937
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AeffectuerMaintenance%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierPersistanceAnomalie%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2FFluxActionsRAL%3A%3AeffectuerMaintenance%3A%3AnotifierPersistanceAnomalie%22%2C%22FluxActionsRAL%3A%3AeffectuerMaintenance%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 341.5,897 L 341.5,914.875 Q 341.5,915 341.625,915 L 341.625,915 Q 341.75,915 341.75,914.875 L 341.75,911.125 Q 341.75,911 341.875,911 L 341.875,911 Q 342,911 342,911.125 L 342,929",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 341.5,
+              "y": 897
+            },
+            "targetPoint": {
+              "x": 342,
+              "y": 929
+            },
+            "label": {
+              "x": 341.75,
+              "y": 913
+            },
+            "points": [
+              {
+                "x": 341.5,
+                "y": 897
+              },
+              {
+                "x": 341.5,
+                "y": 915
+              },
+              {
+                "x": 341.75,
+                "y": 915
+              },
+              {
+                "x": 341.75,
+                "y": 911
+              },
+              {
+                "x": 342,
+                "y": 911
+              },
+              {
+                "x": 342,
+                "y": 929
+              }
+            ],
+            "corner": 8
+          }
+        }
+      }
+    }
+  }
+}
