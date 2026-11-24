@@ -1,0 +1,1433 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "FluxActionsRAL": {
+      "afv": {
+        "layout": {
+          "FluxActionsRAL::ConsulterCarte": {
+            "x": 22,
+            "y": 22,
+            "parentKey": null,
+            "w": 871,
+            "h": 1680,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/__initial__": {
+            "x": 155,
+            "y": 38,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 12,
+            "h": 12
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::ouvrirApplication": {
+            "x": 77,
+            "y": 81.11927746791093,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::demanderCarte": {
+            "x": 75.18283133813966,
+            "y": 175.69006092140282,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::envoyerCarte": {
+            "x": 79.25752992790487,
+            "y": 320.3054232530405,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::afficherCarte": {
+            "x": 81.07469858976518,
+            "y": 422.14488135397374,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::afficherErreur": {
+            "x": 670.5084309618298,
+            "y": 305.84608699491304,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::choisirZones": {
+            "x": 72.88072253208904,
+            "y": 559.4915690381702,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::validerZones": {
+            "x": 72.88072253208907,
+            "y": 668.5997017865448,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::enregistrerZones": {
+            "x": 72.88072253208907,
+            "y": 754.0846419307348,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::testConnexion": {
+            "x": 361.20963660276925,
+            "y": 184.85391726745956,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 152,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::testModification": {
+            "x": 402.9822263864837,
+            "y": 454.93193030421463,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 182,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/FluxActionsRAL::ConsulterCarte::fin": {
+            "x": 460.70240701950604,
+            "y": 814.1292208088807,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 64,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte/__final__": {
+            "x": 484.70240701950604,
+            "y": 914.0096003285178,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 16,
+            "h": 16,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::ConsulterCarte::robotConnecte": {
+            "x": 22,
+            "y": 1600,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 177,
+            "h": 58
+          },
+          "FluxActionsRAL::ConsulterCarte::modifierZones": {
+            "x": 223,
+            "y": 1600,
+            "parentKey": "FluxActionsRAL::ConsulterCarte",
+            "w": 177,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte": {
+            "x": 22,
+            "y": 5.119311391459313,
+            "parentKey": null,
+            "w": 953,
+            "h": 1707,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/__initial__": {
+            "x": 163,
+            "y": 28,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 12,
+            "h": 12,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::verifierConnexionRobot": {
+            "x": 84.99337158936336,
+            "y": 75.70548072973548,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::recupererCarte": {
+            "x": 54.45832756257613,
+            "y": 176.504609385339,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::afficherCarte": {
+            "x": 54.45832756257613,
+            "y": 271.0737179551338,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::afficherMessageErreur": {
+            "x": 760.8921654175522,
+            "y": 222.87208100178213,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::afficherZonesModifiables": {
+            "x": 191.07485003808313,
+            "y": 470.77729977504794,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 184,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::enregistrerZones": {
+            "x": 199.07485003808313,
+            "y": 594.2422588120435,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::afficherConfirmation": {
+            "x": 199.07485003808316,
+            "y": 683.1797185951473,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::testConnexion": {
+            "x": 496.04862564701307,
+            "y": 173.56721578753886,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 152,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/FluxActionsRAL::consulterCarte::testModification": {
+            "x": 471.0001372802559,
+            "y": 367.6579883835886,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 182,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte/__final__": {
+            "x": 650.1327471680302,
+            "y": 795.4533792772875,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 16,
+            "h": 16,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::consulterCarte::demandeCarte": {
+            "x": 22,
+            "y": 1346.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 171,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte::robotConnecte": {
+            "x": 217,
+            "y": 1346.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 177,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte::robotHorsLigne": {
+            "x": 22,
+            "y": 1486.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 184,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte::modificationDemandee": {
+            "x": 230,
+            "y": 1486.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 225,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte::aucuneModification": {
+            "x": 22,
+            "y": 1626.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 211,
+            "h": 58
+          },
+          "FluxActionsRAL::consulterCarte::zonesValidees": {
+            "x": 257,
+            "y": 1626.8806886085406,
+            "parentKey": "FluxActionsRAL::consulterCarte",
+            "w": 177,
+            "h": 58
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2F__final__%22%5D":[{"x":795,"y":534}],"route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%22%5D":[{"x":407,"y":201}]},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AouvrirApplication%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2F__initial__%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AouvrirApplication%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 183,72 L 183,103.119",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 183,
+              "y": 72
+            },
+            "targetPoint": {
+              "x": 183,
+              "y": 103.11927746791093
+            },
+            "label": {
+              "x": 183,
+              "y": 87.55963873395547
+            },
+            "points": [
+              {
+                "x": 183,
+                "y": 72
+              },
+              {
+                "x": 183,
+                "y": 103.11927746791093
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AouvrirApplication%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AdemanderCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AouvrirApplication%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AdemanderCarte%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 183,161.119 L 183,178.781 Q 183,179.69 182.091,179.69 L 182.091,179.69 Q 181.183,179.69 181.183,180.599 L 181.183,197.69",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 183,
+              "y": 161.11927746791093
+            },
+            "targetPoint": {
+              "x": 181.18283133813966,
+              "y": 197.69006092140282
+            },
+            "label": {
+              "x": 182.37680739581577,
+              "y": 179.69006092140282
+            },
+            "points": [
+              {
+                "x": 183,
+                "y": 161.11927746791093
+              },
+              {
+                "x": 183,
+                "y": 179.69006092140282
+              },
+              {
+                "x": 181.18283133813966,
+                "y": 179.69006092140282
+              },
+              {
+                "x": 181.18283133813966,
+                "y": 197.69006092140282
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AdemanderCarte%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AdemanderCarte%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 181.183,255.69 L 181.183,265.69 Q 181.183,273.69 189.183,273.69 L 312.196,273.69 Q 320.196,273.69 320.196,265.69 L 320.196,196.854 Q 320.196,188.854 328.196,188.854 L 451.21,188.854 Q 459.21,188.854 459.21,196.854 L 459.21,206.854",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 181.18283133813966,
+              "y": 255.69006092140282
+            },
+            "targetPoint": {
+              "x": 459.20963660276925,
+              "y": 206.85391726745956
+            },
+            "label": {
+              "x": 320.19623397045444,
+              "y": 231.2719890944312
+            },
+            "points": [
+              {
+                "x": 181.18283133813966,
+                "y": 255.69006092140282
+              },
+              {
+                "x": 181.18283133813966,
+                "y": 273.69006092140285
+              },
+              {
+                "x": 320.19623397045444,
+                "y": 273.69006092140285
+              },
+              {
+                "x": 320.19623397045444,
+                "y": 188.85391726745956
+              },
+              {
+                "x": 459.20963660276925,
+                "y": 188.85391726745956
+              },
+              {
+                "x": 459.20963660276925,
+                "y": 206.85391726745956
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AenvoyerCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AenvoyerCarte%22%5D": {
+            "caption": {
+              "x": 402.71,
+              "y": 267.85,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[robotConnecte]"
+              ],
+              "text": "[robotConnecte]",
+              "source": {
+                "x": 459.20963660276925,
+                "y": 254.85391726745956
+              },
+              "target": {
+                "x": 185.25752992790487,
+                "y": 342.3054232530405
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 459.21,254.854 L 459.21,316.305 Q 459.21,324.305 451.21,324.305 L 193.258,324.305 Q 185.258,324.305 185.258,332.305 L 185.258,342.305",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 459.20963660276925,
+              "y": 254.85391726745956
+            },
+            "targetPoint": {
+              "x": 185.25752992790487,
+              "y": 342.3054232530405
+            },
+            "label": {
+              "x": 347.95933625812756,
+              "y": 324.3054232530405
+            },
+            "points": [
+              {
+                "x": 459.20963660276925,
+                "y": 254.85391726745956
+              },
+              {
+                "x": 459.20963660276925,
+                "y": 324.3054232530405
+              },
+              {
+                "x": 185.25752992790487,
+                "y": 324.3054232530405
+              },
+              {
+                "x": 185.25752992790487,
+                "y": 342.3054232530405
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ElseSuccessionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherErreur%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestConnexion%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherErreur%22%5D": {
+            "caption": {
+              "x": 542.71,
+              "y": 221.854,
+              "width": 45,
+              "height": 18,
+              "lines": [
+                "else"
+              ],
+              "text": "else",
+              "source": {
+                "x": 535.2096366027693,
+                "y": 230.85391726745956
+              },
+              "target": {
+                "x": 776.5084309618298,
+                "y": 327.84608699491304
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 535.21,230.854 L 768.508,230.854 Q 776.508,230.854 776.508,238.854 L 776.508,327.846",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 535.2096366027693,
+              "y": 230.85391726745956
+            },
+            "targetPoint": {
+              "x": 776.5084309618298,
+              "y": 327.84608699491304
+            },
+            "label": {
+              "x": 704.3551186460263,
+              "y": 230.85391726745956
+            },
+            "points": [
+              {
+                "x": 535.2096366027693,
+                "y": 230.85391726745956
+              },
+              {
+                "x": 776.5084309618298,
+                "y": 230.85391726745956
+              },
+              {
+                "x": 776.5084309618298,
+                "y": 327.84608699491304
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AenvoyerCarte%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AenvoyerCarte%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherCarte%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 185.258,400.305 L 185.258,425.236 Q 185.258,426.145 186.166,426.145 L 186.166,426.145 Q 187.075,426.145 187.075,427.053 L 187.075,444.145",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 185.25752992790487,
+              "y": 400.3054232530405
+            },
+            "targetPoint": {
+              "x": 187.07469858976518,
+              "y": 444.14488135397374
+            },
+            "label": {
+              "x": 185.25752992790487,
+              "y": 423.13373663443724
+            },
+            "points": [
+              {
+                "x": 185.25752992790487,
+                "y": 400.3054232530405
+              },
+              {
+                "x": 185.25752992790487,
+                "y": 426.14488135397374
+              },
+              {
+                "x": 187.07469858976518,
+                "y": 426.14488135397374
+              },
+              {
+                "x": 187.07469858976518,
+                "y": 444.14488135397374
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherCarte%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherCarte%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 187.075,502.145 L 187.075,512.145 Q 187.075,520.145 195.075,520.145 L 343.528,520.145 Q 351.528,520.145 351.528,512.145 L 351.528,466.932 Q 351.528,458.932 359.528,458.932 L 507.982,458.932 Q 515.982,458.932 515.982,466.932 L 515.982,476.932",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 187.07469858976518,
+              "y": 502.14488135397374
+            },
+            "targetPoint": {
+              "x": 515.9822263864837,
+              "y": 476.93193030421463
+            },
+            "label": {
+              "x": 351.52846248812443,
+              "y": 489.53840582909413
+            },
+            "points": [
+              {
+                "x": 187.07469858976518,
+                "y": 502.14488135397374
+              },
+              {
+                "x": 187.07469858976518,
+                "y": 520.1448813539737
+              },
+              {
+                "x": 351.52846248812443,
+                "y": 520.1448813539737
+              },
+              {
+                "x": 351.52846248812443,
+                "y": 458.93193030421463
+              },
+              {
+                "x": 515.9822263864837,
+                "y": 458.93193030421463
+              },
+              {
+                "x": 515.9822263864837,
+                "y": 476.93193030421463
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AchoisirZones%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AchoisirZones%22%5D": {
+            "caption": {
+              "x": 350.482,
+              "y": 533.93,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[modifierZones]"
+              ],
+              "text": "[modifierZones]",
+              "source": {
+                "x": 424.9822263864837,
+                "y": 500.93193030421463
+              },
+              "target": {
+                "x": 178.88072253208904,
+                "y": 581.4915690381702
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 424.982,500.932 L 414.982,500.932 Q 406.982,500.932 406.982,508.932 L 406.982,555.492 Q 406.982,563.492 398.982,563.492 L 186.881,563.492 Q 178.881,563.492 178.881,571.492 L 178.881,581.492",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 424.9822263864837,
+              "y": 500.93193030421463
+            },
+            "targetPoint": {
+              "x": 178.88072253208904,
+              "y": 581.4915690381702
+            },
+            "label": {
+              "x": 324.2112938262641,
+              "y": 563.4915690381702
+            },
+            "points": [
+              {
+                "x": 424.9822263864837,
+                "y": 500.93193030421463
+              },
+              {
+                "x": 406.9822263864837,
+                "y": 500.93193030421463
+              },
+              {
+                "x": 406.9822263864837,
+                "y": 563.4915690381702
+              },
+              {
+                "x": 178.88072253208904,
+                "y": 563.4915690381702
+              },
+              {
+                "x": 178.88072253208904,
+                "y": 581.4915690381702
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ElseSuccessionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AtestModification%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%22%5D": {
+            "caption": {
+              "x": 493.48199999999997,
+              "y": 537.93,
+              "width": 45,
+              "height": 18,
+              "lines": [
+                "else"
+              ],
+              "text": "else",
+              "source": {
+                "x": 515.9822263864837,
+                "y": 524.9319303042146
+              },
+              "target": {
+                "x": 514.702407019506,
+                "y": 836.1292208088807
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 515.982,524.932 L 515.982,817.489 Q 515.982,818.129 515.342,818.129 L 515.342,818.129 Q 514.702,818.129 514.702,818.769 L 514.702,836.129",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 515.9822263864837,
+              "y": 524.9319303042146
+            },
+            "targetPoint": {
+              "x": 514.702407019506,
+              "y": 836.1292208088807
+            },
+            "label": {
+              "x": 515.9822263864837,
+              "y": 681.1704852400364
+            },
+            "points": [
+              {
+                "x": 515.9822263864837,
+                "y": 524.9319303042146
+              },
+              {
+                "x": 515.9822263864837,
+                "y": 818.1292208088807
+              },
+              {
+                "x": 514.702407019506,
+                "y": 818.1292208088807
+              },
+              {
+                "x": 514.702407019506,
+                "y": 836.1292208088807
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AchoisirZones%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AvaliderZones%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AchoisirZones%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AvaliderZones%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 178.881,639.492 L 178.881,690.6",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 178.88072253208904,
+              "y": 639.4915690381702
+            },
+            "targetPoint": {
+              "x": 178.88072253208907,
+              "y": 690.5997017865448
+            },
+            "label": {
+              "x": 178.88072253208907,
+              "y": 665.0456354123575
+            },
+            "points": [
+              {
+                "x": 178.88072253208904,
+                "y": 639.4915690381702
+              },
+              {
+                "x": 178.88072253208907,
+                "y": 690.5997017865448
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AvaliderZones%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AenregistrerZones%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AvaliderZones%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AenregistrerZones%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 178.881,748.6 L 178.881,753.1 Q 178.881,757.6 183.381,757.6 L 272.138,757.6 Q 276.881,757.6 276.881,762.342 L 276.881,762.342 Q 276.881,767.085 272.138,767.085 L 183.381,767.085 Q 178.881,767.085 178.881,771.585 L 178.881,776.085",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 178.88072253208907,
+              "y": 748.5997017865448
+            },
+            "targetPoint": {
+              "x": 178.88072253208907,
+              "y": 776.0846419307348
+            },
+            "label": {
+              "x": 276.88072253208907,
+              "y": 762.3421718586399
+            },
+            "points": [
+              {
+                "x": 178.88072253208907,
+                "y": 748.5997017865448
+              },
+              {
+                "x": 178.88072253208907,
+                "y": 757.5997017865448
+              },
+              {
+                "x": 276.88072253208907,
+                "y": 757.5997017865448
+              },
+              {
+                "x": 276.88072253208907,
+                "y": 767.0846419307348
+              },
+              {
+                "x": 178.88072253208907,
+                "y": 767.0846419307348
+              },
+              {
+                "x": 178.88072253208907,
+                "y": 776.0846419307348
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AenregistrerZones%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AenregistrerZones%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "left",
+            "path": "M 178.881,834.085 L 178.881,852.129 Q 178.881,860.129 186.881,860.129 L 482.702,860.129",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 178.88072253208907,
+              "y": 834.0846419307348
+            },
+            "targetPoint": {
+              "x": 482.70240701950604,
+              "y": 860.1292208088807
+            },
+            "label": {
+              "x": 317.7692753367246,
+              "y": 860.1292208088807
+            },
+            "points": [
+              {
+                "x": 178.88072253208907,
+                "y": 834.0846419307348
+              },
+              {
+                "x": 178.88072253208907,
+                "y": 860.1292208088807
+              },
+              {
+                "x": 482.70240701950604,
+                "y": 860.1292208088807
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherErreur%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3AafficherErreur%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "right",
+            "path": "M 776.508,385.846 L 776.508,852.129 Q 776.508,860.129 768.508,860.129 L 546.702,860.129",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 776.5084309618298,
+              "y": 385.84608699491304
+            },
+            "targetPoint": {
+              "x": 546.702407019506,
+              "y": 860.1292208088807
+            },
+            "label": {
+              "x": 776.5084309618298,
+              "y": 737.8906658730589
+            },
+            "points": [
+              {
+                "x": 776.5084309618298,
+                "y": 385.84608699491304
+              },
+              {
+                "x": 776.5084309618298,
+                "y": 860.1292208088807
+              },
+              {
+                "x": 546.702407019506,
+                "y": 860.1292208088807
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AConsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2FFluxActionsRAL%3A%3AConsulterCarte%3A%3Afin%22%2C%22FluxActionsRAL%3A%3AConsulterCarte%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 514.702,884.129 L 514.702,936.01",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 514.702407019506,
+              "y": 884.1292208088807
+            },
+            "targetPoint": {
+              "x": 514.702407019506,
+              "y": 936.0096003285178
+            },
+            "label": {
+              "x": 514.702407019506,
+              "y": 910.0694105686993
+            },
+            "points": [
+              {
+                "x": 514.702407019506,
+                "y": 884.1292208088807
+              },
+              {
+                "x": 514.702407019506,
+                "y": 936.0096003285178
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AverifierConnexionRobot%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2F__initial__%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AverifierConnexionRobot%22%5D": {
+            "caption": {
+              "x": 138.993,
+              "y": 56.040000000000006,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[demandeCarte]"
+              ],
+              "text": "[demandeCarte]",
+              "source": {
+                "x": 191,
+                "y": 45.11931139145931
+              },
+              "target": {
+                "x": 192.49337158936336,
+                "y": 80.8247921211948
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 191,45.119 L 191,62.746 Q 191,63.119 191.373,63.119 L 191.599,63.119 Q 191.747,63.119 191.747,62.972 L 191.747,62.972 Q 191.747,62.825 191.894,62.825 L 192.12,62.825 Q 192.493,62.825 192.493,63.198 L 192.493,80.825",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 191,
+              "y": 45.11931139145931
+            },
+            "targetPoint": {
+              "x": 192.49337158936336,
+              "y": 80.8247921211948
+            },
+            "label": {
+              "x": 191.7466857946817,
+              "y": 62.972051756327076
+            },
+            "points": [
+              {
+                "x": 191,
+                "y": 45.11931139145931
+              },
+              {
+                "x": 191,
+                "y": 63.11931139145931
+              },
+              {
+                "x": 191.7466857946817,
+                "y": 63.11931139145931
+              },
+              {
+                "x": 191.7466857946817,
+                "y": 62.824792121194804
+              },
+              {
+                "x": 192.49337158936336,
+                "y": 62.824792121194804
+              },
+              {
+                "x": 192.49337158936336,
+                "y": 80.8247921211948
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AverifierConnexionRobot%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AverifierConnexionRobot%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 192.493,138.825 L 192.493,152.687 Q 192.493,160.687 200.493,160.687 L 586.049,160.687 Q 594.049,160.687 594.049,168.687 L 594.049,178.687",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 192.49337158936336,
+              "y": 138.8247921211948
+            },
+            "targetPoint": {
+              "x": 594.0486256470131,
+              "y": 178.68652717899818
+            },
+            "label": {
+              "x": 391.3401310892865,
+              "y": 160.68652717899818
+            },
+            "points": [
+              {
+                "x": 192.49337158936336,
+                "y": 138.8247921211948
+              },
+              {
+                "x": 192.49337158936336,
+                "y": 160.68652717899818
+              },
+              {
+                "x": 594.0486256470131,
+                "y": 160.68652717899818
+              },
+              {
+                "x": 594.0486256470131,
+                "y": 178.68652717899818
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%22%5D": {
+            "caption": {
+              "x": 401.55,
+              "y": 193.687,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[robotConnecte]"
+              ],
+              "text": "[robotConnecte]",
+              "source": {
+                "x": 518.0486256470131,
+                "y": 202.68652717899818
+              },
+              "target": {
+                "x": 244.45832756257613,
+                "y": 210.62392077679831
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "right",
+            "path": "M 518.049,202.687 L 407.843,202.687 Q 407,202.687 407,201.843 L 407,201.843 Q 407,201 406.157,201 L 249.27,201 Q 244.458,201 244.458,205.812 L 244.458,210.624",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 518.0486256470131,
+              "y": 202.68652717899818
+            },
+            "targetPoint": {
+              "x": 244.45832756257613,
+              "y": 210.62392077679831
+            },
+            "label": {
+              "x": 377.2847798058945,
+              "y": 201
+            },
+            "points": [
+              {
+                "x": 518.0486256470131,
+                "y": 202.68652717899818
+              },
+              {
+                "x": 407,
+                "y": 202.68652717899818
+              },
+              {
+                "x": 407,
+                "y": 201
+              },
+              {
+                "x": 244.45832756257613,
+                "y": 201
+              },
+              {
+                "x": 244.45832756257613,
+                "y": 210.62392077679831
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherMessageErreur%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestConnexion%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherMessageErreur%22%5D": {
+            "caption": {
+              "x": 672.85,
+              "y": 193.687,
+              "width": 120,
+              "height": 18,
+              "lines": [
+                "[robotHorsLigne]"
+              ],
+              "text": "[robotHorsLigne]",
+              "source": {
+                "x": 670.0486256470131,
+                "y": 202.68652717899818
+              },
+              "target": {
+                "x": 866.8921654175522,
+                "y": 227.99139239324145
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 670.049,202.687 L 858.892,202.687 Q 866.892,202.687 866.892,210.687 L 866.892,227.991",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 670.0486256470131,
+              "y": 202.68652717899818
+            },
+            "targetPoint": {
+              "x": 866.8921654175522,
+              "y": 227.99139239324145
+            },
+            "label": {
+              "x": 781.1228281394043,
+              "y": 202.68652717899818
+            },
+            "points": [
+              {
+                "x": 670.0486256470131,
+                "y": 202.68652717899818
+              },
+              {
+                "x": 866.8921654175522,
+                "y": 202.68652717899818
+              },
+              {
+                "x": 866.8921654175522,
+                "y": 227.99139239324145
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherCarte%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3ArecupererCarte%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherCarte%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 160.458,239.624 L 160.458,276.193",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 160.45832756257613,
+              "y": 239.62392077679831
+            },
+            "targetPoint": {
+              "x": 160.45832756257613,
+              "y": 276.1930293465931
+            },
+            "label": {
+              "x": 160.45832756257613,
+              "y": 257.9084750616957
+            },
+            "points": [
+              {
+                "x": 160.45832756257613,
+                "y": 239.62392077679831
+              },
+              {
+                "x": 160.45832756257613,
+                "y": 276.1930293465931
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherCarte%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherCarte%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 160.458,334.193 L 160.458,346.777 Q 160.458,354.777 168.458,354.777 L 576,354.777 Q 584,354.777 584,362.777 L 584,372.777",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 160.45832756257613,
+              "y": 334.1930293465931
+            },
+            "targetPoint": {
+              "x": 584.0001372802559,
+              "y": 372.7772997750479
+            },
+            "label": {
+              "x": 370.93709720718863,
+              "y": 354.7772997750479
+            },
+            "points": [
+              {
+                "x": 160.45832756257613,
+                "y": 334.1930293465931
+              },
+              {
+                "x": 160.45832756257613,
+                "y": 354.7772997750479
+              },
+              {
+                "x": 584.0001372802559,
+                "y": 354.7772997750479
+              },
+              {
+                "x": 584.0001372802559,
+                "y": 372.7772997750479
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherZonesModifiables%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherZonesModifiables%22%5D": {
+            "caption": {
+              "x": 505.5,
+              "y": 433.78,
+              "width": 157,
+              "height": 18,
+              "lines": [
+                "[modificationDemandee]"
+              ],
+              "text": "[modificationDemandee]",
+              "source": {
+                "x": 584.0001372802559,
+                "y": 420.7772997750479
+              },
+              "target": {
+                "x": 305.0748500380831,
+                "y": 475.8966111665072
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 584,420.777 L 584,449.897 Q 584,457.897 576,457.897 L 313.075,457.897 Q 305.075,457.897 305.075,465.897 L 305.075,475.897",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 584.0001372802559,
+              "y": 420.7772997750479
+            },
+            "targetPoint": {
+              "x": 305.0748500380831,
+              "y": 475.8966111665072
+            },
+            "label": {
+              "x": 454.0971493548992,
+              "y": 457.8966111665072
+            },
+            "points": [
+              {
+                "x": 584.0001372802559,
+                "y": 420.7772997750479
+              },
+              {
+                "x": 584.0001372802559,
+                "y": 457.8966111665072
+              },
+              {
+                "x": 305.0748500380831,
+                "y": 457.8966111665072
+              },
+              {
+                "x": 305.0748500380831,
+                "y": 475.8966111665072
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AtestModification%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2F__final__%22%5D": {
+            "caption": {
+              "x": 677,
+              "y": 387.777,
+              "width": 144,
+              "height": 18,
+              "lines": [
+                "[aucuneModification]"
+              ],
+              "text": "[aucuneModification]",
+              "source": {
+                "x": 675.0001372802559,
+                "y": 396.7772997750479
+              },
+              "target": {
+                "x": 680.1327471680302,
+                "y": 800.5726906687468
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 675,396.777 L 787,396.777 Q 795,396.777 795,404.777 L 795,792.573 Q 795,800.573 787,800.573 L 680.133,800.573",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 675.0001372802559,
+              "y": 396.7772997750479
+            },
+            "targetPoint": {
+              "x": 680.1327471680302,
+              "y": 800.5726906687468
+            },
+            "label": {
+              "x": 795,
+              "y": 596.1086902780103
+            },
+            "points": [
+              {
+                "x": 675.0001372802559,
+                "y": 396.7772997750479
+              },
+              {
+                "x": 795,
+                "y": 396.7772997750479
+              },
+              {
+                "x": 795,
+                "y": 800.5726906687468
+              },
+              {
+                "x": 680.1327471680302,
+                "y": 800.5726906687468
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherZonesModifiables%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AenregistrerZones%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherZonesModifiables%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AenregistrerZones%22%5D": {
+            "caption": {
+              "x": 248.575,
+              "y": 546.9,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[zonesValidees]"
+              ],
+              "text": "[zonesValidees]",
+              "source": {
+                "x": 305.0748500380831,
+                "y": 533.8966111665072
+              },
+              "target": {
+                "x": 305.0748500380831,
+                "y": 599.3615702035028
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 305.075,533.897 L 305.075,599.362",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 305.0748500380831,
+              "y": 533.8966111665072
+            },
+            "targetPoint": {
+              "x": 305.0748500380831,
+              "y": 599.3615702035028
+            },
+            "label": {
+              "x": 305.0748500380831,
+              "y": 566.6290906850049
+            },
+            "points": [
+              {
+                "x": 305.0748500380831,
+                "y": 533.8966111665072
+              },
+              {
+                "x": 305.0748500380831,
+                "y": 599.3615702035028
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AenregistrerZones%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherConfirmation%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AenregistrerZones%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherConfirmation%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 305.075,657.362 L 305.075,688.299",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 305.0748500380831,
+              "y": 657.3615702035028
+            },
+            "targetPoint": {
+              "x": 305.0748500380831,
+              "y": 688.2990299866066
+            },
+            "label": {
+              "x": 305.0748500380831,
+              "y": 672.8303000950547
+            },
+            "points": [
+              {
+                "x": 305.0748500380831,
+                "y": 657.3615702035028
+              },
+              {
+                "x": 305.0748500380831,
+                "y": 688.2990299866066
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherConfirmation%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherConfirmation%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 305.075,746.299 L 305.075,774.573 Q 305.075,782.573 313.075,782.573 L 672.133,782.573 Q 680.133,782.573 680.133,790.573 L 680.133,800.573",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 305.0748500380831,
+              "y": 746.2990299866066
+            },
+            "targetPoint": {
+              "x": 680.1327471680302,
+              "y": 800.5726906687468
+            },
+            "label": {
+              "x": 483.46696826198655,
+              "y": 782.5726906687468
+            },
+            "points": [
+              {
+                "x": 305.0748500380831,
+                "y": 746.2990299866066
+              },
+              {
+                "x": 305.0748500380831,
+                "y": 782.5726906687468
+              },
+              {
+                "x": 680.1327471680302,
+                "y": 782.5726906687468
+              },
+              {
+                "x": 680.1327471680302,
+                "y": 800.5726906687468
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AconsulterCarte%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherMessageErreur%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2FFluxActionsRAL%3A%3AconsulterCarte%3A%3AafficherMessageErreur%22%2C%22FluxActionsRAL%3A%3AconsulterCarte%2F__final__%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "bottom",
+            "path": "M 866.892,285.991 L 866.892,826.573 Q 866.892,834.573 858.892,834.573 L 688.133,834.573 Q 680.133,834.573 680.133,826.573 L 680.133,816.573",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 866.8921654175522,
+              "y": 285.9913923932414
+            },
+            "targetPoint": {
+              "x": 680.1327471680302,
+              "y": 816.5726906687468
+            },
+            "label": {
+              "x": 866.8921654175522,
+              "y": 662.6617506557551
+            },
+            "points": [
+              {
+                "x": 866.8921654175522,
+                "y": 285.9913923932414
+              },
+              {
+                "x": 866.8921654175522,
+                "y": 834.5726906687468
+              },
+              {
+                "x": 680.1327471680302,
+                "y": 834.5726906687468
+              },
+              {
+                "x": 680.1327471680302,
+                "y": 816.5726906687468
+              }
+            ],
+            "corner": 8
+          }
+        }
+      }
+    },
+    "~file": {
+      "gv": {
+        "gvMode": "group"
+      }
+    }
+  }
+}

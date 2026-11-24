@@ -27,8 +27,1080 @@
             "edgeRoutes": {},
             "edgeAnchors": {},
             "edgeGeometry": {}
+          },
+          "tree": {
+            "layout": {
+              "robotAspirateur::Contexte": {
+                "x": 555.5,
+                "y": 0,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts": {
+                "x": 523.5,
+                "y": 332,
+                "parentKey": null,
+                "w": 168,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::utilisateur": {
+                "x": 0,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::robot": {
+                "x": 120,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::station": {
+                "x": 240,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::appSmartPhone": {
+                "x": 360,
+                "y": 166,
+                "parentKey": null,
+                "w": 109,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::wifi": {
+                "x": 485,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::reseauElectrique": {
+                "x": 605,
+                "y": 166,
+                "parentKey": null,
+                "w": 130,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::sol": {
+                "x": 751,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::bouton": {
+                "x": 871,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::obstacle": {
+                "x": 991,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::Contexte::salete": {
+                "x": 1111,
+                "y": 166,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts::Utilisateur": {
+                "x": 41,
+                "y": 600,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts::RobotAspirateur": {
+                "x": 161,
+                "y": 600,
+                "parentKey": null,
+                "w": 123,
+                "h": 58
+              },
+              "robotAspirateur::parts::StationDeCharge": {
+                "x": 300,
+                "y": 600,
+                "parentKey": null,
+                "w": 123,
+                "h": 58
+              },
+              "robotAspirateur::parts::AppSmartPhone": {
+                "x": 439,
+                "y": 600,
+                "parentKey": null,
+                "w": 109,
+                "h": 58
+              },
+              "robotAspirateur::parts::ReseauWifi": {
+                "x": 564,
+                "y": 600,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts::ReseauElectrique": {
+                "x": 684,
+                "y": 600,
+                "parentKey": null,
+                "w": 130,
+                "h": 58
+              },
+              "robotAspirateur::parts::Sol": {
+                "x": 830,
+                "y": 600,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts::Obstacle": {
+                "x": 950,
+                "y": 600,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              },
+              "robotAspirateur::parts::Salete": {
+                "x": 1070,
+                "y": 600,
+                "parentKey": null,
+                "w": 104,
+                "h": 58
+              }
+            },
+            "ports": {},
+            "edgeRoutes": {},
+            "edgeAnchors": {},
+            "edgeGeometry": {
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Autilisateur%22%2C%22robotAspirateur%3A%3AContexte%3A%3Autilisateur%22%2C%22robotAspirateur%3A%3Aparts%3A%3AUtilisateur%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M52 224L52 244L 52,404Q 52,412 60,412L 67.66666666666666,412Q 75.66666666666666,412 75.66666666666666,420L75.66666666666666 580L75.66666666666666 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 52,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 75.66666666666666,
+                  "y": 600
+                },
+                "label": {
+                  "x": 63.83333333333333,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Arobot%22%2C%22robotAspirateur%3A%3AContexte%3A%3Arobot%22%2C%22robotAspirateur%3A%3Aparts%3A%3ARobotAspirateur%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M172 224L172 244L 172,404Q 172,412 180,412L 194,412Q 202,412 202,420L202 580L202 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 172,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 202,
+                  "y": 600
+                },
+                "label": {
+                  "x": 187,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Astation%22%2C%22robotAspirateur%3A%3AContexte%3A%3Astation%22%2C%22robotAspirateur%3A%3Aparts%3A%3AStationDeCharge%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M292 224L292 244L 292,404Q 292,412 300,412L 333,412Q 341,412 341,420L341 580L341 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 292,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 341,
+                  "y": 600
+                },
+                "label": {
+                  "x": 316.5,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3AappSmartPhone%22%2C%22robotAspirateur%3A%3AContexte%3A%3AappSmartPhone%22%2C%22robotAspirateur%3A%3Aparts%3A%3AAppSmartPhone%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M414.5 224L414.5 244L 414.5,404Q 414.5,412 422.5,412L 467.3333333333333,412Q 475.3333333333333,412 475.3333333333333,420L475.3333333333333 580L475.3333333333333 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 414.5,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 475.3333333333333,
+                  "y": 600
+                },
+                "label": {
+                  "x": 444.91666666666663,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Awifi%22%2C%22robotAspirateur%3A%3AContexte%3A%3Awifi%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauWifi%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M 537,224 L 537,234 Q 537,242 529,242 L 517.5,242 Q 509.5,242 509.5,250 L 509.5,574 Q 509.5,582 517.5,582 L 590.667,582 Q 598.667,582 598.667,590 L 598.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 537,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 598.6666666666666,
+                  "y": 600
+                },
+                "label": {
+                  "x": 509.5,
+                  "y": 442.83333333333326
+                },
+                "points": [
+                  {
+                    "x": 537,
+                    "y": 224
+                  },
+                  {
+                    "x": 537,
+                    "y": 242
+                  },
+                  {
+                    "x": 509.5,
+                    "y": 242
+                  },
+                  {
+                    "x": 509.5,
+                    "y": 582
+                  },
+                  {
+                    "x": 598.6666666666666,
+                    "y": 582
+                  },
+                  {
+                    "x": 598.6666666666666,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3AreseauElectrique%22%2C%22robotAspirateur%3A%3AContexte%3A%3AreseauElectrique%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauElectrique%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 670,224 L 670,234 Q 670,242 678,242 L 762.667,242 Q 770.667,242 770.667,250 L 770.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 670,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 770.6666666666666,
+                  "y": 600
+                },
+                "label": {
+                  "x": 770.6666666666666,
+                  "y": 361.6666666666667
+                },
+                "points": [
+                  {
+                    "x": 670,
+                    "y": 224
+                  },
+                  {
+                    "x": 670,
+                    "y": 242
+                  },
+                  {
+                    "x": 770.6666666666666,
+                    "y": 242
+                  },
+                  {
+                    "x": 770.6666666666666,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asol%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asol%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASol%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M803 224L803 244L 803,404Q 803,412 811,412L 891.3333333333334,412Q 899.3333333333334,412 899.3333333333334,420L899.3333333333334 580L899.3333333333334 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 803,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 899.3333333333334,
+                  "y": 600
+                },
+                "label": {
+                  "x": 851.1666666666667,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Aobstacle%22%2C%22robotAspirateur%3A%3AContexte%3A%3Aobstacle%22%2C%22robotAspirateur%3A%3Aparts%3A%3AObstacle%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M1043 224L1043 244L 1043,404Q 1043,412 1035,412L 1027.3333333333335,412Q 1019.3333333333334,412 1019.3333333333334,420L1019.3333333333334 580L1019.3333333333334 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 1043,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 1019.3333333333334,
+                  "y": 600
+                },
+                "label": {
+                  "x": 1031.1666666666667,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22definedBy%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asalete%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asalete%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASalete%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M1163 224L1163 244L 1163,404Q 1163,412 1155,412L 1147.3333333333333,412Q 1139.3333333333333,412 1139.3333333333333,420L1139.3333333333333 580L1139.3333333333333 600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 1163,
+                  "y": 224
+                },
+                "targetPoint": {
+                  "x": 1139.3333333333333,
+                  "y": 600
+                },
+                "label": {
+                  "x": 1151.1666666666665,
+                  "y": 412
+                }
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AUtilisateur%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AUtilisateur%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 599.5,574.8 L 118.333,574.8 Q 110.333,574.8 110.333,582.8 L 110.333,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 110.33333333333333,
+                  "y": 600
+                },
+                "label": {
+                  "x": 110.33333333333331,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 110.33333333333333,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 110.33333333333333,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3ARobotAspirateur%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3ARobotAspirateur%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 599.5,574.8 L 251,574.8 Q 243,574.8 243,582.8 L 243,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 243,
+                  "y": 600
+                },
+                "label": {
+                  "x": 243,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 243,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 243,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AStationDeCharge%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AStationDeCharge%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 599.5,574.8 L 390,574.8 Q 382,574.8 382,582.8 L 382,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 382,
+                  "y": 600
+                },
+                "label": {
+                  "x": 382,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 382,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 382,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AAppSmartPhone%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AAppSmartPhone%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 599.5,574.8 L 519.667,574.8 Q 511.667,574.8 511.667,582.8 L 511.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 511.66666666666663,
+                  "y": 600
+                },
+                "label": {
+                  "x": 511.66666666666663,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 511.66666666666663,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 511.66666666666663,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauWifi%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauWifi%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.667",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 615.5,574.8 L 625.333,574.8 Q 633.333,574.8 633.333,582.8 L 633.333,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 633.3333333333334,
+                  "y": 600
+                },
+                "label": {
+                  "x": 633.3333333333334,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 633.3333333333334,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 633.3333333333334,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauElectrique%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AReseauElectrique%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 615.5,574.8 L 719.333,574.8 Q 727.333,574.8 727.333,582.8 L 727.333,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 727.3333333333334,
+                  "y": 600
+                },
+                "label": {
+                  "x": 727.3333333333334,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 727.3333333333334,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 727.3333333333334,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASol%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASol%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 615.5,574.8 L 856.667,574.8 Q 864.667,574.8 864.667,582.8 L 864.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 864.6666666666666,
+                  "y": 600
+                },
+                "label": {
+                  "x": 864.6666666666666,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 864.6666666666666,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 864.6666666666666,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3AObstacle%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3AObstacle%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 615.5,574.8 L 976.667,574.8 Q 984.667,574.8 984.667,582.8 L 984.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 984.6666666666666,
+                  "y": 600
+                },
+                "label": {
+                  "x": 984.6666666666666,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 984.6666666666666,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 984.6666666666666,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22owningMembership%22%2C%22%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASalete%22%2C%22robotAspirateur%3A%3Aparts%22%2C%22robotAspirateur%3A%3Aparts%3A%3ASalete%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top:0.333",
+                "path": "M 607.5,390 L 607.5,566.8 Q 607.5,574.8 615.5,574.8 L 1096.667,574.8 Q 1104.667,574.8 1104.667,582.8 L 1104.667,600",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 390
+                },
+                "targetPoint": {
+                  "x": 1104.6666666666667,
+                  "y": 600
+                },
+                "label": {
+                  "x": 1104.6666666666667,
+                  "y": 574.8
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 390
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 1104.6666666666667,
+                    "y": 574.8
+                  },
+                  {
+                    "x": 1104.6666666666667,
+                    "y": 600
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Autilisateur%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Autilisateur%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 599.5,142 L 60,142 Q 52,142 52,150 L 52,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 52,
+                  "y": 166
+                },
+                "label": {
+                  "x": 52,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 52,
+                    "y": 142
+                  },
+                  {
+                    "x": 52,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Arobot%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Arobot%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 599.5,142 L 180,142 Q 172,142 172,150 L 172,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 172,
+                  "y": 166
+                },
+                "label": {
+                  "x": 172,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 172,
+                    "y": 142
+                  },
+                  {
+                    "x": 172,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Astation%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Astation%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 599.5,142 L 300,142 Q 292,142 292,150 L 292,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 292,
+                  "y": 166
+                },
+                "label": {
+                  "x": 292,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 292,
+                    "y": 142
+                  },
+                  {
+                    "x": 292,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3AappSmartPhone%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3AappSmartPhone%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 599.5,142 L 422.5,142 Q 414.5,142 414.5,150 L 414.5,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 414.5,
+                  "y": 166
+                },
+                "label": {
+                  "x": 414.5,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 414.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 414.5,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Awifi%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Awifi%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 599.5,142 L 545,142 Q 537,142 537,150 L 537,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 537,
+                  "y": 166
+                },
+                "label": {
+                  "x": 537,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 537,
+                    "y": 142
+                  },
+                  {
+                    "x": 537,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3AreseauElectrique%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3AreseauElectrique%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 615.5,142 L 662,142 Q 670,142 670,150 L 670,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 670,
+                  "y": 166
+                },
+                "label": {
+                  "x": 670,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 670,
+                    "y": 142
+                  },
+                  {
+                    "x": 670,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asol%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asol%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 615.5,142 L 795,142 Q 803,142 803,150 L 803,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 803,
+                  "y": 166
+                },
+                "label": {
+                  "x": 803,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 803,
+                    "y": 142
+                  },
+                  {
+                    "x": 803,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Abouton%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Abouton%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 615.5,142 L 915,142 Q 923,142 923,150 L 923,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 923,
+                  "y": 166
+                },
+                "label": {
+                  "x": 923,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 923,
+                    "y": 142
+                  },
+                  {
+                    "x": 923,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Aobstacle%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Aobstacle%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 615.5,142 L 1035,142 Q 1043,142 1043,150 L 1043,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 1043,
+                  "y": 166
+                },
+                "label": {
+                  "x": 1043,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 1043,
+                    "y": 142
+                  },
+                  {
+                    "x": 1043,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              },
+              "route:v2:%5B%22composition%22%2C%22%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asalete%22%2C%22robotAspirateur%3A%3AContexte%22%2C%22robotAspirateur%3A%3AContexte%3A%3Asalete%22%5D": {
+                "sourceHandle": "bottom",
+                "targetHandle": "top",
+                "path": "M 607.5,58 L 607.5,134 Q 607.5,142 615.5,142 L 1155,142 Q 1163,142 1163,150 L 1163,166",
+                "lineStyle": "orthogonal",
+                "sourcePoint": {
+                  "x": 607.5,
+                  "y": 58
+                },
+                "targetPoint": {
+                  "x": 1163,
+                  "y": 166
+                },
+                "label": {
+                  "x": 1163,
+                  "y": 142
+                },
+                "points": [
+                  {
+                    "x": 607.5,
+                    "y": 58
+                  },
+                  {
+                    "x": 607.5,
+                    "y": 142
+                  },
+                  {
+                    "x": 1163,
+                    "y": 142
+                  },
+                  {
+                    "x": 1163,
+                    "y": 166
+                  }
+                ],
+                "corner": 8
+              }
+            },
+            "expandedElements": [
+              "robotAspirateur::Contexte",
+              "robotAspirateur::parts"
+            ]
           }
-        }
+        },
+        "gvMode": "tree"
       }
     }
   }
