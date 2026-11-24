@@ -1,0 +1,1046 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "FluxActionsRAL": {
+      "afv": {
+        "layout": {
+          "FluxActionsRAL::gererDechetsEtReservoirs": {
+            "x": 22,
+            "y": 5,
+            "parentKey": null,
+            "w": 706,
+            "h": 2657,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/__initial__": {
+            "x": 259,
+            "y": 28,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 12,
+            "h": 12,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::compacterDechets": {
+            "x": 181,
+            "y": 84,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::verifierPresenceSachet": {
+            "x": 179.5,
+            "y": 189,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::notifierSachetAbsent": {
+            "x": 522,
+            "y": 391,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::transfererDechets": {
+            "x": 135,
+            "y": 408,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::mesurerNiveauSachet": {
+            "x": 135,
+            "y": 495,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::notifierSachetPlein": {
+            "x": 85,
+            "y": 602.25,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::mesurerNiveauxLiquides": {
+            "x": 460.5,
+            "y": 730.625,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 171,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::notifierNiveauLiquideBas": {
+            "x": 99,
+            "y": 859.375,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 184,
+            "h": 58,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::testPresence": {
+            "x": 398,
+            "y": 283,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 142,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::testSachet": {
+            "x": 484,
+            "y": 565,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 122,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::testLiquides": {
+            "x": 476,
+            "y": 819.5,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 142,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::fusionPresence": {
+            "x": 137,
+            "y": 313,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 162,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/FluxActionsRAL::gererDechetsEtReservoirs::fusionSachet": {
+            "x": 474,
+            "y": 652.4749908447266,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 142,
+            "h": 48,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs/__final__": {
+            "x": 368,
+            "y": 958,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 16,
+            "h": 16,
+            "placedByHand": true
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::dechetsCollectes": {
+            "x": 22,
+            "y": 2017,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 198,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::robotAccoste": {
+            "x": 244,
+            "y": 2017,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 171,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::sachetPresent": {
+            "x": 22,
+            "y": 2157,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 177,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::sachetAbsent": {
+            "x": 223,
+            "y": 2157,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 171,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::sachetPlace": {
+            "x": 22,
+            "y": 2297,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::sachetPlein": {
+            "x": 214,
+            "y": 2297,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 168,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::sachetNonPlein": {
+            "x": 22,
+            "y": 2437,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 184,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::niveauLiquideBas": {
+            "x": 230,
+            "y": 2437,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 198,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::niveauLiquideSuffisant": {
+            "x": 22,
+            "y": 2577,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 239,
+            "h": 58
+          },
+          "FluxActionsRAL::gererDechetsEtReservoirs::reservoirsRemplis": {
+            "x": 285,
+            "y": 2577,
+            "parentKey": "FluxActionsRAL::gererDechetsEtReservoirs",
+            "w": 205,
+            "h": 58
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3A__initial__%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AcompacterDechets%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2F__initial__%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AcompacterDechets%22%5D": {
+            "caption": {
+              "x": 221,
+              "y": 58,
+              "width": 132,
+              "height": 18,
+              "lines": [
+                "[dechetsCollectes]"
+              ],
+              "text": "[dechetsCollectes]",
+              "source": {
+                "x": 287,
+                "y": 45
+              },
+              "target": {
+                "x": 287,
+                "y": 89
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 287,45 L 287,89",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 287,
+              "y": 45
+            },
+            "targetPoint": {
+              "x": 287,
+              "y": 89
+            },
+            "label": {
+              "x": 287,
+              "y": 67
+            },
+            "points": [
+              {
+                "x": 287,
+                "y": 45
+              },
+              {
+                "x": 287,
+                "y": 89
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AcompacterDechets%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AverifierPresenceSachet%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AcompacterDechets%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AverifierPresenceSachet%22%5D": {
+            "caption": {
+              "x": 233.5,
+              "y": 160,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[robotAccoste]"
+              ],
+              "text": "[robotAccoste]",
+              "source": {
+                "x": 287,
+                "y": 147
+              },
+              "target": {
+                "x": 287,
+                "y": 194
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 287,147 L 287,194",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 287,
+              "y": 147
+            },
+            "targetPoint": {
+              "x": 287,
+              "y": 194
+            },
+            "label": {
+              "x": 287,
+              "y": 170.5
+            },
+            "points": [
+              {
+                "x": 287,
+                "y": 147
+              },
+              {
+                "x": 287,
+                "y": 194
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AverifierPresenceSachet%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AverifierPresenceSachet%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 287,252 L 287,262 Q 287,270 295,270 L 483,270 Q 491,270 491,278 L 491,288",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 287,
+              "y": 252
+            },
+            "targetPoint": {
+              "x": 491,
+              "y": 288
+            },
+            "label": {
+              "x": 389,
+              "y": 270
+            },
+            "points": [
+              {
+                "x": 287,
+                "y": 252
+              },
+              {
+                "x": 287,
+                "y": 270
+              },
+              {
+                "x": 491,
+                "y": 270
+              },
+              {
+                "x": 491,
+                "y": 288
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%22%5D": {
+            "caption": {
+              "x": 431.30499180311443,
+              "y": 343.9133915918405,
+              "width": 113,
+              "height": 18,
+              "lines": [
+                "[sachetPresent]"
+              ],
+              "text": "[sachetPresent]",
+              "source": {
+                "x": 491,
+                "y": 336
+              },
+              "target": {
+                "x": 240,
+                "y": 318
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 491,336 L 491,346 Q 491,354 483,354 L 373.5,354 Q 365.5,354 365.5,346 L 365.5,308 Q 365.5,300 357.5,300 L 248,300 Q 240,300 240,308 L 240,318",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 491,
+              "y": 336
+            },
+            "targetPoint": {
+              "x": 240,
+              "y": 318
+            },
+            "label": {
+              "x": 365.5,
+              "y": 327
+            },
+            "points": [
+              {
+                "x": 491,
+                "y": 336
+              },
+              {
+                "x": 491,
+                "y": 354
+              },
+              {
+                "x": 365.5,
+                "y": 354
+              },
+              {
+                "x": 365.5,
+                "y": 300
+              },
+              {
+                "x": 240,
+                "y": 300
+              },
+              {
+                "x": 240,
+                "y": 318
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetAbsent%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestPresence%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetAbsent%22%5D": {
+            "caption": {
+              "x": 574.5,
+              "y": 315,
+              "width": 107,
+              "height": 18,
+              "lines": [
+                "[sachetAbsent]"
+              ],
+              "text": "[sachetAbsent]",
+              "source": {
+                "x": 562,
+                "y": 312
+              },
+              "target": {
+                "x": 628,
+                "y": 396
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "top",
+            "path": "M 562,312 L 620,312 Q 628,312 628,320 L 628,396",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 562,
+              "y": 312
+            },
+            "targetPoint": {
+              "x": 628,
+              "y": 396
+            },
+            "label": {
+              "x": 628,
+              "y": 321
+            },
+            "points": [
+              {
+                "x": 562,
+                "y": 312
+              },
+              {
+                "x": 628,
+                "y": 312
+              },
+              {
+                "x": 628,
+                "y": 396
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetAbsent%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetAbsent%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%22%5D": {
+            "caption": {
+              "x": 574.3049918031144,
+              "y": 461.9133915918405,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "[sachetPlace]"
+              ],
+              "text": "[sachetPlace]",
+              "source": {
+                "x": 628,
+                "y": 454
+              },
+              "target": {
+                "x": 321,
+                "y": 342
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "right",
+            "path": "M 628,454 L 628,464 Q 628,472 620,472 L 347,472 Q 339,472 339,464 L 339,350 Q 339,342 331,342 L 321,342",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 628,
+              "y": 454
+            },
+            "targetPoint": {
+              "x": 321,
+              "y": 342
+            },
+            "label": {
+              "x": 418.5,
+              "y": 472
+            },
+            "points": [
+              {
+                "x": 628,
+                "y": 454
+              },
+              {
+                "x": 628,
+                "y": 472
+              },
+              {
+                "x": 339,
+                "y": 472
+              },
+              {
+                "x": 339,
+                "y": 342
+              },
+              {
+                "x": 321,
+                "y": 342
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtransfererDechets%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionPresence%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtransfererDechets%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 240,366 L 240,394.5 Q 240,395 240.5,395 L 240.5,395 Q 241,395 241,395.5 L 241,413",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 240,
+              "y": 366
+            },
+            "targetPoint": {
+              "x": 241,
+              "y": 413
+            },
+            "label": {
+              "x": 240,
+              "y": 390
+            },
+            "points": [
+              {
+                "x": 240,
+                "y": 366
+              },
+              {
+                "x": 240,
+                "y": 395
+              },
+              {
+                "x": 241,
+                "y": 395
+              },
+              {
+                "x": 241,
+                "y": 413
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtransfererDechets%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauSachet%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtransfererDechets%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauSachet%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 241,471 L 241,500",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 241,
+              "y": 471
+            },
+            "targetPoint": {
+              "x": 241,
+              "y": 500
+            },
+            "label": {
+              "x": 241,
+              "y": 485.5
+            },
+            "points": [
+              {
+                "x": 241,
+                "y": 471
+              },
+              {
+                "x": 241,
+                "y": 500
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauSachet%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauSachet%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 241,558 L 241,568 Q 241,576 249,576 L 396,576 Q 404,576 404,568 L 404,560 Q 404,552 412,552 L 559,552 Q 567,552 567,560 L 567,570",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 241,
+              "y": 558
+            },
+            "targetPoint": {
+              "x": 567,
+              "y": 570
+            },
+            "label": {
+              "x": 404,
+              "y": 564
+            },
+            "points": [
+              {
+                "x": 241,
+                "y": 558
+              },
+              {
+                "x": 241,
+                "y": 576
+              },
+              {
+                "x": 404,
+                "y": 576
+              },
+              {
+                "x": 404,
+                "y": 552
+              },
+              {
+                "x": 567,
+                "y": 552
+              },
+              {
+                "x": 567,
+                "y": 570
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetPlein%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetPlein%22%5D": {
+            "caption": {
+              "x": 404.4589452606299,
+              "y": 580.25,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "[sachetPlein]"
+              ],
+              "text": "[sachetPlein]",
+              "source": {
+                "x": 506,
+                "y": 594
+              },
+              "target": {
+                "x": 191,
+                "y": 607.25
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 506,594 L 490.375,594 Q 488,594 488,591.625 L 488,591.625 Q 488,589.25 485.625,589.25 L 199,589.25 Q 191,589.25 191,597.25 L 191,607.25",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 506,
+              "y": 594
+            },
+            "targetPoint": {
+              "x": 191,
+              "y": 607.25
+            },
+            "label": {
+              "x": 341.875,
+              "y": 589.25
+            },
+            "points": [
+              {
+                "x": 506,
+                "y": 594
+              },
+              {
+                "x": 488,
+                "y": 594
+              },
+              {
+                "x": 488,
+                "y": 589.25
+              },
+              {
+                "x": 191,
+                "y": 589.25
+              },
+              {
+                "x": 191,
+                "y": 607.25
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestSachet%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%22%5D": {
+            "caption": {
+              "x": 507,
+              "y": 631,
+              "width": 120,
+              "height": 18,
+              "lines": [
+                "[sachetNonPlein]"
+              ],
+              "text": "[sachetNonPlein]",
+              "source": {
+                "x": 567,
+                "y": 618
+              },
+              "target": {
+                "x": 567,
+                "y": 657.4749908447266
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 567,618 L 567,657.475",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 567,
+              "y": 618
+            },
+            "targetPoint": {
+              "x": 567,
+              "y": 657.4749908447266
+            },
+            "label": {
+              "x": 567,
+              "y": 637.7374954223633
+            },
+            "points": [
+              {
+                "x": 567,
+                "y": 618
+              },
+              {
+                "x": 567,
+                "y": 657.4749908447266
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetPlein%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierSachetPlein%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "left",
+            "path": "M 191,665.25 L 191,675.25 Q 191,683.25 199,683.25 L 477.112,683.25 Q 478,683.25 478,682.362 L 478,682.362 Q 478,681.475 478.888,681.475 L 496,681.475",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 191,
+              "y": 665.25
+            },
+            "targetPoint": {
+              "x": 496,
+              "y": 681.4749908447266
+            },
+            "label": {
+              "x": 335.3875045776367,
+              "y": 683.25
+            },
+            "points": [
+              {
+                "x": 191,
+                "y": 665.25
+              },
+              {
+                "x": 191,
+                "y": 683.25
+              },
+              {
+                "x": 478,
+                "y": 683.25
+              },
+              {
+                "x": 478,
+                "y": 681.4749908447266
+              },
+              {
+                "x": 496,
+                "y": 681.4749908447266
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22FirstThenChain%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauxLiquides%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AfusionSachet%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauxLiquides%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 567,705.475 L 567,720.05 Q 567,720.55 567.5,720.55 L 567.5,720.55 Q 568,720.55 568,721.05 L 568,735.625",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 567,
+              "y": 705.4749908447266
+            },
+            "targetPoint": {
+              "x": 568,
+              "y": 735.625
+            },
+            "label": {
+              "x": 567.5,
+              "y": 720.5499954223633
+            },
+            "points": [
+              {
+                "x": 567,
+                "y": 705.4749908447266
+              },
+              {
+                "x": 567,
+                "y": 720.5499954223633
+              },
+              {
+                "x": 568,
+                "y": 720.5499954223633
+              },
+              {
+                "x": 568,
+                "y": 735.625
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22ThenActionMember%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauxLiquides%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AmesurerNiveauxLiquides%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%22%5D": {
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 568,793.625 L 568,808.563 Q 568,809.063 568.5,809.063 L 568.5,809.063 Q 569,809.063 569,809.563 L 569,824.5",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 568,
+              "y": 793.625
+            },
+            "targetPoint": {
+              "x": 569,
+              "y": 824.5
+            },
+            "label": {
+              "x": 568.5,
+              "y": 809.0625
+            },
+            "points": [
+              {
+                "x": 568,
+                "y": 793.625
+              },
+              {
+                "x": 568,
+                "y": 809.0625
+              },
+              {
+                "x": 569,
+                "y": 809.0625
+              },
+              {
+                "x": 569,
+                "y": 824.5
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierNiveauLiquideBas%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierNiveauLiquideBas%22%5D": {
+            "caption": {
+              "x": 365.73,
+              "y": 837.375,
+              "width": 132,
+              "height": 18,
+              "lines": [
+                "[niveauLiquideBas]"
+              ],
+              "text": "[niveauLiquideBas]",
+              "source": {
+                "x": 498,
+                "y": 848.5
+              },
+              "target": {
+                "x": 213,
+                "y": 864.375
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "left",
+            "targetHandle": "top",
+            "path": "M 498,848.5 L 481.063,848.5 Q 480,848.5 480,847.438 L 480,847.438 Q 480,846.375 478.938,846.375 L 221,846.375 Q 213,846.375 213,854.375 L 213,864.375",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 498,
+              "y": 848.5
+            },
+            "targetPoint": {
+              "x": 213,
+              "y": 864.375
+            },
+            "label": {
+              "x": 347.5625,
+              "y": 846.375
+            },
+            "points": [
+              {
+                "x": 498,
+                "y": 848.5
+              },
+              {
+                "x": 480,
+                "y": 848.5
+              },
+              {
+                "x": 480,
+                "y": 846.375
+              },
+              {
+                "x": 213,
+                "y": 846.375
+              },
+              {
+                "x": 213,
+                "y": 864.375
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22IfActionNode%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AtestLiquides%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2F__final__%22%5D": {
+            "caption": {
+              "x": 484.5,
+              "y": 885.5,
+              "width": 169,
+              "height": 18,
+              "lines": [
+                "[niveauLiquideSuffisant]"
+              ],
+              "text": "[niveauLiquideSuffisant]",
+              "source": {
+                "x": 569,
+                "y": 872.5
+              },
+              "target": {
+                "x": 398,
+                "y": 963
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 569,872.5 L 569,937 Q 569,945 561,945 L 406,945 Q 398,945 398,953 L 398,963",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 569,
+              "y": 872.5
+            },
+            "targetPoint": {
+              "x": 398,
+              "y": 963
+            },
+            "label": {
+              "x": 510.75,
+              "y": 945
+            },
+            "points": [
+              {
+                "x": 569,
+                "y": 872.5
+              },
+              {
+                "x": 569,
+                "y": 945
+              },
+              {
+                "x": 398,
+                "y": 945
+              },
+              {
+                "x": 398,
+                "y": 963
+              }
+            ],
+            "corner": 8
+          },
+          "route:v2:%5B%22succession%22%2C%22%22%2C%22%5B%5C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%5C%22%2C%5C%22SuccessionStmt%5C%22%2C%5C%22succession%5C%22%2C%5C%22t0%3A%3AFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierNiveauLiquideBas%5C%22%2C%5C%22t0%3A%3A__final__%5C%22%5D%3A1%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2FFluxActionsRAL%3A%3AgererDechetsEtReservoirs%3A%3AnotifierNiveauLiquideBas%22%2C%22FluxActionsRAL%3A%3AgererDechetsEtReservoirs%2F__final__%22%5D": {
+            "caption": {
+              "x": 144,
+              "y": 935.38,
+              "width": 138,
+              "height": 18,
+              "lines": [
+                "[reservoirsRemplis]"
+              ],
+              "text": "[reservoirsRemplis]",
+              "source": {
+                "x": 213,
+                "y": 922.375
+              },
+              "target": {
+                "x": 390,
+                "y": 971
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "left",
+            "path": "M 213,922.375 L 213,963 Q 213,971 221,971 L 390,971",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 213,
+              "y": 922.375
+            },
+            "targetPoint": {
+              "x": 390,
+              "y": 971
+            },
+            "label": {
+              "x": 277.1875,
+              "y": 971
+            },
+            "points": [
+              {
+                "x": 213,
+                "y": 922.375
+              },
+              {
+                "x": 213,
+                "y": 971
+              },
+              {
+                "x": 390,
+                "y": 971
+              }
+            ],
+            "corner": 8
+          }
+        }
+      }
+    }
+  }
+}
