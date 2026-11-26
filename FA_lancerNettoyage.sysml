@@ -47,8 +47,8 @@ package AspiCoo_Lancer {
         if modeAspiration then effectuerAspiration;
         if modeLavage then effectuerLavage;
 
-        succession effectuerAspiration then choixMode;
-        succession effectuerLavage then choixMode;
+        succession first effectuerAspiration then choixMode;
+        succession first effectuerLavage then choixMode;
 
         then collecterDechets;
         then compacterDechets;
@@ -59,13 +59,13 @@ package AspiCoo_Lancer {
         if nettoyageIncomplet then reprendreNettoyage;
         if nettoyageTermine then terminerSession;
 
-        succession reprendreNettoyage then verifierFinNettoyage;
+        succession first reprendreNettoyage then verifierFinNettoyage;
 
-        succession terminerSession then retournerStation;
-        succession retournerStation then viderReservoirRobot;
-        succession viderReservoirRobot then transfererDechetsVersSachet;
-        succession transfererDechetsVersSachet then rechargerRobot;
-        succession rechargerRobot then mettreEnVeille;
+        succession first terminerSession then retournerStation;
+        succession first retournerStation then viderReservoirRobot;
+        succession first viderReservoirRobot then transfererDechetsVersSachet;
+        succession first transfererDechetsVersSachet then rechargerRobot;
+        succession first rechargerRobot then mettreEnVeille;
         then done;
     }
 }
