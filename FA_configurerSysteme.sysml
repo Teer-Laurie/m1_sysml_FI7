@@ -1,4 +1,3 @@
-
 package tbi {
 
     private import ScalarValues::Boolean;
@@ -125,10 +124,10 @@ package tbi {
         succession first scannerQRCodeIdentification
             then mergeIdentification;
 
-        succession first mergeIdentification
-            then decisionIdentification;
-
         succession first saisirManuellementIdentifiantRobot
+            then mergeIdentification;
+
+        succession first mergeIdentification
             then decisionIdentification;
 
         if identificationIncorrecte
