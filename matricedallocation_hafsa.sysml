@@ -1,26 +1,57 @@
 package RAL_Allocation {
 
-    private import RAL_VueGenerale::*;
-    private import RAL_VueInterconnexion::*;
+    package Parts {
+        part def SmartPhone;
+        part def RobotNettoyeur;
+        part def StationRechargeEvacuation;
+        part def CarteElectronique;
+        part def CarteStation;
+        part def MicroControleur;
+        part def ModuleCartographie;
+        part def ModuleDiagnostic;
 
-    part def SmartPhone;
+        part def AppRAL;
+        part def LogicielRobot;
+        part def LogicielStation;
+        part def GestionnaireSession;
+        part def Carte;
+        part def Diagnostic;
+    }
+
+    private import Parts::*;
+
+    /* ===== matériel ===== */
     part smartPhone : SmartPhone;
 
-    /* ===== logiciel -> matériel ===== */
+    part robot : RobotNettoyeur {
+        part carteElectronique : CarteElectronique {
+            part microControleur : MicroControleur;
+            part cartographie : ModuleCartographie;
+            part diagnostic : ModuleDiagnostic;
+        }
+    }
+
+    part station : StationRechargeEvacuation {
+        part carteStation : CarteStation;
+    }
+
+    /* ===== logiciel ===== */
+    part appSmartphone : AppRAL;
+
+    part logicielRobot : LogicielRobot {
+        part gestionnaireSession : GestionnaireSession;
+        part carte : Carte;
+        part diagnostic : Diagnostic;
+    }
+
+    part logicielStation : LogicielStation;
+
+    /* ===== allocations ===== */
     allocate appSmartphone to smartPhone;
-    allocate logicielRobot to systeme.robot.carteElectronique;
-    allocate logicielStation to systeme.station.carteStation;
+    allocate logicielRobot to robot.carteElectronique;
+    allocate logicielStation to station.carteStation;
 
-    /* ===== détail : modules du robot ===== */
-    allocate logicielRobot.gestionnaireSession to systeme.robot.carteElectronique.microControleur;
-    allocate logicielRobot.carte to systeme.robot.carteElectronique.cartographie;
-    allocate logicielRobot.modes to systeme.robot.carteElectronique.controleurMoteurs;
-    allocate logicielRobot.diagnostic to systeme.robot.carteElectronique.diagnostic;
-    allocate logicielRobot.alertes to systeme.robot.carteElectronique.uniteWifi;
-
-    /* ===== détail : modules de la station ===== */
-    allocate logicielStation.gestionnaireEvacuation to systeme.station.evacuation;
-    allocate logicielStation.gestionnaireCharge to systeme.station.uniteAlimentationElectrique;
-    allocate logicielStation.niveaux to systeme.station.carteStation;
-    allocate logicielStation.alertes to systeme.station.carteStation;
+    allocate logicielRobot.gestionnaireSession to robot.carteElectronique.microControleur;
+    allocate logicielRobot.carte to robot.carteElectronique.cartographie;
+    allocate logicielRobot.diagnostic to robot.carteElectronique.diagnostic;
 }
