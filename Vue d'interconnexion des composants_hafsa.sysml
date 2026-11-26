@@ -1,53 +1,161 @@
 package RAL_VueInterconnexion {
 
-    private import RAL_VueGenerale::Parts::*;
+    package Parts {
+        /* ports */
+        port def BoutonMateriel;
+        port def PortCharge;
+        port def PortEvacuation;
+        port def PortLiquides;
+        port def AntenneWifi;
 
-    part systemeRAL : SystemeRAL {
+        /* robot */
+        part def RobotNettoyeur;
+        part def CarteElectronique;
+        part def MicroControleur;
+        part def ModuleCartographie;
+        part def ModuleDiagnostic;
+        part def UniteCommunicationWifi;
+        part def ControleurMoteurs;
+        part def CapteursObstacles;
+        part def CapteurSurface;
+        part def CapteurSalete;
+        part def MoteurDeplacement;
+        part def Aspirateur;
+        part def BrossePrincipale;
+        part def Filtre;
+        part def ModuleLavage;
+        part def ReservoirDechets;
+        part def Compacteur;
+        part def Batterie;
 
-        /* --- dans le robot --- */
-        /* perception -> contrôleur */
-        flow obstacles from robot.capteursObstacles to robot.controleur;
-        flow typeSurface from robot.capteurSurface to robot.controleur;
-        flow niveauSalete from robot.capteurSalete to robot.controleur;
-        flow carte from robot.cartographie to robot.controleur;
-        flow etatComposants from robot.diagnostic to robot.controleur;
-        flow commandeLocale from robot.bouton to robot.controleur;
+        /* station */
+        part def StationRechargeEvacuation;
+        part def CarteStation;
+        part def UniteAlimentationElectrique;
+        part def SystemeEvacuation;
+        part def MagasinSachets;
+        part def CapteurNiveauSachet;
+        part def ReservoirEau;
+        part def ReservoirProduit;
+        part def CapteursNiveauLiquides;
 
-        /* contrôleur -> actionneurs */
-        flow consigneDeplacement from robot.controleur to robot.moteurs;
-        flow puissanceAspiration from robot.controleur to robot.aspirateur;
-        flow consigneLavage from robot.controleur to robot.lavage;
+        /* système */
+        part def SystemeRAL;
+    }
 
-        /* chaîne des déchets */
-        flow dechets from robot.aspirateur to robot.reservoir;
-        flow compactage from robot.compacteur to robot.reservoir;
+    private import Parts::*;
 
-        /* surveillance de l'usure */
-        flow etatBrosse from robot.brosse to robot.diagnostic;
-        flow etatFiltre from robot.filtre to robot.diagnostic;
+    part systeme : SystemeRAL {
 
-        /* énergie */
-        flow energie from robot.batterie to robot.controleur;
+        /* ================= ROBOT ================= */
+        part robot : RobotNettoyeur {
+            in port boutonCommande : BoutonMateriel;
 
-        /* communication */
-        flow donneesRobot from robot.controleur to robot.wifi;
+            part carteElectronique : CarteElectronique {
+                part microControleur : MicroControleur;
+                part cartographie : ModuleCartographie;
+                part diagnostic : ModuleDiagnostic;
+                part uniteWifi : UniteCommunicationWifi;
+                part controleurMoteurs : ControleurMoteurs;
+                inout port antenne : AntenneWifi;
+                in port alimentation;
 
-        /* --- dans la station --- */
-        flow energieStation from station.alimentation to station.chargeur;
-        flow niveauSachet from station.capteurSachet to station.evacuation;
-        flow dechetsVersSachet from station.evacuation to station.sachets;
-        flow niveauEau from station.reservoirEau to station.capteursLiquides;
-        flow niveauProduit from station.reservoirProduit to station.capteursLiquides;
+                connect microControleur to cartographie;
+                connect microControleur to diagnostic;
+                connect microControleur to uniteWifi;
+                connect microControleur to controleurMoteurs;
+                connect uniteWifi to antenne;
+            }
 
-        /* --- entre le robot et la station --- */
-        flow recharge from station.chargeur to robot.batterie;
-        flow evacuationDechets from robot.reservoir to station.evacuation;
-        flow eau from station.reservoirEau to robot.lavage;
-        flow produit from station.reservoirProduit to robot.lavage;
+            part capteursObstacles : CapteursObstacles;
+            part capteurSurface : CapteurSurface;
+            part capteurSalete : CapteurSalete;
+            part moteurs : MoteurDeplacement[2];
+            part aspirateur : Aspirateur;
+            part brosse : BrossePrincipale;
+            part filtre : Filtre;
+            part lavage : ModuleLavage;
+            part reservoir : ReservoirDechets;
+            part compacteur : Compacteur;
 
-        /* --- entre le robot et l'application (par le Wi-Fi) --- */
-        flow commandes from application.programmation to robot.wifi;
-        flow etatRobot from robot.wifi to application.notifications;
-        flow carteRobot from robot.wifi to application.carte;
+            part batterie : Batterie {
+                in port charge;
+                out port basseTension;
+            }
+
+            in port portCharge : PortCharge;
+            out port sortieDechets : PortEvacuation;
+            in port entreeLiquides : PortLiquides;
+            inout port antenneWifi : AntenneWifi;
+
+            /* commande et perception */
+            connect boutonCommande to carteElectronique;
+            connect capteursObstacles to carteElectronique;
+            connect capteurSurface to carteElectronique;
+            connect capteurSalete to carteElectronique;
+            connect brosse to carteElectronique;
+            connect filtre to carteElectronique;
+
+            /* actionneurs */
+            connect carteElectronique to moteurs;
+            connect carteElectronique to aspirateur;
+            connect carteElectronique to lavage;
+            connect carteElectronique to compacteur;
+
+            /* chaîne des déchets */
+            connect aspirateur to reservoir;
+            connect compacteur to reservoir;
+            connect reservoir to sortieDechets;
+
+            /* énergie */
+            connect portCharge to batterie.charge;
+            connect batterie.basseTension to carteElectronique.alimentation;
+
+            /* liquides et communication */
+            connect entreeLiquides to lavage;
+            connect carteElectronique.antenne to antenneWifi;
+        }
+
+        /* ================= STATION ================= */
+        part station : StationRechargeEvacuation {
+            part carteStation : CarteStation;
+
+            part uniteAlimentationElectrique : UniteAlimentationElectrique {
+                in port hauteTension;
+                out port basseTension;
+            }
+
+            part evacuation : SystemeEvacuation;
+            part sachets : MagasinSachets;
+            part capteurSachet : CapteurNiveauSachet;
+            part reservoirEau : ReservoirEau;
+            part reservoirProduit : ReservoirProduit;
+            part capteursLiquides : CapteursNiveauLiquides;
+
+            in port hauteTension;
+            out port sortieCharge : PortCharge;
+            in port entreeDechets : PortEvacuation;
+            out port sortieLiquides : PortLiquides;
+            inout port antenneWifi : AntenneWifi;
+
+            connect hauteTension to uniteAlimentationElectrique.hauteTension;
+            connect uniteAlimentationElectrique.basseTension to carteStation;
+            connect uniteAlimentationElectrique.basseTension to sortieCharge;
+
+            connect entreeDechets to evacuation;
+            connect evacuation to sachets;
+            connect capteurSachet to carteStation;
+            connect carteStation to evacuation;
+
+            connect reservoirEau to sortieLiquides;
+            connect reservoirProduit to sortieLiquides;
+            connect capteursLiquides to carteStation;
+            connect carteStation to antenneWifi;
+        }
+
+        /* ================= LIENS ROBOT - STATION ================= */
+        connect station.sortieCharge to robot.portCharge;
+        connect robot.sortieDechets to station.entreeDechets;
+        connect station.sortieLiquides to robot.entreeLiquides;
     }
 }
