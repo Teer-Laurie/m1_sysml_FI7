@@ -2,9 +2,8 @@ package robotAspirateur {
     private import ScalarValues::Boolean;
 
     package parts {
-        /* acteurs */
+        /* acteur */
         part def Utilisateur;
-        part def Administrateur :> Utilisateur;
 
         /* système d'intérêt */
         part def RobotNettoyeur;
@@ -16,7 +15,6 @@ package robotAspirateur {
         private import robotAspirateur::parts::*;
 
         actor utilisateur : Utilisateur;
-        actor administrateur : Administrateur ::> utilisateur;
 
         use case lancerNettoyage {
             ref actor utilisateur;
@@ -43,7 +41,7 @@ package robotAspirateur {
             ref actor utilisateur;
         }
         use case configurerSysteme {
-            ref actor administrateur;
+            ref actor utilisateur;
         }
     }
 }
