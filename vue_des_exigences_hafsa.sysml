@@ -1,6 +1,53 @@
 package robotAspirateur {
     package requirements {
-        /* exigences extraites des cas d'utilisation */
+        /* tête de la hiérarchie */
+        requirement specificationsRobot {
+            doc /* le système répond aux catégories d'exigences listées ci-dessous */
+        }
+
+        /* groupes */
+        requirement interactionsMaterielles specializes specificationsRobot {
+            doc /* le système doit disposer des interactions matérielles listées */
+        }
+        requirement contraintes specializes specificationsRobot {
+            doc /* le système doit respecter les contraintes ci-dessous */
+        }
+        requirement fonctions specializes specificationsRobot {
+            doc /* le système doit comprendre les fonctions listées ci-dessous */
+        }
+
+        /* interactions matérielles */
+        requirement connexionWifi specializes interactionsMaterielles {
+            doc /* le système doit communiquer avec l'application via le réseau Wi-Fi domestique */
+        }
+        requirement compatibiliteElectrique specializes interactionsMaterielles {
+            doc /* la station est compatible avec le réseau électrique du pays de l'utilisateur */
+        }
+        requirement reservoirsEauProduit specializes interactionsMaterielles {
+            doc /* la station doit accueillir un réservoir d'eau et un réservoir de produit ménager */
+        }
+        requirement franchissementObstacles specializes interactionsMaterielles {
+            doc /* le robot doit contourner les obstacles imprévus et s'adapter au type de sol */
+        }
+
+        /* contraintes (valeurs proposées) */
+        requirement autonomieBatterie specializes contraintes {
+            doc /* l'autonomie du robot doit être supérieure à 120 min */
+        }
+        requirement niveauSonore specializes contraintes {
+            doc /* le niveau sonore doit être inférieur à 65 dB */
+        }
+        requirement capaciteReservoir specializes contraintes {
+            doc /* le réservoir compacté doit permettre au moins 7 jours entre deux vidanges */
+        }
+        requirement hauteurRobot specializes contraintes {
+            doc /* la hauteur du robot doit être inférieure à 10 cm */
+        }
+        requirement coutRevient specializes contraintes {
+            doc /* le prix de revient doit être inférieur à 400 € */
+        }
+
+        /* fonctions */
         requirement lancementNettoyage specializes fonctions {
             doc /* l'utilisateur doit pouvoir lancer un nettoyage depuis l'application ou le bouton du robot */
         }
@@ -16,8 +63,6 @@ package robotAspirateur {
         requirement notificationUtilisateur specializes fonctions {
             doc /* l'application doit notifier l'utilisateur de l'état du système */
         }
-
-        /* exigences extraites des innovations */
         requirement nettoyageAdaptatif specializes fonctions {
             doc /* le robot doit détecter les zones sales et ajuster sa puissance d'aspiration */
         }
@@ -32,51 +77,6 @@ package robotAspirateur {
         }
         requirement retourAutomatique specializes fonctions {
             doc /* le robot doit retourner à sa station lorsque la batterie est faible ou la session terminée, puis reprendre son travail */
-        }
-
-        /* exigences extraites des interactions avec le contexte */
-        requirement connexionWifi specializes interactionsMaterielles {
-            doc /* le système doit communiquer avec l'application via le réseau Wi-Fi domestique */
-        }
-        requirement compatibiliteElectrique specializes interactionsMaterielles {
-            doc /* la station est compatible avec le réseau électrique du pays de l'utilisateur */
-        }
-        requirement reservoirsEauProduit specializes interactionsMaterielles {
-            doc /* la station doit accueillir un réservoir d'eau et un réservoir de produit ménager */
-        }
-        requirement franchissementObstacles specializes interactionsMaterielles {
-            doc /* le robot doit contourner les obstacles imprévus et s'adapter au type de sol */
-        }
-
-        /* contraintes chiffrées (valeurs proposées) */
-        requirement autonomieBatterie specializes contraintes {
-            doc /* l'autonomie du robot doit être supérieure à 120 min */
-        }
-        requirement niveauSonore specializes contraintes {
-            doc /* le niveau sonore doit être inférieur à 65 dB */
-        }
-        requirement capaciteReservoir specializes contraintes {
-            doc /* le réservoir compacté doit permettre au moins 7 jours entre deux vidanges */
-        }
-        requirement hauteurRobot specializes contraintes {
-            doc /* la hauteur du robot doit être inférieure à 10 cm pour passer sous les meubles */
-        }
-        requirement coutRevient specializes contraintes {
-            doc /* le prix de revient doit être inférieur à 400 € */
-        }
-
-        /* exigences de regroupement hiérarchique */
-        requirement fonctions specializes specificationsRobot {
-            doc /* le système doit comprendre les fonctions listées ci-dessous */
-        }
-        requirement interactionsMaterielles specializes specificationsRobot {
-            doc /* le système doit disposer des interactions matérielles listées */
-        }
-        requirement contraintes specializes specificationsRobot {
-            doc /* le système doit respecter les contraintes ci-dessous */
-        }
-        requirement specificationsRobot {
-            doc /* le système répond aux catégories d'exigences listées ci-dessous */
         }
     }
 }
