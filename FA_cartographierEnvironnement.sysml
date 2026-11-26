@@ -37,32 +37,32 @@ package robot {
 
         first start;
         then demarrerRobot;
-        succession demarrerRobot if robotDemarre then choisirOptionCartographier;
-        succession choisirOptionCartographier if optionChoisie then lancerRobot;
-        succession lancerRobot if robotLance then mergeCartographie;
+        succession first demarrerRobot if robotDemarre then choisirOptionCartographier;
+        succession first choisirOptionCartographier if optionChoisie then lancerRobot;
+        succession first lancerRobot if robotLance then mergeCartographie;
 
-        succession mergeCartographie then cartographierEspace;
+        succession first mergeCartographie then cartographierEspace;
         then decideCartographie;
             if espaceCartographie then enregistrerDonnees;
             if espaceNonCartographie then decideRecommencerCartographie;
 
-        succession decideRecommencerCartographie
+        succession first decideRecommencerCartographie
             if recommencerCartographie then mergeCartographie;
-        succession decideRecommencerCartographie
+        succession first decideRecommencerCartographie
             if annulerCartographie then done;
 
-        succession enregistrerDonnees if donneesEnregistrees then mergeEnvoi;
+        succession first enregistrerDonnees if donneesEnregistrees then mergeEnvoi;
 
-        succession mergeEnvoi then envoyerDonneesApplication;
+        succession first mergeEnvoi then envoyerDonneesApplication;
         then decideEnvoi;
             if donneesEnvoyees then verifierValiderDonnees;
             if donneesNonEnvoyees then afficherMessageErreur;
 
-        succession afficherMessageErreur then decideRecommencerEnvoi;
+        succession first afficherMessageErreur then decideRecommencerEnvoi;
             if recommencerEnvoi then mergeEnvoi;
             if annulerEnvoi then done;
 
-        succession verifierValiderDonnees if donneesValidees then enregistrementFinal;
-        succession enregistrementFinal then done;
+        succession first verifierValiderDonnees if donneesValidees then enregistrementFinal;
+        succession first enregistrementFinal then done;
     }
 }

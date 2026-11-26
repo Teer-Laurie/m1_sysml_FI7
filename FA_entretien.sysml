@@ -37,8 +37,8 @@ package AspiCoo_Entretenir {
         if eauNecessaire then signalerBesoinRemplissageEau;
         if produitNecessaire then signalerBesoinRemplissageProduit;
 
-        succession signalerBesoinRemplissageEau then choixReservoirs;
-        succession signalerBesoinRemplissageProduit then choixReservoirs;
+        succession first signalerBesoinRemplissageEau then choixReservoirs;
+        succession first signalerBesoinRemplissageProduit then choixReservoirs;
 
         then signalerNettoyageAccessoires;
         then controlerEtatStation;
@@ -49,7 +49,7 @@ package AspiCoo_Entretenir {
         if sachetPlein then signalerRetraitSachetPlein;
         if sachetNonPlein then terminerProcessusEntretien;
 
-        succession signalerRetraitSachetPlein then terminerProcessusEntretien;
+        succession first signalerRetraitSachetPlein then terminerProcessusEntretien;
 
         then done;
     }

@@ -19,7 +19,7 @@ package AspiCoo_Programmer {
 
         first start;
 
-        succession start if boutonProgrammerAppuye then afficherInterfaceProgrammation;
+        succession first start if boutonProgrammerAppuye then afficherInterfaceProgrammation;
 
         then repriseSaisie;
         then recevoirParametres;
@@ -30,9 +30,9 @@ package AspiCoo_Programmer {
         if parametresValides then enregistrerSession;
         if not parametresValides then afficherMessageErreur;
 
-        succession afficherMessageErreur then repriseSaisie;
+        succession first afficherMessageErreur then repriseSaisie;
 
-        succession enregistrerSession then afficherConfirmation;
+        succession first enregistrerSession then afficherConfirmation;
 
         then done;
     }
