@@ -1,84 +1,86 @@
 package RAL_VueGenerale {
 
     package Parts {
+        /* logiciel embarqué du robot */
+        part def LogicielRobot;
+        part def GestionnaireSession;
+        part def Carte;
+        part def Zone;
+        part def Obstacle;
+        part def ModeNettoyage;
+        part def Diagnostic;
+        part def EtatComposant;
+        part def Alerte;
 
-        /* composants du robot */
-        part def Batterie;
-        part def MoteurDeplacement;
-        part def CapteursObstacles;
-        part def CapteurSurface;
-        part def CapteurSalete;
-        part def ModuleCartographie;
-        part def ModuleDiagnostic;
-        part def BrossePrincipale;
-        part def Filtre;
-        part def Aspirateur;
-        part def ModuleLavage;
-        part def ReservoirDechets;
-        part def Compacteur;
-        part def ModuleWifi;
-        part def BoutonCommande;
-        part def Controleur;
+        /* logiciel de la station */
+        part def LogicielStation;
+        part def GestionnaireEvacuation;
+        part def GestionnaireCharge;
+        part def NiveauConsommable;
 
-        /* composants de la station */
-        part def ChargeurStation;
-        part def SystemeEvacuation;
-        part def MagasinSachets;
-        part def CapteurNiveauSachet;
-        part def ReservoirEau;
-        part def ReservoirProduit;
-        part def CapteursNiveauLiquides;
-        part def AlimentationStation;
+        /* application mobile */
+        part def AppRAL;
+        part def DialogueConnexion;
+        part def CompteUtilisateur;
+        part def VueCarte;
+        part def DialogueProgrammation;
+        part def SessionProgrammee;
+        part def DialogueReglage;
+        part def Reglage;
+        part def GuideEntretien;
+        part def Notification;
 
-        /* composants de l'application */
-        part def InterfaceUtilisateur;
-        part def ModuleProgrammation;
-        part def ModuleNotifications;
-        part def AffichageCarte;
+        /* matériel et système */
+        part def RobotNettoyeur;
+        part def StationRechargeEvacuation;
+        part def SystemeRAL;
+    }
 
-        /* constituants */
-        part def RobotNettoyeur {
-            part controleur : Controleur;
-            part batterie : Batterie;
-            part moteurs : MoteurDeplacement[2];
-            part capteursObstacles : CapteursObstacles;
-            part capteurSurface : CapteurSurface;
-            part capteurSalete : CapteurSalete;
-            part cartographie : ModuleCartographie;
-            part diagnostic : ModuleDiagnostic;
-            part brosse : BrossePrincipale;
-            part filtre : Filtre;
-            part aspirateur : Aspirateur;
-            part lavage : ModuleLavage;
-            part reservoir : ReservoirDechets;
-            part compacteur : Compacteur;
-            part wifi : ModuleWifi;
-            part bouton : BoutonCommande;
+    private import Parts::*;
+
+    /* ===== logiciel embarqué du robot ===== */
+    part logicielRobot : LogicielRobot {
+        part gestionnaireSession : GestionnaireSession;
+        part carte : Carte {
+            part zones : Zone[1..*];
+            part obstacles : Obstacle[0..*];
         }
-
-        part def StationRechargeEvacuation {
-            part alimentation : AlimentationStation;
-            part chargeur : ChargeurStation;
-            part evacuation : SystemeEvacuation;
-            part sachets : MagasinSachets;
-            part capteurSachet : CapteurNiveauSachet;
-            part reservoirEau : ReservoirEau;
-            part reservoirProduit : ReservoirProduit;
-            part capteursLiquides : CapteursNiveauLiquides;
+        part modes : ModeNettoyage[3];          // aspiration, lavage, mixte
+        part diagnostic : Diagnostic {
+            part etatsComposants : EtatComposant[1..*];
         }
+        part alertes : Alerte[0..*];
+    }
 
-        part def ApplicationMobile {
-            part interface : InterfaceUtilisateur;
-            part programmation : ModuleProgrammation;
-            part notifications : ModuleNotifications;
-            part carte : AffichageCarte;
-        }
+    /* ===== logiciel de la station ===== */
+    part logicielStation : LogicielStation {
+        part gestionnaireEvacuation : GestionnaireEvacuation;
+        part gestionnaireCharge : GestionnaireCharge;
+        part niveaux : NiveauConsommable[3];    // sachet, eau, produit
+        part alertes : Alerte[0..*];
+    }
 
-        /* système d'intérêt */
-        part def SystemeRAL {
-            part robot : RobotNettoyeur;
-            part station : StationRechargeEvacuation;
-            part application : ApplicationMobile;
+    /* ===== application mobile ===== */
+    part appSmartphone : AppRAL {
+        part dialogueConnexion : DialogueConnexion;
+        part compte : CompteUtilisateur;
+        part vueCarte : VueCarte;
+        part dialogueProgrammation : DialogueProgrammation;
+        part sessionsProgrammees : SessionProgrammee[0..*];
+        part dialogueReglage : DialogueReglage[1..*];
+        part reglages : Reglage[0..*];
+        part guideEntretien : GuideEntretien;
+        part notifications : Notification[0..*];
+    }
+
+    /* ===== architecture d'ensemble ===== */
+    part systeme : SystemeRAL {
+        part robot : RobotNettoyeur {
+            part logiciel :> logicielRobot;
         }
+        part station : StationRechargeEvacuation {
+            part logiciel :> logicielStation;
+        }
+        part application :> appSmartphone;
     }
 }
