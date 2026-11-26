@@ -26,6 +26,7 @@ package AspiCoo_Lancer {
         action viderReservoirRobot;
         action transfererDechetsVersSachet;
         action rechargerRobot;
+        action mettreEnVeille;
 
         merge choixMode;
 
@@ -64,7 +65,7 @@ package AspiCoo_Lancer {
         succession retournerStation then viderReservoirRobot;
         succession viderReservoirRobot then transfererDechetsVersSachet;
         succession transfererDechetsVersSachet then rechargerRobot;
-
+        succession rechargerRobot then mettreEnVeille;
         then done;
     }
 }
