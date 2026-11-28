@@ -1,62 +1,102 @@
-package AspiCoo_Lancer {
+package SequencesRAL_Lancer {
 
     package parts {
-        part def InterfaceNettoyage;
-        part def RobotAspirateur;
+        part def Utilisateur;
+        part def ApplicationMobile;
+        part def GestionnaireCommunication;
+        part def ModulePilotage;
         part def ModuleCartographie;
-        part def ReservoirDechets;
+        part def Capteurs;
         part def Station;
-        part def SachetDechets;
     }
 
     package sequences {
 
-        private import AspiCoo_Lancer::parts::*;
+        private import SequencesRAL_Lancer::parts::*;
 
-        occurrence lancerNettoyage {
+        /* A : scénario nominal */
+        occurrence lancerNettoyageNominal {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part communication : GestionnaireCommunication;
+            part pilotage : ModulePilotage;
+            part cartographie : ModuleCartographie;
+            part capteurs : Capteurs;
+            part station : Station;
 
-            part Utilisateur: InterfaceNettoyage;
-            part robot: RobotAspirateur;
-            part cartographie: ModuleCartographie;
-            part reservoirs: ReservoirDechets;
-            part station: Station;
-            part sachet: SachetDechets;
+            message demanderNettoyage from utilisateur to application;
+            message transmettreDemande from application to communication;
+            message relayerDemande from communication to pilotage;
+            message verifierSession from pilotage to pilotage;
+            message demanderCarte from pilotage to cartographie;
+            message transmettreCarte from cartographie to pilotage;
+            message analyserSurface from pilotage to capteurs;
+            message typeSurface from capteurs to pilotage;
+            message effectuerNettoyage from pilotage to pilotage;
+            message verifierFinNettoyage from pilotage to pilotage;
+            message retournerStation from pilotage to station;
+            message notifierFin from pilotage to communication;
+            message relayerNotification from communication to application;
+            message afficherFinNettoyage from application to utilisateur;
+        }
 
-            message lancerNettoyage from Utilisateur to robot;
+        /* B : retour à la station en cours de nettoyage */
+        occurrence lancerNettoyageRetourStation {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part communication : GestionnaireCommunication;
+            part pilotage : ModulePilotage;
+            part cartographie : ModuleCartographie;
+            part capteurs : Capteurs;
+            part station : Station;
 
-            message verifierSession from robot to robot;
+            message demanderNettoyage from utilisateur to application;
+            message transmettreDemande from application to communication;
+            message relayerDemande from communication to pilotage;
+            message verifierSession from pilotage to pilotage;
+            message demanderCarte from pilotage to cartographie;
+            message transmettreCarte from cartographie to pilotage;
+            message analyserSurface from pilotage to capteurs;
+            message typeSurface from capteurs to pilotage;
+            message effectuerNettoyage from pilotage to pilotage;
+            message batterieFaibleOuReservoirPlein from capteurs to pilotage;
+            message retournerStation from pilotage to station;
+            message rechargerOuVider from station to pilotage;
+            message reprendreNettoyage from pilotage to pilotage;
+            message verifierFinNettoyage from pilotage to pilotage;
+            message retournerStationFin from pilotage to station;
+            message notifierFin from pilotage to communication;
+            message relayerNotification from communication to application;
+            message afficherFinNettoyage from application to utilisateur;
+        }
 
-            message demarrerRobot from robot to robot;
+        /* C : robot hors ligne */
+        occurrence lancerNettoyageHorsLigne {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part communication : GestionnaireCommunication;
 
-            message demanderCartographie from robot to cartographie;
+            message demanderNettoyage from utilisateur to application;
+            message transmettreDemande from application to communication;
+            message verifierConnexionRobot from communication to communication;
+            message echecConnexion from communication to application;
+            message afficherErreur from application to utilisateur;
+        }
 
-            message transmettreCartographie from cartographie to robot;
+        /* D : session déjà en cours */
+        occurrence lancerNettoyageSessionEnCours {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part communication : GestionnaireCommunication;
+            part pilotage : ModulePilotage;
 
-            message analyserSurface from robot to robot;
-
-            message adapterModeNettoyage from robot to robot;
-
-            message effectuerAspirationOuLavage from robot to robot;
-
-            message collecterDechets from robot to reservoirs;
-
-            message compacterDechets from reservoirs to reservoirs;
-
-            message verifierFinNettoyage from robot to robot;
-
-            message reprendreNettoyage from robot to robot;
-
-            message terminerSession from robot to robot;
-
-            message retournerStation from robot to station;
-
-            message viderReservoirRobot from robot to station;
-
-            message transfererDechetsVersSachet from station to sachet;
-
-            message rechargerRobot from station to robot;
-
-            message notifierFinNettoyage from robot to Utilisateur;
+            message demanderNettoyage from utilisateur to application;
+            message transmettreDemande from application to communication;
+            message relayerDemande from communication to pilotage;
+            message verifierSession from pilotage to pilotage;
+            message refuserDemande from pilotage to communication;
+            message relayerRefus from communication to application;
+            message informerSessionEnCours from application to utilisateur;
         }
     }
 }
