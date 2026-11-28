@@ -1,134 +1,77 @@
-package ActionsRAL {
+package SequencesRAL_Programmer {
 
-    private import ScalarValues::Boolean;
+    package parts {
+        part def Utilisateur;
+        part def ApplicationMobile;
+        part def ModuleProgrammation;
+        part def BaseDeDonnees;
+        part def GestionnaireCommunication;
+        part def ModulePilotage;
+    }
 
-    /* couvre les cas d'utilisation lancerNettoyage et programmerNettoyage (EF-01, EF-02, EF-03) */
-    action programmerNettoyage {
+    package sequences {
 
-        // ==========================================
-        // 1. ATTRIBUTS (gardes)
-        // ==========================================
-        attribute cycleMaintenant : Boolean;
-        attribute programmerCycle : Boolean;
-        attribute annuler : Boolean;
+        private import SequencesRAL_Programmer::parts::*;
 
-        attribute validerMaintenant : Boolean;
-        attribute validerProgrammation : Boolean;
-        attribute validerEspaceProgramme : Boolean;
+        /* A : scénario nominal */
+        occurrence programmerNettoyageNominal {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
+            part communication : GestionnaireCommunication;
+            part pilotage : ModulePilotage;
 
-        attribute robotDemarre : Boolean;
+            message ouvrirProgrammation from utilisateur to application;
+            message saisirParametres from utilisateur to application;
+            message transmettreParametres from application to programmation;
+            message verifierParametres from programmation to programmation;
+            message enregistrerSession from programmation to bdd;
+            message sessionEnregistree from bdd to programmation;
+            message confirmerProgrammation from programmation to application;
+            message afficherConfirmation from application to utilisateur;
+            message attendreHeure from programmation to programmation;
+            message envoyerDemarrage from programmation to communication;
+            message relayerDemarrage from communication to pilotage;
+            message demarrerCycle from pilotage to pilotage;
+        }
 
-        // ==========================================
-        // 2. ACTIONS
-        // ==========================================
-        action ouvrirApplication;
+        /* B : paramètres invalides */
+        occurrence programmerNettoyageParametresInvalides {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
 
-        // Branche "Cycle maintenant"
-        action lancerCycleMaintenant;
-        action choisirEspaceMaintenant;
-        action validerEspaceMaintenant;
+            message ouvrirProgrammation from utilisateur to application;
+            message saisirParametres from utilisateur to application;
+            message transmettreParametres from application to programmation;
+            message verifierParametres from programmation to programmation;
+            message parametresInvalides from programmation to application;
+            message afficherErreur from application to utilisateur;
+            message corrigerParametres from utilisateur to application;
+            message transmettreParametresCorriges from application to programmation;
+            message verifierParametresCorriges from programmation to programmation;
+            message enregistrerSession from programmation to bdd;
+            message confirmerProgrammation from programmation to application;
+            message afficherConfirmation from application to utilisateur;
+        }
 
-        // Branche "Programmer date, heure, durée"
-        action programmerDateHeureDuree;
-        action programmerDate;
-        action programmerHeure;
-        action programmerDuree;
-        action validerProgrammationCycle;
-        action choisirEspaceProgramme;
-        action validerEspaceChoisiProgramme;
-        action attendreDateChoisie;
+        /* C : robot indisponible à l'heure prévue */
+        occurrence programmerNettoyageRobotIndisponible {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
+            part communication : GestionnaireCommunication;
 
-        // Fin
-        action demarrerRobot;
-        action demarrerCycle;
-        action signalerEchecDemarrage;
-
-        // ==========================================
-        // 3. NOEUDS DE CONTROLE
-        // ==========================================
-        decide decisionMenu;
-        decide decisionValidationMaintenant;
-        decide decisionValidationProgrammation;
-        decide decisionValidationEspaceProgramme;
-        decide decisionDemarrage;
-
-        fork forkProgrammation;
-        join joinProgrammation;
-
-        merge mergeDemarrage;
-
-        // ==========================================
-        // 4. OUVERTURE DE L'APPLICATION
-        // ==========================================
-        succession first start then ouvrirApplication;
-        succession first ouvrirApplication then decisionMenu;
-
-        // ==========================================
-        // 5. CHOIX DANS LE MENU
-        // ==========================================
-        succession first decisionMenu
-            if cycleMaintenant then lancerCycleMaintenant;
-        succession first decisionMenu
-            if programmerCycle then programmerDateHeureDuree;
-        succession first decisionMenu
-            if annuler then done;
-
-        // ==========================================
-        // 6. BRANCHE "CYCLE MAINTENANT"
-        // ==========================================
-        succession first lancerCycleMaintenant then choisirEspaceMaintenant;
-        succession first choisirEspaceMaintenant then validerEspaceMaintenant;
-        succession first validerEspaceMaintenant then decisionValidationMaintenant;
-
-        succession first decisionValidationMaintenant
-            if validerMaintenant then mergeDemarrage;
-        succession first decisionValidationMaintenant
-            if not validerMaintenant then choisirEspaceMaintenant;
-
-        // ==========================================
-        // 7. BRANCHE "PROGRAMMER DATE, HEURE, DUREE"
-        // ==========================================
-        succession first programmerDateHeureDuree then forkProgrammation;
-
-        // Saisies en parallèle
-        succession first forkProgrammation then programmerDate;
-        succession first forkProgrammation then programmerHeure;
-        succession first forkProgrammation then programmerDuree;
-
-        succession first programmerDate then joinProgrammation;
-        succession first programmerHeure then joinProgrammation;
-        succession first programmerDuree then joinProgrammation;
-
-        succession first joinProgrammation then validerProgrammationCycle;
-        succession first validerProgrammationCycle then decisionValidationProgrammation;
-
-        succession first decisionValidationProgrammation
-            if validerProgrammation then choisirEspaceProgramme;
-        succession first decisionValidationProgrammation
-            if not validerProgrammation then programmerDateHeureDuree;
-
-        succession first choisirEspaceProgramme then validerEspaceChoisiProgramme;
-        succession first validerEspaceChoisiProgramme then decisionValidationEspaceProgramme;
-
-        succession first decisionValidationEspaceProgramme
-            if validerEspaceProgramme then attendreDateChoisie;
-        succession first decisionValidationEspaceProgramme
-            if not validerEspaceProgramme then choisirEspaceProgramme;
-
-        succession first attendreDateChoisie then mergeDemarrage;
-
-        // ==========================================
-        // 8. DEMARRAGE DU ROBOT ET FIN
-        // ==========================================
-        succession first mergeDemarrage then demarrerRobot;
-        succession first demarrerRobot then decisionDemarrage;
-
-        succession first decisionDemarrage
-            if robotDemarre then demarrerCycle;
-        succession first decisionDemarrage
-            if not robotDemarre then signalerEchecDemarrage;
-
-        succession first demarrerCycle then done;
-        succession first signalerEchecDemarrage then done;
+            message attendreHeure from programmation to programmation;
+            message envoyerDemarrage from programmation to communication;
+            message verifierDisponibiliteRobot from communication to communication;
+            message robotIndisponible from communication to programmation;
+            message reporterSession from programmation to bdd;
+            message notifierReport from programmation to application;
+            message afficherReport from application to utilisateur;
+        }
     }
 }
