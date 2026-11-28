@@ -1,43 +1,77 @@
-package AspiCoo_Programmer {
+package SequencesRAL_Programmer {
 
     package parts {
-        part def InterfaceUtilisateur;
-        part def RobotAspirateur;
+        part def Utilisateur;
+        part def ApplicationMobile;
         part def ModuleProgrammation;
         part def BaseDeDonnees;
+        part def GestionnaireCommunication;
+        part def ModulePilotage;
     }
 
     package sequences {
 
-        private import AspiCoo_Programmer::parts::*;
+        private import SequencesRAL_Programmer::parts::*;
 
-        occurrence sequenceProgrammerSession {
+        /* A : scénario nominal */
+        occurrence programmerNettoyageNominal {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
+            part communication : GestionnaireCommunication;
+            part pilotage : ModulePilotage;
 
-            // Yaşam hatları (Lifelines)
-            part interfaceUtilisateur: InterfaceUtilisateur;
-            part robot: RobotAspirateur;
-            part moduleProgrammation: ModuleProgrammation;
-            part bdd: BaseDeDonnees;
+            message ouvrirProgrammation from utilisateur to application;
+            message saisirParametres from utilisateur to application;
+            message transmettreParametres from application to programmation;
+            message verifierParametres from programmation to programmation;
+            message enregistrerSession from programmation to bdd;
+            message sessionEnregistree from bdd to programmation;
+            message confirmerProgrammation from programmation to application;
+            message afficherConfirmation from application to utilisateur;
+            message attendreHeure from programmation to programmation;
+            message envoyerDemarrage from programmation to communication;
+            message relayerDemarrage from communication to pilotage;
+            message demarrerCycle from pilotage to pilotage;
+        }
 
-            // 1. Kullanıcının butona basması ve arayüzün açılması
-            message appuyerBoutonProgrammer from interfaceUtilisateur to robot;
-            message afficherInterfaceProgrammation from robot to interfaceUtilisateur;
+        /* B : paramètres invalides */
+        occurrence programmerNettoyageParametresInvalides {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
 
-            // 2. Kullanıcının parametreleri girmesi ve doğrulanması
-            message saisirParametres from interfaceUtilisateur to moduleProgrammation;
-            message verifierParametresSession from moduleProgrammation to moduleProgrammation;
+            message ouvrirProgrammation from utilisateur to application;
+            message saisirParametres from utilisateur to application;
+            message transmettreParametres from application to programmation;
+            message verifierParametres from programmation to programmation;
+            message parametresInvalides from programmation to application;
+            message afficherErreur from application to utilisateur;
+            message corrigerParametres from utilisateur to application;
+            message transmettreParametresCorriges from application to programmation;
+            message verifierParametresCorriges from programmation to programmation;
+            message enregistrerSession from programmation to bdd;
+            message confirmerProgrammation from programmation to application;
+            message afficherConfirmation from application to utilisateur;
+        }
 
-            // 3. Alternatif Akış: Parametreler Geçersizse (parametresInvalides)
-            message notifierParametresInvalides from moduleProgrammation to interfaceUtilisateur;
-            message afficherMessageErreur from interfaceUtilisateur to interfaceUtilisateur;
+        /* C : robot indisponible à l'heure prévue */
+        occurrence programmerNettoyageRobotIndisponible {
+            part utilisateur : Utilisateur;
+            part application : ApplicationMobile;
+            part programmation : ModuleProgrammation;
+            part bdd : BaseDeDonnees;
+            part communication : GestionnaireCommunication;
 
-            // 4. Ana Akış: Parametreler Geçerliyse (parametresValides)
-            message enregistrerSession from moduleProgrammation to bdd;
-            message confirmerEnregistrement from bdd to moduleProgrammation;
-
-            // 5. Kullanıcıya bildirim ve tamamlama
-            message notifierSuccesProgrammation from moduleProgrammation to interfaceUtilisateur;
-            message afficherConfirmation from interfaceUtilisateur to interfaceUtilisateur;
+            message attendreHeure from programmation to programmation;
+            message envoyerDemarrage from programmation to communication;
+            message verifierDisponibiliteRobot from communication to communication;
+            message robotIndisponible from communication to programmation;
+            message reporterSession from programmation to bdd;
+            message notifierReport from programmation to application;
+            message afficherReport from application to utilisateur;
         }
     }
 }
